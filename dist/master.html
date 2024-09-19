@@ -26,10 +26,53 @@
 
 			.module {
 				width: 640px;
-				border-left: 0.5px solid #171A1C;
-				border-right: 0.5px solid #171A1C;
-				padding: 0 24px 0 24px;
+				padding: 0 32px 0 32px;
 			}
+
+			.content {
+				display: block;
+				border-left: 0.5px solid #dadada;
+				border-right: 0.5px solid #dadada;
+				padding: 0 16px 0 16px;
+			}
+
+			/* Variant BG Colors */
+			.module.variant-sapphine {
+				background-color: #00539A;
+			}
+
+			.module.variant-sage {
+				background-color: #D9E5CC;
+			}
+
+			.module.variant-onyx {
+				background-color: #171A1C;
+			}
+
+			.module.variant-clarity {
+				background-color: #EBF4FA;
+			}
+
+			.module.variant-currency {
+				background-color: #4D5C49;
+			}
+
+			/* Variant Frame Colors */
+			.module.variant-sapphine .content {
+				border-left: 0.5px solid #296faa;
+				border-right: 0.5px solid #296faa;
+			}
+
+			.module.variant-onyx .content {
+				border-left: 0.5px solid #3c3f40;
+				border-right: 0.5px solid #3c3f40;
+			}
+
+			.module.variant-currency .content {
+				border-left: 0.5px solid #6a7666;
+				border-right: 0.5px solid #6a7666;
+			}
+
 		</style>
 
 	</head>
@@ -38,33 +81,74 @@
 
 			<!--
 				Module: logo-banner
+				Type: Default
 			-->
 			<table name="module_logo-banner_default" class="module">
-				<tr style="display: block; padding: 32px 16px 32px 16px">
-					<td>
+				<tr class="content">
+					<td style="padding: 32px 0 32px 0;">
 						<img src="../images/LAM_Logo-2024.svg" alt="" width="124px">
 					</td>
 				</tr>
 			</table>
 
-			<table class="module">
-				<tbody>
-					<tr>
-						<td>
-							:D
-						</td>
-					</tr>
-				</tbody>
+			<!--
+				Module: logo-banner
+				Type: Sapphine variant
+			-->
+			<table name="module_logo-banner_default" class="module variant-sapphine">
+				<tr class="content">
+					<td style="padding: 32px 0 32px 0;">
+						<img src="../images/LAM_Logo-2024-white.svg" alt="" width="124px">
+					</td>
+				</tr>
 			</table>
 
-			<table class="module">
-				<tbody>
-					<tr>
-						<td>
-							:D
-						</td>
-					</tr>
-				</tbody>
+			<!--
+				Module: logo-banner
+				Type: Sage variant
+			-->
+			<table name="module_logo-banner_default" class="module variant-sage">
+				<tr class="content">
+					<td style="padding: 32px 0 32px 0;">
+						<img src="../images/LAM_Logo-2024.svg" alt="" width="124px">
+					</td>
+				</tr>
+			</table>
+
+			<!--
+				Module: logo-banner
+				Type: Onyx variant
+			-->
+			<table name="module_logo-banner_default" class="module variant-onyx">
+				<tr class="content">
+					<td style="padding: 32px 0 32px 0;">
+						<img src="../images/LAM_Logo-2024-white.svg" alt="" width="124px">
+					</td>
+				</tr>
+			</table>
+
+			<!--
+				Module: logo-banner
+				Type: Clarity variant
+			-->
+			<table name="module_logo-banner_default" class="module variant-clarity">
+				<tr class="content">
+					<td style="padding: 32px 0 32px 0;">
+						<img src="../images/LAM_Logo-2024.svg" alt="" width="124px">
+					</td>
+				</tr>
+			</table>
+
+			<!--
+				Module: logo-banner
+				Type: Currency variant
+			-->
+			<table name="module_logo-banner_default" class="module variant-currency">
+				<tr class="content">
+					<td style="padding: 32px 0 32px 0;">
+						<img src="../images/LAM_Logo-2024-white.svg" alt="" width="124px">
+					</td>
+				</tr>
 			</table>
 		</center>
 	</body>
