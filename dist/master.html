@@ -9,7 +9,7 @@
 		<!-- Template Styles -->
 		<style type="text/css">
 
-			/* #Region Boilerplate */
+			/* Boilerplate */
 			body {
 				margin: 0;
 			}
@@ -17,7 +17,10 @@
 			table {
 				border-spacing: 0;
 			}
-			/* #EndRegion - Boilerplate */
+
+			a {
+				color: #00539A;
+			}			
 
 			.wrapper {
 				width: 100%;
@@ -35,6 +38,7 @@
 				border-right: 0.5px solid #dadada;
 				padding: 0 16px 0 16px;
 			}
+			/* #EndRegion - Boilerplate */
 
 			/* Variant BG Colors */
 			.module.variant-sapphine {
@@ -56,6 +60,7 @@
 			.module.variant-currency {
 				background-color: #4D5C49;
 			}
+			/* #End - Variant BG Colors */
 
 			/* Variant Frame Colors */
 			.module.variant-sapphine .content {
@@ -72,12 +77,33 @@
 				border-left: 0.5px solid #6a7666;
 				border-right: 0.5px solid #6a7666;
 			}
+			/* #End - Variant BG Colors */
+
+			/* Module specific styles */
+			.banner-one-column {
+				display: block;
+				background-size: cover;
+				width: 100%;
+				height: 140px;
+			}
+			/* #End - Module specific styles */
 
 		</style>
 
 	</head>
 	<body>
 		<center class="wrapper">
+
+			<!--
+				Module: Preheader
+			-->
+			<table name="module_preheader" class="module">
+				<tr class="">
+					<td style="display: block; padding: 8px 0 8px 0; text-align: center;">
+						<a href="#">Preheader text will go here</a>
+					</td>
+				</tr>
+			</table>
 
 			<!--
 				Module: logo-banner
@@ -148,6 +174,70 @@
 					<td style="padding: 32px 0 32px 0;">
 						<img src="../images/LAM_Logo-2024-white.svg" alt="" width="124px">
 					</td>
+				</tr>
+			</table>
+
+			<!--
+				Module: Email-banner-one-column
+				Type: Default
+			-->
+			<table name="module_logo-banner_default" class="module">
+				<tr class="content">
+					<tr class="content">
+						<td class="banner-one-column" style="background-image: url('../images/Background-1.png');"></td>
+					</tr>
+				</tr>
+			</table>
+
+			<!--
+				Module: Email-banner-one-column
+				Type: Sapphine variant
+			-->
+			<table name="module_logo-banner_default" class="module variant-sapphine">
+				<tr class="content">
+					<tr class="content">
+						<td class="banner-one-column" style="background-image: url('../images/Background-1.png');"></td>
+					</tr>
+				</tr>
+			</table>
+
+			<!--
+				Module: Email-banner-one-column
+				Type: Sage variant
+			-->
+			<table name="module_logo-banner_default" class="module variant-sage">
+				<tr class="content">
+					<td class="banner-one-column" style="background-image: url('../images/Background-3.png');"></td>
+				</tr>
+			</table>
+
+			<!--
+				Module: Email-banner-one-column
+				Type: Onyx variant
+			-->
+			<table name="module_logo-banner_default" class="module variant-onyx">
+				<tr class="content">
+					<td class="banner-one-column" style="background-image: url('../images/Background-2.png');"></td>
+				</tr>
+			</table>
+
+			<!--
+				Module: Email-banner-one-column
+				Type: Clarity variant
+			-->
+			<table name="module_logo-banner_default" class="module variant-clarity">
+				<tr class="content">
+					<td class="banner-one-column" style="background-image: url('../images/Background-1.png');"></td>
+				</tr>
+			</table>
+
+			<!--
+				Module: Email-banner-one-column
+				Type: Currency variant
+			-->
+			<table name="module_logo-banner_default" class="module variant-currency">
+				<tr class="content">
+					<td class="banner-one-column" style="background-image: url('../images/Background-1.png');"></td>
 				</tr>
 			</table>
 		</center>
