@@ -1,0 +1,15 @@
+{
+  "name": "lazard-email-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"build":"juice --css ./src/styles/index.css ./src/templates/master.html ./dist/master.html"
+  },
+  "author": "Anthony Capobianchi",
+  "license": "ISC",
+  "dependencies": {
+    "juice": "^11.0.0"
+  }
+}

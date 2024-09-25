@@ -1,0 +1,130 @@
+/* Boilerplate */
+body {
+	margin: 0;
+	font-family:Arial, Helvetica;
+	color: #171A1C;
+}
+
+h1, h2, h3, p {
+	font-weight: 400;
+	margin: 0;
+}
+
+h1 {
+	font-size: 40px;
+	line-height: 40px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-weight: 700;
+	font-size: 16px;
+}
+
+p {
+	font-size: 14px;
+	line-height: 120%; /* 16.8px */
+	letter-spacing: -0.14px;
+	padding: 20px 0 20px 0;
+}
+
+table {
+	border-spacing: 0;
+}
+
+a {
+	color: #00539A;
+}
+
+.wrapper {
+	width: 100%;
+	table-layout: fixed;
+}
+
+.module {
+	width: 100%;
+	max-width: 640px;
+	padding: 0 32px 0 32px;
+}
+
+.content {
+	display: block;
+	border-left: 0.5px solid #dadada;
+	border-right: 0.5px solid #dadada;
+	padding: 0 16px 0 16px;
+}
+
+.content .content-padding {
+	padding: 32px 0 32px 0;
+}
+/* #EndRegion - Boilerplate */
+
+/* Variant BG/Font Colors */
+.module.variant-sapphine {
+	background-color: #00539A;
+}
+
+.module.variant-sage {
+	background-color: #D9E5CC;
+}
+
+.module.variant-onyx {
+	background-color: #171A1C;
+}
+
+.module.variant-clarity {
+	background-color: #EBF4FA;
+}
+
+.module.variant-currency {
+	background-color: #4D5C49;
+}
+
+.module.variant-sapphine, .module.variant-onyx, .module.variant-currency {
+	color: #EBF4FA;
+}
+/* #End - Variant BG Colors */
+
+/* Variant Frame Colors */
+.module.variant-sapphine .content {
+	border-left: 0.5px solid #296faa;
+	border-right: 0.5px solid #296faa;
+}
+
+.module.variant-onyx .content {
+	border-left: 0.5px solid #3c3f40;
+	border-right: 0.5px solid #3c3f40;
+}
+
+.module.variant-currency .content {
+	border-left: 0.5px solid #6a7666;
+	border-right: 0.5px solid #6a7666;
+}
+/* #End - Variant BG Colors */
+
+/* Module specific styles */
+.banner-one-column {
+	display: block;
+	background-size: cover;
+	width: 100%;
+	height: 140px;
+}
+
+.layout_two-column {
+	display: block;
+}
+
+.layout_two-column .column {
+	display: inline-block;
+	width: 100%;
+	max-width: 263px;
+	vertical-align: top;
+}
+/* #End - Module specific styles */

@@ -2,152 +2,24 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Lazard Email Template - Master</title>
 
 		<!-- Template Styles -->
-		<style type="text/css">
-
-			/* Boilerplate */
-			body {
-				margin: 0;
-				font-family:Arial, Helvetica;
-				color: #171A1C;
-			}
-
-			h1, h2, h3, p {
-				font-weight: 400;
-				margin: 0;
-			}
-
-			h1 {
-				font-size: 40px;
-				line-height: 40px;
-			}
-
-			h2 {
-				font-size: 32px;
-			}
-
-			h3 {
-				font-size: 24px;
-			}
-
-			h4 {
-				font-weight: 700;
-				font-size: 16px;
-			}
-
-			p {
-				font-size: 14px;
-				line-height: 120%; /* 16.8px */
-				letter-spacing: -0.14px;
-				padding: 20px 0 20px 0;
-			}
-
-			table {
-				border-spacing: 0;
-			}
-
-			a {
-				color: #00539A;
-			}
-
-			.wrapper {
-				width: 100%;
-				table-layout: fixed;
-			}
-
-			.module {
-				width: 640px;
-				padding: 0 32px 0 32px;
-			}
-
-			.content {
-				display: block;
-				border-left: 0.5px solid #dadada;
-				border-right: 0.5px solid #dadada;
-				padding: 0 16px 0 16px;
-			}
-			/* #EndRegion - Boilerplate */
-
-			/* Variant BG/Font Colors */
-			.module.variant-sapphine {
-				background-color: #00539A;
-			}
-
-			.module.variant-sage {
-				background-color: #D9E5CC;
-			}
-
-			.module.variant-onyx {
-				background-color: #171A1C;
-			}
-
-			.module.variant-clarity {
-				background-color: #EBF4FA;
-			}
-
-			.module.variant-currency {
-				background-color: #4D5C49;
-			}
-
-			.module.variant-sapphine, .module.variant-onyx, .module.variant-currency {
-				color: #EBF4FA;
-			}
-			/* #End - Variant BG Colors */
-
-			/* Variant Frame Colors */
-			.module.variant-sapphine .content {
-				border-left: 0.5px solid #296faa;
-				border-right: 0.5px solid #296faa;
-			}
-
-			.module.variant-onyx .content {
-				border-left: 0.5px solid #3c3f40;
-				border-right: 0.5px solid #3c3f40;
-			}
-
-			.module.variant-currency .content {
-				border-left: 0.5px solid #6a7666;
-				border-right: 0.5px solid #6a7666;
-			}
-			/* #End - Variant BG Colors */
-
-			/* Module specific styles */
-			.banner-one-column {
-				display: block;
-				background-size: cover;
-				width: 100%;
-				height: 140px;
-			}
-
-			.layout_two-column {
-				display: block;
-			}
-			
-			.layout_two-column .column {
-				display: inline-block;
-				width: 100%;
-				max-width: 263px;
-				vertical-align: top;
-			}
-			/* #End - Module specific styles */
-
-		</style>
+		<link rel="stylesheet" type="text/css" href="/src/styles/index.css">
 
 	</head>
-	<body>
-		<center class="wrapper">
+	<body style="margin: 0; font-family: Arial, Helvetica; color: #171A1C;">
+		<center class="wrapper" style="width: 100%; table-layout: fixed;">
 
 			<!--
 				Module: Preheader
 			-->
-			<table name="module_preheader" class="module">
-				<tr class="">
+			<table name="module_preheader" class="module" style="border-spacing: 0; width: 100%; max-width: 640px; padding: 0 32px 0 32px;" width="100%">
+				<tr class>
 					<td style="display: block; padding: 8px 0 8px 0; text-align: center;">
-						<a href="#">Preheader text will go here</a>
+						<a href="#" style="color: #00539A;">Preheader text will go here</a>
 					</td>
 				</tr>
 			</table>
@@ -156,10 +28,10 @@
 				Module: logo-banner
 				Type: Default
 			-->
-			<table name="module_logo-banner_default" class="module">
-				<tr class="content">
-					<td style="padding: 32px 0 32px 0;">
-						<img src="../images/LAM_Logo-2024.svg" alt="" width="124px">
+			<table name="module_logo-banner_default" class="module" style="border-spacing: 0; width: 100%; max-width: 640px; padding: 0 32px 0 32px;" width="100%">
+				<tr class="content" style="display: block; border-left: 0.5px solid #dadada; border-right: 0.5px solid #dadada; padding: 0 16px 0 16px;">
+					<td class="content-padding" style="padding: 32px 0 32px 0;">
+						<img src="/images/LAM_Logo-2024.svg" alt width="124px">
 					</td>
 				</tr>
 			</table>
@@ -168,10 +40,10 @@
 				Module: logo-banner
 				Type: Sapphine variant
 			-->
-			<table name="module_logo-banner_default" class="module variant-sapphine">
-				<tr class="content">
-					<td style="padding: 32px 0 32px 0;">
-						<img src="../images/LAM_Logo-2024-white.svg" alt="" width="124px">
+			<table name="module_logo-banner_default" class="module variant-sapphine" style="border-spacing: 0; width: 100%; max-width: 640px; padding: 0 32px 0 32px; background-color: #00539A; color: #EBF4FA;" width="100%" bgcolor="#00539A">
+				<tr class="content" style="display: block; padding: 0 16px 0 16px; border-left: 0.5px solid #296faa; border-right: 0.5px solid #296faa;">
+					<td class="content-padding" style="padding: 32px 0 32px 0;">
+						<img src="/images/LAM_Logo-2024-white.svg" alt width="124px">
 					</td>
 				</tr>
 			</table>
@@ -180,10 +52,10 @@
 				Module: logo-banner
 				Type: Sage variant
 			-->
-			<table name="module_logo-banner_default" class="module variant-sage">
-				<tr class="content">
-					<td style="padding: 32px 0 32px 0;">
-						<img src="../images/LAM_Logo-2024.svg" alt="" width="124px">
+			<table name="module_logo-banner_default" class="module variant-sage" style="border-spacing: 0; width: 100%; max-width: 640px; padding: 0 32px 0 32px; background-color: #D9E5CC;" width="100%" bgcolor="#D9E5CC">
+				<tr class="content" style="display: block; border-left: 0.5px solid #dadada; border-right: 0.5px solid #dadada; padding: 0 16px 0 16px;">
+					<td class="content-padding" style="padding: 32px 0 32px 0;">
+						<img src="/images/LAM_Logo-2024.svg" alt width="124px">
 					</td>
 				</tr>
 			</table>
@@ -192,10 +64,10 @@
 				Module: logo-banner
 				Type: Onyx variant
 			-->
-			<table name="module_logo-banner_default" class="module variant-onyx">
-				<tr class="content">
-					<td style="padding: 32px 0 32px 0;">
-						<img src="../images/LAM_Logo-2024-white.svg" alt="" width="124px">
+			<table name="module_logo-banner_default" class="module variant-onyx" style="border-spacing: 0; width: 100%; max-width: 640px; padding: 0 32px 0 32px; background-color: #171A1C; color: #EBF4FA;" width="100%" bgcolor="#171A1C">
+				<tr class="content" style="display: block; padding: 0 16px 0 16px; border-left: 0.5px solid #3c3f40; border-right: 0.5px solid #3c3f40;">
+					<td class="content-padding" style="padding: 32px 0 32px 0;">
+						<img src="/images/LAM_Logo-2024-white.svg" alt width="124px">
 					</td>
 				</tr>
 			</table>
@@ -204,10 +76,10 @@
 				Module: logo-banner
 				Type: Clarity variant
 			-->
-			<table name="module_logo-banner_default" class="module variant-clarity">
-				<tr class="content">
-					<td style="padding: 32px 0 32px 0;">
-						<img src="../images/LAM_Logo-2024.svg" alt="" width="124px">
+			<table name="module_logo-banner_default" class="module variant-clarity" style="border-spacing: 0; width: 100%; max-width: 640px; padding: 0 32px 0 32px; background-color: #EBF4FA;" width="100%" bgcolor="#EBF4FA">
+				<tr class="content" style="display: block; border-left: 0.5px solid #dadada; border-right: 0.5px solid #dadada; padding: 0 16px 0 16px;">
+					<td class="content-padding" style="padding: 32px 0 32px 0;">
+						<img src="/images/LAM_Logo-2024.svg" alt width="124px">
 					</td>
 				</tr>
 			</table>
@@ -216,10 +88,10 @@
 				Module: logo-banner
 				Type: Currency variant
 			-->
-			<table name="module_logo-banner_default" class="module variant-currency">
-				<tr class="content">
-					<td style="padding: 32px 0 32px 0;">
-						<img src="../images/LAM_Logo-2024-white.svg" alt="" width="124px">
+			<table name="module_logo-banner_default" class="module variant-currency" style="border-spacing: 0; width: 100%; max-width: 640px; padding: 0 32px 0 32px; background-color: #4D5C49; color: #EBF4FA;" width="100%" bgcolor="#4D5C49">
+				<tr class="content" style="display: block; padding: 0 16px 0 16px; border-left: 0.5px solid #6a7666; border-right: 0.5px solid #6a7666;">
+					<td class="content-padding" style="padding: 32px 0 32px 0;">
+						<img src="/images/LAM_Logo-2024-white.svg" alt width="124px">
 					</td>
 				</tr>
 			</table>
@@ -228,33 +100,33 @@
 				Module: Email-banner-one-column
 				Type: Default
 			-->
-			<table name="module_logo-banner_default" class="module">
-				<tr class="content">
-					<tr class="content">
-						<td class="banner-one-column" style="background-image: url('../images/Background-1.png');"></td>
+			<table name="module_logo-banner_default" class="module" style="border-spacing: 0; width: 100%; max-width: 640px; padding: 0 32px 0 32px;" width="100%">
+				<tr class="content" style="display: block; border-left: 0.5px solid #dadada; border-right: 0.5px solid #dadada; padding: 0 16px 0 16px;">
+					</tr><tr class="content" style="display: block; border-left: 0.5px solid #dadada; border-right: 0.5px solid #dadada; padding: 0 16px 0 16px;">
+						<td class="banner-one-column" style="display: block; background-size: cover; width: 100%; height: 140px; background-image: url('/images/Background-1.png');" width="100%" height="140" background="/images/Background-1.png"></td>
 					</tr>
-				</tr>
+				
 			</table>
 
 			<!--
 				Module: Email-banner-one-column
 				Type: Sapphine variant
 			-->
-			<table name="module_logo-banner_default" class="module variant-sapphine">
-				<tr class="content">
-					<tr class="content">
-						<td class="banner-one-column" style="background-image: url('../images/Background-1.png');"></td>
+			<table name="module_logo-banner_default" class="module variant-sapphine" style="border-spacing: 0; width: 100%; max-width: 640px; padding: 0 32px 0 32px; background-color: #00539A; color: #EBF4FA;" width="100%" bgcolor="#00539A">
+				<tr class="content" style="display: block; padding: 0 16px 0 16px; border-left: 0.5px solid #296faa; border-right: 0.5px solid #296faa;">
+					</tr><tr class="content" style="display: block; padding: 0 16px 0 16px; border-left: 0.5px solid #296faa; border-right: 0.5px solid #296faa;">
+						<td class="banner-one-column" style="display: block; background-size: cover; width: 100%; height: 140px; background-image: url('/images/Background-1.png');" width="100%" height="140" background="/images/Background-1.png"></td>
 					</tr>
-				</tr>
+				
 			</table>
 
 			<!--
 				Module: Email-banner-one-column
 				Type: Sage variant
 			-->
-			<table name="module_logo-banner_default" class="module variant-sage">
-				<tr class="content">
-					<td class="banner-one-column" style="background-image: url('../images/Background-3.png');"></td>
+			<table name="module_logo-banner_default" class="module variant-sage" style="border-spacing: 0; width: 100%; max-width: 640px; padding: 0 32px 0 32px; background-color: #D9E5CC;" width="100%" bgcolor="#D9E5CC">
+				<tr class="content" style="display: block; border-left: 0.5px solid #dadada; border-right: 0.5px solid #dadada; padding: 0 16px 0 16px;">
+					<td class="banner-one-column" style="display: block; background-size: cover; width: 100%; height: 140px; background-image: url('/images/Background-3.png');" width="100%" height="140" background="/images/Background-3.png"></td>
 				</tr>
 			</table>
 
@@ -262,9 +134,9 @@
 				Module: Email-banner-one-column
 				Type: Onyx variant
 			-->
-			<table name="module_logo-banner_default" class="module variant-onyx">
-				<tr class="content">
-					<td class="banner-one-column" style="background-image: url('../images/Background-2.png');"></td>
+			<table name="module_logo-banner_default" class="module variant-onyx" style="border-spacing: 0; width: 100%; max-width: 640px; padding: 0 32px 0 32px; background-color: #171A1C; color: #EBF4FA;" width="100%" bgcolor="#171A1C">
+				<tr class="content" style="display: block; padding: 0 16px 0 16px; border-left: 0.5px solid #3c3f40; border-right: 0.5px solid #3c3f40;">
+					<td class="banner-one-column" style="display: block; background-size: cover; width: 100%; height: 140px; background-image: url('/images/Background-2.png');" width="100%" height="140" background="/images/Background-2.png"></td>
 				</tr>
 			</table>
 
@@ -272,9 +144,9 @@
 				Module: Email-banner-one-column
 				Type: Clarity variant
 			-->
-			<table name="module_logo-banner_default" class="module variant-clarity">
-				<tr class="content">
-					<td class="banner-one-column" style="background-image: url('../images/Background-1.png');"></td>
+			<table name="module_logo-banner_default" class="module variant-clarity" style="border-spacing: 0; width: 100%; max-width: 640px; padding: 0 32px 0 32px; background-color: #EBF4FA;" width="100%" bgcolor="#EBF4FA">
+				<tr class="content" style="display: block; border-left: 0.5px solid #dadada; border-right: 0.5px solid #dadada; padding: 0 16px 0 16px;">
+					<td class="banner-one-column" style="display: block; background-size: cover; width: 100%; height: 140px; background-image: url('/images/Background-1.png');" width="100%" height="140" background="/images/Background-1.png"></td>
 				</tr>
 			</table>
 
@@ -282,9 +154,9 @@
 				Module: Email-banner-one-column
 				Type: Currency variant
 			-->
-			<table name="module_logo-banner_default" class="module variant-currency">
-				<tr class="content">
-					<td class="banner-one-column" style="background-image: url('../images/Background-1.png');"></td>
+			<table name="module_logo-banner_default" class="module variant-currency" style="border-spacing: 0; width: 100%; max-width: 640px; padding: 0 32px 0 32px; background-color: #4D5C49; color: #EBF4FA;" width="100%" bgcolor="#4D5C49">
+				<tr class="content" style="display: block; padding: 0 16px 0 16px; border-left: 0.5px solid #6a7666; border-right: 0.5px solid #6a7666;">
+					<td class="banner-one-column" style="display: block; background-size: cover; width: 100%; height: 140px; background-image: url('/images/Background-1.png');" width="100%" height="140" background="/images/Background-1.png"></td>
 				</tr>
 			</table>
 
@@ -292,22 +164,22 @@
 				Module: Email-banner-two-column
 				Type: Default
 			-->
-			<table name="module_logo-banner_default" class="module ">
-				<tr class="content">
-					<td class="layout_two-column" style="padding: 32px 0 32px 0;">
-						<table class="column">
+			<table name="module_logo-banner_default" class="module " style="border-spacing: 0; width: 100%; max-width: 640px; padding: 0 32px 0 32px;" width="100%">
+				<tr class="content" style="display: block; border-left: 0.5px solid #dadada; border-right: 0.5px solid #dadada; padding: 0 16px 0 16px;">
+					<td class="layout_two-column content-padding" style="display: block; padding: 32px 0 32px 0;">
+						<table class="column" style="border-spacing: 0; display: inline-block; width: 100%; max-width: 263px; vertical-align: top;" width="100%" valign="top">
 							<tr>
 								<td>
-									<h1>Factor Report</h1>
-									<p>Monthly analysis of global market factors</p>
+									<h1 style="font-weight: 400; margin: 0; font-size: 40px; line-height: 40px;">Factor Report</h1>
+									<p style="font-weight: 400; margin: 0; font-size: 14px; line-height: 120%; letter-spacing: -0.14px; padding: 20px 0 20px 0;">Monthly analysis of global market factors</p>
 								</td>
 							</tr>
 						</table>
 
-						<table class="column">
+						<table class="column" style="border-spacing: 0; display: inline-block; width: 100%; max-width: 263px; vertical-align: top;" width="100%" valign="top">
 							<tr>
 								<td>
-									<p>Col 2</p>
+									<p style="font-weight: 400; margin: 0; font-size: 14px; line-height: 120%; letter-spacing: -0.14px; padding: 20px 0 20px 0;">Col 2</p>
 								</td>
 							</tr>
 						</table>
