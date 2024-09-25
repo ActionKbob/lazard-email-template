@@ -12,6 +12,38 @@
 			/* Boilerplate */
 			body {
 				margin: 0;
+				font-family:Arial, Helvetica;
+				color: #171A1C;
+			}
+
+			h1, h2, h3, p {
+				font-weight: 400;
+				margin: 0;
+			}
+
+			h1 {
+				font-size: 40px;
+				line-height: 40px;
+			}
+
+			h2 {
+				font-size: 32px;
+			}
+
+			h3 {
+				font-size: 24px;
+			}
+
+			h4 {
+				font-weight: 700;
+				font-size: 16px;
+			}
+
+			p {
+				font-size: 14px;
+				line-height: 120%; /* 16.8px */
+				letter-spacing: -0.14px;
+				padding: 20px 0 20px 0;
 			}
 
 			table {
@@ -20,7 +52,7 @@
 
 			a {
 				color: #00539A;
-			}			
+			}
 
 			.wrapper {
 				width: 100%;
@@ -40,7 +72,7 @@
 			}
 			/* #EndRegion - Boilerplate */
 
-			/* Variant BG Colors */
+			/* Variant BG/Font Colors */
 			.module.variant-sapphine {
 				background-color: #00539A;
 			}
@@ -59,6 +91,10 @@
 
 			.module.variant-currency {
 				background-color: #4D5C49;
+			}
+
+			.module.variant-sapphine, .module.variant-onyx, .module.variant-currency {
+				color: #EBF4FA;
 			}
 			/* #End - Variant BG Colors */
 
@@ -85,6 +121,17 @@
 				background-size: cover;
 				width: 100%;
 				height: 140px;
+			}
+
+			.layout_two-column {
+				display: block;
+			}
+			
+			.layout_two-column .column {
+				display: inline-block;
+				width: 100%;
+				max-width: 263px;
+				vertical-align: top;
 			}
 			/* #End - Module specific styles */
 
@@ -238,6 +285,33 @@
 			<table name="module_logo-banner_default" class="module variant-currency">
 				<tr class="content">
 					<td class="banner-one-column" style="background-image: url('../images/Background-1.png');"></td>
+				</tr>
+			</table>
+
+			<!--
+				Module: Email-banner-two-column
+				Type: Default
+			-->
+			<table name="module_logo-banner_default" class="module ">
+				<tr class="content">
+					<td class="layout_two-column" style="padding: 32px 0 32px 0;">
+						<table class="column">
+							<tr>
+								<td>
+									<h1>Factor Report</h1>
+									<p>Monthly analysis of global market factors</p>
+								</td>
+							</tr>
+						</table>
+
+						<table class="column">
+							<tr>
+								<td>
+									<p>Col 2</p>
+								</td>
+							</tr>
+						</table>
+					</td>
 				</tr>
 			</table>
 		</center>
