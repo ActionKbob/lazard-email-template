@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-		"build":"juice --css ./src/styles/index.css ./src/templates/master.html ./dist/master.html"
+		"build":"juice ./src/templates/master.html ./dist/master.html"
   },
   "author": "Anthony Capobianchi",
   "license": "ISC",

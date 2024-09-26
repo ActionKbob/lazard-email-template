@@ -1,8 +1,24 @@
+:root {
+	/* Variant Colors */
+  --parchment: #ffffff;
+	--onyx: #171A1C;
+  --sapphire: #00539A;
+	--sage: #D9E5CC;
+	--clarity: #EBF4FA;
+	--currency: #4D5C49;
+
+	/* Frame colors */
+	--frame: #dadada;
+	--frame_sapphire: #296faa;
+	--frame_onyx: #3c3f40;
+	--frame_currency: #6a7666;
+}
+
 /* Boilerplate */
 body {
 	margin: 0;
 	font-family:Arial, Helvetica;
-	color: #171A1C;
+	color: var(--onyx);
 }
 
 h1, h2, h3, p {
@@ -40,7 +56,7 @@ table {
 }
 
 a {
-	color: #00539A;
+	color: var(--sapphire);
 }
 
 .wrapper {
@@ -56,56 +72,60 @@ a {
 
 .content {
 	display: block;
-	border-left: 0.5px solid #dadada;
-	border-right: 0.5px solid #dadada;
+	border-left: 0.5px solid var(--frame);
+	border-right: 0.5px solid var(--frame);
 	padding: 0 16px 0 16px;
 }
 
-.content .content-padding {
+.content-padding {
 	padding: 32px 0 32px 0;
+}
+
+.content-padding.sm {
+	padding: 8px 0 8px 0;
 }
 /* #EndRegion - Boilerplate */
 
 /* Variant BG/Font Colors */
-.module.variant-sapphine {
-	background-color: #00539A;
+.module.sapphire {
+	background-color: var(--sapphire);
 }
 
-.module.variant-sage {
-	background-color: #D9E5CC;
+.module.sage {
+	background-color: var(--sage);
 }
 
-.module.variant-onyx {
-	background-color: #171A1C;
+.module.onyx {
+	background-color: var(--onyx);
 }
 
-.module.variant-clarity {
-	background-color: #EBF4FA;
+.module.clarity {
+	background-color: var(--clarity);
 }
 
-.module.variant-currency {
-	background-color: #4D5C49;
+.module.currency {
+	background-color: var(--currency);
 }
 
-.module.variant-sapphine, .module.variant-onyx, .module.variant-currency {
-	color: #EBF4FA;
+.module.sapphire, .module.onyx, .module.currency {
+	color: var(--clarity);
 }
 /* #End - Variant BG Colors */
 
 /* Variant Frame Colors */
-.module.variant-sapphine .content {
-	border-left: 0.5px solid #296faa;
-	border-right: 0.5px solid #296faa;
+.module.sapphire .content {
+	border-left: 0.5px solid var(--frame_sapphire);
+	border-right: 0.5px solid var(--frame_sapphire);
 }
 
-.module.variant-onyx .content {
-	border-left: 0.5px solid #3c3f40;
-	border-right: 0.5px solid #3c3f40;
+.module.onyx .content {
+	border-left: 0.5px solid var(--frame_onyx);
+	border-right: 0.5px solid var(--frame_onyx);
 }
 
-.module.variant-currency .content {
-	border-left: 0.5px solid #6a7666;
-	border-right: 0.5px solid #6a7666;
+.module.currency .content {
+	border-left: 0.5px solid var(--frame_currency);
+	border-right: 0.5px solid var(--frame_currency);
 }
 /* #End - Variant BG Colors */
 
@@ -128,3 +148,42 @@ a {
 	vertical-align: top;
 }
 /* #End - Module specific styles */
+
+/* Component styles */
+.btn {
+	padding: 8px 20px;
+	font-size: 12px;
+	text-align: center;
+	border: 1px solid;
+	border-radius: 80.438px;
+	text-decoration: none;
+}
+
+.btn.sm {
+	padding: 3px 20px;
+}
+
+.btn.sapphire {
+	background-color: var(--sapphire);
+	border-color: var(--sapphire);
+	color: var(--parchment);
+	font-weight: 700;
+}
+
+.btn.sapphire.secondary {
+	background-color: var(--parchment);
+	color: var(--sapphire);
+}
+
+.btn.onyx {
+	background-color: var(--onyx);
+	border-color: var(--onyx);
+	color: var(--parchment);
+	font-weight: 700;
+}
+
+.btn.onyx.secondary {
+	background-color: var(--parchment);
+	color: var(--onyx);
+}
+/* #End - Component styles */
