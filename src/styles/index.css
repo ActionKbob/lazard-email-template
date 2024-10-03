@@ -1,5 +1,5 @@
 :root {
-	/* Variant Colors */
+	/* ---------- Variant Colors ---------- */
   --parchment: #ffffff;
 	--onyx: #171A1C;
   --sapphire: #00539A;
@@ -7,14 +7,14 @@
 	--clarity: #EBF4FA;
 	--currency: #4D5C49;
 
-	/* Frame colors */
+	/* ---------- Frame colors ---------- */
 	--frame: #dadada;
 	--frame_sapphire: #296faa;
 	--frame_onyx: #3c3f40;
 	--frame_currency: #6a7666;
 }
 
-/* Boilerplate */
+/* ---------- Boilerplate ---------- */
 body {
 	margin: 0;
 	font-family:Arial, Helvetica;
@@ -46,9 +46,8 @@ h4 {
 
 p {
 	font-size: 14px;
-	line-height: 120%; /* 16.8px */
+	line-height: 120%; /* ---------- 16.8px ---------- */
 	letter-spacing: -0.14px;
-	padding: 20px 0 20px 0;
 }
 
 table {
@@ -84,9 +83,34 @@ a {
 .container.sm {
 	padding: 8px 0 8px 0;
 }
-/* #EndRegion - Boilerplate */
 
-/* Variant BG/Font Colors */
+.align-right {
+	text-align: right;
+}
+
+.py-20 {
+	padding: 20px 0;
+}
+
+.pt-20 {
+	padding: 20px 0 0;
+}
+
+/* 
+	This aligns table content to the right, 
+	used to mimic justify-content-between in very limited contexts 
+*/
+.table-content-right tbody, .table-content-right tr {
+	display: inline;
+}
+
+.table-content-right td {
+	display: block;
+	text-align: right;
+}
+/* ---------- #EndRegion - Boilerplate ---------- */
+
+/* ---------- Variant BG/Font Colors ---------- */
 .module.sapphire {
 	background-color: var(--sapphire);
 }
@@ -110,9 +134,9 @@ a {
 .module.sapphire, .module.onyx, .module.currency {
 	color: var(--clarity);
 }
-/* #End - Variant BG Colors */
+/* ---------- #End - Variant BG Colors ---------- */
 
-/* Variant Frame Colors */
+/* ---------- Variant Frame Colors ---------- */
 .module.sapphire .content {
 	border-left: 0.5px solid var(--frame_sapphire);
 	border-right: 0.5px solid var(--frame_sapphire);
@@ -127,9 +151,9 @@ a {
 	border-left: 0.5px solid var(--frame_currency);
 	border-right: 0.5px solid var(--frame_currency);
 }
-/* #End - Variant BG Colors */
+/* ---------- #End - Variant BG Colors ---------- */
 
-/* Module specific styles */
+/* ---------- Module specific styles ---------- */
 .banner-one-column {
 	display: block;
 	background-size: cover;
@@ -153,15 +177,34 @@ a {
 }
 
 .email-banner-two-column p {
-	padding: 20px 0;
+	padding-bottom: 20px;
 }
 
 .email-heading .container {
+	display: block;
 	padding: 48px 0 16px 0;
 }
-/* #End - Module specific styles */
 
-/* Component styles */
+.email-heading .container .column {
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+}
+
+.email-heading .container .column.left {
+	max-width: 400px;	
+}
+
+.email-heading .container .column.left p {
+	font-size: 12px;
+}
+
+.email-heading .container .column.right {
+	max-width: 136px;
+}
+/* ---------- #End - Module specific styles ---------- */
+
+/* ---------- Component styles ---------- */
 .btn {
 	display: inline-block;
 	padding: 8px 20px;
@@ -215,4 +258,8 @@ a {
 	background-color: var(--onyx);
 	border-radius: 100%;
 }
-/* #End - Component styles */
+
+.eyebrow.light .circle {
+	background-color: var(--parchment);
+}
+/* ---------- #End - Component styles ---------- */
