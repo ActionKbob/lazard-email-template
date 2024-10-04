@@ -27,7 +27,7 @@ function templateInjectionTask( cb )
 
 function inlineCssTask( cb )
 {
-	gulp.src( './src/**/*.html' )
+	gulp.src( `${tempDir}/**/*.html` )
 	.on( 'data', function( { basename, path, relative } ){
 		const dir = `./dist/${relative.replace( basename, '' )}`;
 		juice.juiceFile( path, {}, function( err, outputHtml ) {
