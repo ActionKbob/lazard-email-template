@@ -10,9 +10,12 @@
   "author": "Anthony Capobianchi",
   "license": "ISC",
   "dependencies": {
+    "gulp-file-include": "^2.3.0",
     "juice": "^11.0.0"
   },
   "devDependencies": {
+    "del": "^7.1.0",
     "gulp": "^5.0.0"
-  }
+  },
+	"type": "module"
 }
