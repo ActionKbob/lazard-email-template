@@ -22,7 +22,7 @@ function templateInjectionTask( cb )
 	gulp.src( [ 'src/**/*.html' ] )
 	.pipe( file_include() )
 	.pipe( gulp.dest( tempDir ) )
-	cb();
+	.on( 'end', cb )
 }
 
 function inlineCssTask( cb )
