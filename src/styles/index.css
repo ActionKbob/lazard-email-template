@@ -17,7 +17,7 @@
 /* ---------- Boilerplate ---------- */
 body {
 	margin: 0;
-	font-family:Arial, Helvetica;
+	font-family:"Helvetica",sans-serif;
 	color: var(--onyx);
 }
 

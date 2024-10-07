@@ -20,7 +20,9 @@ const tempDir = './_temp';
 function templateInjectionTask( cb )
 {
 	gulp.src( [ 'src/**/*.html' ] )
-	.pipe( file_include() )
+	.pipe( file_include({
+		basepath : './src/'
+	}) )
 	.pipe( gulp.dest( tempDir ) )
 	.on( 'end', cb )
 }

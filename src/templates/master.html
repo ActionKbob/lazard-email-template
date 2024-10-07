@@ -10,90 +10,38 @@
 	<body>
 		<center class="wrapper">
 
-			@@include('../modules/preheader/preheader.html')
-			<!--
-				Module: Preheader
-			-->
-			<table name="module_preheader" class="module">
-				<tr>
-					<td class="container sm" style="display: block; text-align: center;">
-						<a href="#">Preheader text will go here</a>
-					</td>
-				</tr>
-			</table>
+@@include('modules/preheader/preheader.html')
 
-			<!--
-				Module: logo-banner
-				Variant: Default
-			-->
-			<table class="module">
-				<tr class="content">
-					<td class="container">
-						<img src="/images/LAM_Logo-2024.svg" alt="" width="124px">
-					</td>
-				</tr>
-			</table>
+@@include('modules/logo-banner/logo-banner.html', {
+	"img": "/images/LAM_Logo-2024.svg"
+})
 
-			<!--
-				Module: logo-banner
-				Variant: Sapphire variant
-			-->
-			<table class="module sapphire">
-				<tr class="content">
-					<td class="container">
-						<img src="/images/LAM_Logo-2024-white.svg" alt="" width="124px">
-					</td>
-				</tr>
-			</table>
+@@include('modules/logo-banner/logo-banner.html', {
+	"img": "/images/LAM_Logo-2024-white.svg",
+	"variant": "sapphire"
+})
 
-			<!--
-				Module: logo-banner
-				Variant: Sage variant
-			-->
-			<table class="module sage">
-				<tr class="content">
-					<td class="container">
-						<img src="/images/LAM_Logo-2024.svg" alt="" width="124px">
-					</td>
-				</tr>
-			</table>
+@@include('modules/logo-banner/logo-banner.html', {
+	"img": "/images/LAM_Logo-2024.svg",
+	"variant": "sage"
+})
 
-			<!--
-				Module: logo-banner
-				Variant: Onyx variant
-			-->
-			<table class="module onyx">
-				<tr class="content">
-					<td class="container">
-						<img src="/images/LAM_Logo-2024-white.svg" alt="" width="124px">
-					</td>
-				</tr>
-			</table>
+@@include('modules/logo-banner/logo-banner.html', {
+	"img": "/images/LAM_Logo-2024-white.svg",
+	"variant": "onyx"
+})
 
-			<!--
-				Module: logo-banner
-				Variant: Clarity variant
-			-->
-			<table class="module clarity">
-				<tr class="content">
-					<td class="container">
-						<img src="/images/LAM_Logo-2024.svg" alt="" width="124px">
-					</td>
-				</tr>
-			</table>
+@@include('modules/logo-banner/logo-banner.html', {
+	"img": "/images/LAM_Logo-2024.svg",
+	"variant": "clarity"
+})
 
-			<!--
-				Module: logo-banner
-				Variant: Currency variant
-			-->
-			<table class="module currency">
-				<tr class="content">
-					<td class="container">
-						<img src="/images/LAM_Logo-2024-white.svg" alt="" width="124px">
-					</td>
-				</tr>
-			</table>
+@@include('modules/logo-banner/logo-banner.html', {
+	"img": "/images/LAM_Logo-2024-white.svg",
+	"variant": "currency"
+})
 
+			
 			<!--
 				Module: Email-banner-one-column
 				Variant: Default
