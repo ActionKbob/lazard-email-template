@@ -12,9 +12,10 @@
 
 @@include('modules/preheader/index.html')
 
-@@include('modules/logo-banner/logo-banner.html', {
-	"img": "/images/LAM_Logo-2024.svg"
-})
+<!-- ----------
+	Logo Banner Modules
+---------- -->
+@@include('modules/logo-banner/logo-banner.html')
 
 @@include('modules/logo-banner/logo-banner.sapphire.html')
 
@@ -25,36 +26,27 @@
 @@include('modules/logo-banner/logo-banner.clarity.html')
 
 @@include('modules/logo-banner/logo-banner.currency.html')
+<!-- ----------
+	END Logo Banner Modules
+---------- -->
 
+<!-- ----------
+	Email Banner - One Column
+---------- -->
+@@include('modules/email-banner-one-column/email-banner-one-column.html')
 
-@@include('modules/email-banner-one-column/index.html', {
-	"img": "/images/Background-1.png"
-})
+@@include('modules/email-banner-one-column/email-banner-one-column.sapphire.html')
 
-@@include('modules/email-banner-one-column/index.html', {
-	"img": "/images/Background-1.png",
-	"variant": "sapphire"
-})
+@@include('modules/email-banner-one-column/email-banner-one-column.onyx.html')
 
-@@include('modules/email-banner-one-column/index.html', {
-	"img": "/images/Background-3.png",
-	"variant": "sage"
-})
+@@include('modules/email-banner-one-column/email-banner-one-column.sage.html')
 
-@@include('modules/email-banner-one-column/index.html', {
-	"img": "/images/Background-2.png",
-	"variant": "onyx"
-})
+@@include('modules/email-banner-one-column/email-banner-one-column.clarity.html')
 
-@@include('modules/email-banner-one-column/index.html', {
-	"img": "/images/Background-1.png",
-	"variant": "clarity"
-})
-
-@@include('modules/email-banner-one-column/index.html', {
-	"img": "/images/Background-1.png",
-	"variant": "currency"
-})
+@@include('modules/email-banner-one-column/email-banner-one-column.currency.html')
+<!-- ----------
+	END Email Banner - One Column
+---------- -->
 
 			<!--
 				Module: Email-banner-two-column
