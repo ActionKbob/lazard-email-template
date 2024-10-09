@@ -22,7 +22,8 @@ function templateInjectionTask( cb )
 	gulp.src( [ 'src/**/*.html' ] )
 	.pipe( file_include({
 		prefix: "@@",
-		basepath : './src/'
+		basepath : './src/',
+		indent: true
 	}) )
 	.pipe( gulp.dest( tempDir ) )
 	.on( 'end', cb )
