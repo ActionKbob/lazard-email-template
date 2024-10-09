@@ -14,7 +14,6 @@ import file_include from 'gulp-file-include';
 import juice from 'juice';
 
 import { deleteAsync } from 'del';
-import indent from 'gulp-file-include/lib/indent';
 
 const tempDir = './_temp';
 
@@ -23,8 +22,7 @@ function templateInjectionTask( cb )
 	gulp.src( [ 'src/**/*.html' ] )
 	.pipe( file_include({
 		prefix: "@@",
-		basepath : './src/',
-		indent: true
+		basepath : './src/'
 	}) )
 	.pipe( gulp.dest( tempDir ) )
 	.on( 'end', cb )
