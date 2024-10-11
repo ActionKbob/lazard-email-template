@@ -249,7 +249,7 @@ ul {
 	max-width: 400px;	
 }
 
-.email-heading .container .column.left p {
+.email-heading .container .column.left p, .email-heading p {
 	font-size: 12px;
 }
 
@@ -317,3 +317,7 @@ ul {
 	background-color: var(--parchment);
 }
 /* ---------- #End - Component styles ---------- */
+
+/* ---------- Responsive styles ---------- */
+
+/* ---------- #End - Responsive styles ---------- */
