@@ -34,7 +34,9 @@ function inlineCssTask( cb )
 	gulp.src( `${tempDir}/**/*.html` )
 	.on( 'data', function( { basename, path, relative } ){
 		const dir = `./dist/${relative.replace( basename, '' )}`;
-		juice.juiceFile( path, {}, function( err, outputHtml ) {
+		juice.juiceFile( path, {
+			preserveMediaQueries: true
+		}, function( err, outputHtml ) {
 			if( !fs.existsSync( dir ) )
 				fs.mkdirSync( dir, { recursive : true } );
 

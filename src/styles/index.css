@@ -160,7 +160,7 @@ ul {
 
 .table-content-right td {
 	display: block;
-	text-align: right;
+	/* text-align: left; */
 }
 /* ---------- #EndRegion - Boilerplate ---------- */
 
@@ -319,5 +319,11 @@ ul {
 /* ---------- #End - Component styles ---------- */
 
 /* ---------- Responsive styles ---------- */
+
+@media screen and (min-width: 577px) {
+	.table-content-right td {
+		text-align: right;
+	}
+}
 
 /* ---------- #End - Responsive styles ---------- */
