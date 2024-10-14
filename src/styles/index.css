@@ -219,6 +219,10 @@ ul {
 	display: block;
 }
 
+.column {
+	margin-bottom: 16px;
+}
+
 .layout_two-column .column {
 	display: inline-block;
 	width: 100%;
@@ -230,30 +234,28 @@ ul {
 	height: 148px;
 }
 
-.email-banner-two-column p {
-	padding-bottom: 20px;
-}
 
-.email-heading .container {
+
+.layout_cta-two-column .container {
 	display: block;
 	padding: 48px 0 16px 0;
 }
 
-.email-heading .container .column {
+.layout_cta-two-column .container .column {
 	display: inline-block;
 	width: 100%;
 	vertical-align: top;
 }
 
-.email-heading .container .column.left {
+.layout_cta-two-column .container .column.left {
 	max-width: 400px;	
 }
 
-.email-heading .container .column.left p, .email-heading p {
+.layout_cta-two-column .container .column.left p, .layout_cta-two-column p {
 	font-size: 12px;
 }
 
-.email-heading .container .column.right {
+.layout_cta-two-column .container .column.right {
 	max-width: 136px;
 }
 /* ---------- #End - Module specific styles ---------- */
@@ -311,6 +313,10 @@ ul {
 	margin-right: 8px;
 	background-color: var(--onyx);
 	border-radius: 100%;
+}
+
+.eyebrow.light {
+	color: var(--parchment);
 }
 
 .eyebrow.light .circle {

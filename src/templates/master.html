@@ -27,8 +27,20 @@
 			@@include('components/buttons/button.onyx.secondary.html')
 			<br/><br/>
 			@@include('components/buttons/button.onyx.secondary.small.html')
+			<br/><br/>
 <!-- ----------
 	END Button Components
+---------- -->
+
+<!-- ----------
+	Eyebrow Components
+---------- -->
+			@@include('components/eyebrows/eyebrow.html')
+			<br/><br/>
+			@@include('components/eyebrows/eyebrow.light.html')
+			<br/><br/>
+<!-- ----------
+END Eyebrow Components
 ---------- -->
 
 <!-- ----------
@@ -128,7 +140,10 @@
 <!-- ----------
   One CTA Banner
 ---------- -->
-@@include('modules/cta-banner/template.html')
+			@@include('modules/cta-banner/cta-banner.html')
+			@@include('modules/cta-banner/cta-banner.small.html')
+			@@include('modules/cta-banner/cta-banner.oneColumn.html')
+			@@include('modules/cta-banner/cta-banner.oneColumn.small.html')
 <!-- ----------
   END One CTA Banner
 ---------- -->
