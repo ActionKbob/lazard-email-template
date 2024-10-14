@@ -22,7 +22,7 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
 	font-weight: 400;
 	margin: 0;
 }
@@ -70,19 +70,19 @@ h4 {
 	font-size: 9px;
 }
 
-p {
+p, .p {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 120%; /* ---------- 16.8px ---------- */
 	letter-spacing: -0.14px;
 }
 
-p.p2 {
-	font-size: 12;
+.p2 {
+	font-size: 12px;
 	line-height: 140%;
 }
 
-p.p3 {
+.p3 {
 	font-size: 10px;
 	letter-spacing: -0.1px;
 }
@@ -148,6 +148,10 @@ ul {
 
 .mr-16 {
 	margin-right: 16px;
+}
+
+.d-block { 
+	display: block;
 }
 
 /* 
@@ -258,6 +262,11 @@ ul {
 .layout_cta-two-column .container .column.right {
 	max-width: 136px;
 }
+
+.highlights-table tr td {
+	padding: 16px 0;
+	border-bottom: 1px solid var(--frame);
+}
 /* ---------- #End - Module specific styles ---------- */
 
 /* ---------- Component styles ---------- */
@@ -296,6 +305,11 @@ ul {
 
 .btn.onyx.secondary {
 	background-color: var(--parchment);
+	color: var(--onyx);
+}
+
+.text-btn {
+	text-decoration: none;
 	color: var(--onyx);
 }
 
