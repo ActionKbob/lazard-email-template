@@ -1,4 +1,7 @@
 :root {
+	/* ---------- Colors ---------- */
+	--light_grey: #C5C6C6;
+	
 	/* ---------- Variant Colors ---------- */
   --parchment: #ffffff;
 	--onyx: #171A1C;
