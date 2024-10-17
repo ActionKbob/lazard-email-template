@@ -16,6 +16,7 @@ import juice from 'juice';
 import { deleteAsync } from 'del';
 
 const tempDir = './_temp';
+const distDir = './dist';
 
 function templateInjectionTask( cb )
 {
@@ -54,7 +55,7 @@ function inlineCssTask( cb )
 
 async function cleanup( cb )
 {
-	await deleteAsync( [ tempDir ] );
+	await deleteAsync( [ tempDir, distDir ] );
 	cb();
 }
 
@@ -63,5 +64,6 @@ function watchTask(  )
 	gulp.watch( [ './src/**/*.html', './src/**/*.css' ], gulp.series( 'build' ) );
 }
 
-gulp.task( 'build', gulp.series( templateInjectionTask, inlineCssTask ) );
+gulp.task( 'build', gulp.series( cleanup, templateInjectionTask, inlineCssTask ) );
 gulp.task( 'watch', gulp.series( 'build', watchTask ) );
+gulp.task( 'clean', gulp.series( cleanup ) );

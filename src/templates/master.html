@@ -1,163 +1,62 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
 	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Lazard Email Template - Master</title>
+		<title></title>
 		<link rel="stylesheet" type="text/css" href="../../src/styles/index.css">
 	</head>
-	<body>
-		<center class="wrapper">
-<!-- ----------
-	Button Components
----------- -->
-			@@include('components/buttons/pills/pill.sapphire.html')
-			<br/><br/>
-			@@include('components/buttons/pills/pill.sapphire.small.html')
-			<br/><br/>
-			@@include('components/buttons/pills/pill.sapphire.secondary.html')
-			<br/><br/>
-			@@include('components/buttons/pills/pill.sapphire.secondary.small.html')
-			<br/><br/>
-			@@include('components/buttons/pills/pill.onyx.html')
-			<br/><br/>
-			@@include('components/buttons/pills/pill.onyx.small.html')
-			<br/><br/>
-			@@include('components/buttons/pills/pill.onyx.secondary.html')
-			<br/><br/>
-			@@include('components/buttons/pills/pill.onyx.secondary.small.html')
-			<br/><br/>
-			@@include('components/buttons/text/text.html')
-			<br/><br/>
-<!-- ----------
-	END Button Components
----------- -->
+	<body align="center" style>
+		<center>
 
-<!-- ----------
-	Eyebrow Components
----------- -->
-			@@include('components/eyebrows/eyebrow.html')
-			<br/><br/>
-			@@include('components/eyebrows/eyebrow.light.html')
-			<br/><br/>
-<!-- ----------
-END Eyebrow Components
----------- -->
+<!-- ---------- Preheader Modules ---------- -->
+			@@include( "modules/preheaders/preheader.link.html" )
+			
+			@@include( "modules/preheaders/preheader.html" )
+<!-- ---------- END Preheader Modules ---------- -->
 
-<!-- ----------
-	Preheader Modules
----------- -->
-			@@include('modules/preheader/template.html')
-<!-- ----------
-	END Preheader Modules
----------- -->
+			<table style class="module">
+				<tr style class="frame">
+					<td>
+						<p>
+							anthony ANTHONY
+						</p>
+					</td>
+				</tr>
+				
+				<tr style class="frame">
+					<td>
+						<h1>Headline 1</h1>
+						<h2>Headline 2</h2>
+						<h3>Headline 3</h3>
+						<h4>Headline 4</h4>
 
-<!-- ----------
-	Logo Banner Modules
----------- -->
-			@@include('modules/logo-banner/logo-banner.html')
+						<h1 class="subheadline"> SubHeadline 1</h1>
+						<h2 class="subheadline"> SubHeadline 2</h2>
+						<h3 class="subheadline"> SubHeadline 3</h3>
 
-			@@include('modules/logo-banner/logo-banner.sapphire.html')
+						<p>Paragraph 1</p>
+						<p class="paragraph-2">Paragraph 2</p>
+						<p class="paragraph-3">Paragraph 3</p>
+					</td>
+				</tr>
 
-			@@include('modules/logo-banner/logo-banner.onyx.html')
-
-			@@include('modules/logo-banner/logo-banner.sage.html')
-
-			@@include('modules/logo-banner/logo-banner.clarity.html')
-
-			@@include('modules/logo-banner/logo-banner.currency.html')
-<!-- ----------
-	END Logo Banner Modules
----------- -->
-
-<!-- ----------
-	Email Banner - One Column
----------- -->
-			@@include('modules/email-banner-one-column/email-banner-one-column.html')
-
-			@@include('modules/email-banner-one-column/email-banner-one-column.sapphire.html')
-
-			@@include('modules/email-banner-one-column/email-banner-one-column.onyx.html')
-
-			@@include('modules/email-banner-one-column/email-banner-one-column.sage.html')
-
-			@@include('modules/email-banner-one-column/email-banner-one-column.clarity.html')
-
-			@@include('modules/email-banner-one-column/email-banner-one-column.currency.html')
-<!-- ----------
-	END Email Banner - One Column
----------- -->
-
-<!-- ----------
-	Email Banner - Two Column
----------- -->
-			@@include('modules/email-banner-two-column/email-banner-two-column.html')
-
-			@@include('modules/email-banner-two-column/email-banner-two-column.sapphire.html')
-
-			@@include('modules/email-banner-two-column/email-banner-two-column.onyx.html')
-
-			@@include('modules/email-banner-two-column/email-banner-two-column.sage.html')
-
-			@@include('modules/email-banner-two-column/email-banner-two-column.clarity.html')
-
-			@@include('modules/email-banner-two-column/email-banner-two-column.currency.html')
-<!-- ----------
-	END Email Banner - Two Column
----------- -->
-
-<!-- ----------
-  Email Heading
----------- -->
-			@@include('modules/email-heading/email-heading.html')
-			@@include('modules/email-heading/email-heading.small.html')
-
-			@@include('modules/email-heading/email-heading.sapphire.html')
-			@@include('modules/email-heading/email-heading.small.sapphire.html')
-
-			@@include('modules/email-heading/email-heading.onyx.html')
-			@@include('modules/email-heading/email-heading.small.onyx.html')
-
-			@@include('modules/email-heading/email-heading.sage.html')
-			@@include('modules/email-heading/email-heading.small.sage.html')
-
-			@@include('modules/email-heading/email-heading.clarity.html')
-			@@include('modules/email-heading/email-heading.small.clarity.html')
-
-			@@include('modules/email-heading/email-heading.currency.html')
-			@@include('modules/email-heading/email-heading.small.currency.html')
-<!-- ----------
-  END Email Heading
----------- -->
-
-<!-- ----------
-  One Column Content
----------- -->
-			@@include('modules/one-column-content/one-column-content.html')
-<!-- ----------
-  END One Column Content
----------- -->
-
-<!-- ----------
-  One CTA Banner
----------- -->
-			@@include('modules/cta-banner/cta-banner.html')
-			@@include('modules/cta-banner/cta-banner.small.html')
-			@@include('modules/cta-banner/cta-banner.oneColumn.html')
-			@@include('modules/cta-banner/cta-banner.oneColumn.small.html')
-<!-- ----------
-  END One CTA Banner
----------- -->
-
-<!-- ----------
-  Table
----------- -->
-			@@include('modules/table/table.html')
-<!-- ----------
-END Table
----------- -->
-
+				<tr style class="frame">
+					<td>
+						<!--[if mso]>
+							<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" rel="noopener" target="_blank" href="http://" style="height:50px;v-text-anchor:middle;width:170px;" arcsize="10%" stroke="f" fillcolor="#1F7F4C">
+								<w:anchorlock/>
+								<center>
+						<![endif]-->
+									<a target="_blank" href="https://lazard.com/" style class="btn pill sapphire">Sapphire Large Primary</a>
+						<!--[if mso]>
+								</center>
+							</v:roundrect>
+						<![endif]-->
+					</td>
+				</tr>
+			</table>
 		</center>
 	</body>
 </html>

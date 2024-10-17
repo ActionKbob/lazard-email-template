@@ -1,38 +1,57 @@
+/* ---------- Variables ---------- */
 :root {
 	/* ---------- Colors ---------- */
 	--light_grey: #C5C6C6;
+	--bg_grey: #F3F2F2;
 	
 	/* ---------- Variant Colors ---------- */
+	/* Primary */
   --parchment: #ffffff;
 	--onyx: #171A1C;
   --sapphire: #00539A;
 	--sage: #D9E5CC;
 	--clarity: #EBF4FA;
 	--currency: #4D5C49;
-
+	/* Secondary */
+	--dark_blue: #102E47;
+	--medium_blue: #3D8ACC;
+	--light_blue: #93CDFF;
+	--dark_blue: #30362B;
+	--medium_green: #C1D2B1;
+	--light_green: #D9E5CC;
+	--dark_grey: #515355;
+	--medium_grey: #747576;
+	--light_grey: #C5C6C6;
+	/* Utility */
+	--bg_grey: #F3F2F2;
+	/* RGBA - Used for MSO button colors */
+	--rgba_sapphire: rgb(0, 83, 154);
+	
 	/* ---------- Frame colors ---------- */
 	--frame: #dadada;
 	--frame_sapphire: #296faa;
 	--frame_onyx: #3c3f40;
 	--frame_currency: #6a7666;
 }
+/* ---------- END Colors ---------- */
 
 /* ---------- Boilerplate ---------- */
 body {
 	margin: 0;
-	font-family:"Helvetica",sans-serif;
-	color: var(--onyx);
+	padding-top: 10px;
+	background-color: var(--bg_grey);
 }
 
 /* Typography */
-h1, h2, h3, h4, p {
-	font-weight: 400;
-	margin: 0;
+h1, h2, h3, h4 {
+	font-family: "PP Neue World", serif; /*TODO: Helvetica, sans-serif; */
+	font-weight: normal;
+	color: var(--onyx);
+	line-height: 100%;
 }
 
 h1 {
 	font-size: 40px;
-	line-height: 40px;
 }
 
 h2 {
@@ -41,312 +60,101 @@ h2 {
 
 h3 {
 	font-size: 24px;
+	line-height: 120%;
 }
 
 h4 {
-	font-weight: 700;
-	font-size: 16px;
+	font-size: 12px;
 }
 
-.subheading-1 {
+.subheadline {
+	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
+	font-weight: bold;
 	font-size: 24px;
-	font-weight: 700;
-	letter-spacing: -0.24px;
 	line-height: 95%;
+	letter-spacing: -0.24px;
 }
 
-.subheading-2 {
+h2.subheadline {
 	font-size: 16px;
-	font-weight: 400;
 	letter-spacing: -0.16px;
+	font-weight: normal;
 	line-height: 120%;
 }
 
-.subheading-3 {
+h3.subheadline {
 	font-size: 12px;
-	font-weight: 700;
 	letter-spacing: -0.12px;
 	line-height: 120%;
+}
+
+p {
+	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: var(--onyx);
+	line-height: 120%;
+}
+
+.paragraph-2 {
+	font-size: 12px;
+	line-height: 140%;
+}
+
+.paragraph-3 {
+	font-size: 10px;
+}
+
+a {
+	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: var(--sapphire);
+	text-transform: capitalize;
+	line-height: 120%;
+}
+
+.link-2 {
+	font-size: 12px;
+	line-height: 160%;
 }
 
 .disclaimer {
 	font-size: 9px;
 }
 
-p, .p {
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 120%; /* ---------- 16.8px ---------- */
-	letter-spacing: -0.14px;
+/* Utilities */
+.center {
+	text-align: center;
 }
+/* ---------- END Boilerplate ---------- */
 
-.p2 {
-	font-size: 12px;
-	line-height: 140%;
+/* ---------- Component Styles ---------- */
+.btn.pill {
+	display: inline-block;
+	background-color: var(--rgba_sapphire);
+	color: var(--parchment);
+	border: var(--onyx);
+	border-radius: 80px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-text-size-adjust: none;
+	line-height: 32px;
+	padding: 0 20px;
 }
+/* ---------- END Component Styles ---------- */
 
-.p3 {
-	font-size: 10px;
-	letter-spacing: -0.1px;
-}
-/* END Typography */
-
-table {
-	border-spacing: 0;
-}
-
-a, li.link {
-	color: var(--sapphire);
-}
-
-ul {
-	margin-left: 0;
-	padding-left: 16px;
-	line-height: 160%;
-	font-weight: 400;
-}
-
-.wrapper {
-	width: 100%;
-	table-layout: fixed;
-}
-
+/* ---------- Module Styles ---------- */
 .module {
-	width: 100%;
-	max-width: 640px;
-	padding: 0 32px 0 32px;
+	width: 640px;
+	background-color: var(--parchment);
+	padding: 0 32px;
 }
 
-.content {
+.frame {
 	display: block;
+	padding: 0 16px;
 	border-left: 0.5px solid var(--frame);
 	border-right: 0.5px solid var(--frame);
-	padding: 0 16px 0 16px;
 }
-
-.container {
-	padding: 32px 0 32px 0;
-}
-
-.container.sm {
-	padding: 8px 0 8px 0;
-}
-
-.align-right {
-	text-align: right;
-}
-
-.py-20 {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-.pt-20 {
-	padding-top: 20px;
-}
-
-.pt-16 {
-	padding-top: 16px
-}
-
-.mr-16 {
-	margin-right: 16px;
-}
-
-.d-block { 
-	display: block;
-}
-
-/* 
-	This aligns table content to the right, 
-	used to mimic justify-content-between in very limited contexts 
-*/
-.table-content-right tbody, .table-content-right tr {
-	display: inline;
-}
-
-.table-content-right td {
-	display: block;
-	/* text-align: left; */
-}
-/* ---------- #EndRegion - Boilerplate ---------- */
-
-/* ---------- Variant BG/Font Colors ---------- */
-.module.sapphire {
-	background-color: var(--sapphire);
-}
-
-.module.sage {
-	background-color: var(--sage);
-}
-
-.module.onyx {
-	background-color: var(--onyx);
-}
-
-.module.clarity {
-	background-color: var(--clarity);
-}
-
-.module.currency {
-	background-color: var(--currency);
-}
-
-.module.sapphire, .module.onyx, .module.currency {
-	color: var(--clarity);
-}
-/* ---------- #End - Variant BG Colors ---------- */
-
-/* ---------- Variant Frame Colors ---------- */
-.module.sapphire .content {
-	border-left: 0.5px solid var(--frame_sapphire);
-	border-right: 0.5px solid var(--frame_sapphire);
-}
-
-.module.onyx .content {
-	border-left: 0.5px solid var(--frame_onyx);
-	border-right: 0.5px solid var(--frame_onyx);
-}
-
-.module.currency .content {
-	border-left: 0.5px solid var(--frame_currency);
-	border-right: 0.5px solid var(--frame_currency);
-}
-/* ---------- #End - Variant BG Colors ---------- */
-
-/* ---------- Module specific styles ---------- */
-.banner-one-column {
-	display: block;
-	background-size: cover;
-	width: 100%;
-	height: 140px;
-}
-
-.layout_two-column {
-	display: block;
-}
-
-.column {
-	margin-bottom: 16px;
-}
-
-.layout_two-column .column {
-	display: inline-block;
-	width: 100%;
-	max-width: 263px;
-	vertical-align: top;
-}
-
-.layout_two-column .featured-image {
-	height: 148px;
-}
-
-
-
-.layout_cta-two-column .container {
-	display: block;
-	padding: 48px 0 16px 0;
-}
-
-.layout_cta-two-column .container .column {
-	display: inline-block;
-	width: 100%;
-	vertical-align: top;
-}
-
-.layout_cta-two-column .container .column.left {
-	max-width: 400px;	
-}
-
-.layout_cta-two-column .container .column.left p, .layout_cta-two-column p {
-	font-size: 12px;
-}
-
-.layout_cta-two-column .container .column.right {
-	max-width: 136px;
-}
-
-.highlights-table tr td {
-	padding: 16px 0;
-	border-bottom: 1px solid var(--frame);
-}
-/* ---------- #End - Module specific styles ---------- */
-
-/* ---------- Component styles ---------- */
-.btn {
-	display: inline-block;
-	padding: 8px 20px;
-	font-size: 12px;
-	text-align: center;
-	border: 1px solid;
-	border-radius: 80.438px;
-	text-decoration: none;
-}
-
-.btn.sm {
-	padding: 3px 20px;
-}
-
-.btn.sapphire {
-	background-color: var(--sapphire);
-	border-color: var(--sapphire);
-	color: var(--parchment);
-	font-weight: 700;
-}
-
-.btn.sapphire.secondary {
-	background-color: var(--parchment);
-	color: var(--sapphire);
-}
-
-.btn.onyx {
-	background-color: var(--onyx);
-	border-color: var(--onyx);
-	color: var(--parchment);
-	font-weight: 700;
-}
-
-.btn.onyx.secondary {
-	background-color: var(--parchment);
-	color: var(--onyx);
-}
-
-.text-btn {
-	text-decoration: none;
-	color: var(--onyx);
-}
-
-.eyebrow {
-	font-size: 10px;
-	line-height: 8px;
-	text-transform: uppercase;
-	margin-bottom: 16px;
-}
-
-.eyebrow .circle {
-	display: inline-block;
-	width: 8px;
-	height: 8px;
-	margin-right: 8px;
-	background-color: var(--onyx);
-	border-radius: 100%;
-}
-
-.eyebrow.light {
-	color: var(--parchment);
-}
-
-.eyebrow.light .circle {
-	background-color: var(--parchment);
-}
-/* ---------- #End - Component styles ---------- */
-
-/* ---------- Responsive styles ---------- */
-
-@media screen and (min-width: 577px) {
-	.table-content-right td {
-		text-align: right;
-	}
-}
-
-/* ---------- #End - Responsive styles ---------- */
+/* ---------- END Module Styles ---------- */
