@@ -24,7 +24,10 @@ function templateInjectionTask( cb )
 	.pipe( file_include({
 		prefix: "@@",
 		basepath : './src/',
-		indent: true
+		indent: true,
+		context: {
+			imgBase: "https://info.lazardassetmanagement.com/rs/394-MLC-997/images"
+		}
 	}) )
 	.pipe( gulp.dest( tempDir ) )
 	.on( 'end', cb )
@@ -42,7 +45,10 @@ function inlineCssTask( cb )
 				preserveMediaQueries = true;
 		juice.juiceFile( path, {
 			extraCss : cssString,
-			preserveMediaQueries
+			preserveMediaQueries,
+			webResources: {
+				images: 0
+			}
 		}, function( err, outputHtml ) {
 			if( !fs.existsSync( dir ) )
 				fs.mkdirSync( dir, { recursive : true } );

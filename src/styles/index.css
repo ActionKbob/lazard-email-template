@@ -44,10 +44,12 @@ body {
 
 /* Typography */
 h1, h2, h3, h4 {
-	font-family: "PP Neue World", serif; /*TODO: Helvetica, sans-serif; */
+	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
+	/* font-family: "PP Neue World", serif; */
 	font-weight: normal;
 	color: var(--onyx);
 	line-height: 100%;
+	margin: 0;
 }
 
 h1 {
@@ -94,6 +96,7 @@ p {
 	font-weight: normal;
 	color: var(--onyx);
 	line-height: 120%;
+	margin: 0;
 }
 
 .paragraph-2 {
@@ -124,8 +127,35 @@ a {
 }
 
 /* Utilities */
+.d-block {
+	display: block;
+}
+
 .center {
 	text-align: center;
+}
+
+.padding-y-20 {
+	padding: 20px 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+table {
+	border-collapse: collapse !important;
+}
+
+/* Layout */
+.layout_two-column {
+	display: block;
+}
+
+.layout_two-column .column {
+	display: inline-block;
+	width: 100%;
+	max-width: 267px;
 }
 /* ---------- END Boilerplate ---------- */
 
@@ -136,6 +166,8 @@ a {
 	color: var(--parchment);
 	border: var(--onyx);
 	border-radius: 80px;
+	font-size: 12px;
+	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
 	-webkit-text-size-adjust: none;
@@ -145,16 +177,39 @@ a {
 /* ---------- END Component Styles ---------- */
 
 /* ---------- Module Styles ---------- */
-.module {
-	width: 640px;
+.wrapper {
+	display: table;
+	width: 100%;
 	background-color: var(--parchment);
-	padding: 0 32px;
+	max-width: 640px;
 }
 
-.frame {
+.module {
 	display: block;
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+.container {
+	display: block;
+	padding: 32px 16px;
+}
+
+.container.v-flush {
 	padding: 0 16px;
-	border-left: 0.5px solid var(--frame);
-	border-right: 0.5px solid var(--frame);
+}
+
+.container.framed {
+	border-left: 1px solid var(--frame);
+	border-right: 1px solid var(--frame);
 }
 /* ---------- END Module Styles ---------- */
+
+/* ---------- Mobile Styles ---------- */
+@media screen and (max-width: 578px) {
+	/* .layout_two-column .column {
+		display: block;
+		padding-bottom: 16px;
+	} */
+}
+/* ---------- END Mobile Styles ---------- */
