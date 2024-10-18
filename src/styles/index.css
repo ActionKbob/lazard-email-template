@@ -50,6 +50,29 @@ table tr td {
 	vertical-align: top;
 }
 
+ul {
+	margin-left: 0;
+	padding-left: 0px;
+	line-height: 160%;
+	font-weight: 400;
+	list-style: none;
+	font-size: 12px;
+}
+
+li {
+	padding-bottom: 8px;
+}
+
+li a {
+	font-size: 12px;
+}
+
+li > span {
+	font-size: 20px;
+	vertical-align: middle;
+	color: var(--sapphire);
+}
+
 /* Typography */
 h1, h2, h3, h4 {
 	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
@@ -166,7 +189,7 @@ a {
 	display: inline-block;
 	background-color: var(--rgba_sapphire);
 	color: var(--parchment);
-	border: var(--onyx);
+	border: 1px solid var(--sapphire);
 	border-radius: 80px;
 	font-size: 12px;
 	font-weight: bold;
@@ -175,6 +198,14 @@ a {
 	-webkit-text-size-adjust: none;
 	line-height: 32px;
 	padding: 0 20px;
+
+	/* Outlook Overrides */
+	mso-border-alt: none #FFFFFF 0;
+}
+
+.btn.pill.secondary {
+	background-color: var(--parchment);
+	color: var(--sapphire);
 }
 
 .eyebrow {
@@ -230,7 +261,7 @@ a {
 
 /* ---------- Dark Mode Styles ---------- */
 @media (prefers-color-scheme: dark) {
-	.module {
+	/* .module {
 		background-color: #00539A !important;
 		color: #ffffff !important;
 	}
@@ -243,6 +274,6 @@ a {
 	.content {
 		border-right: 0.5px solid #296faa !important;
 		border-left: 0.5px solid #296faa !important;
-	}
+	} */
 }
 /* ---------- END Dark Mode Styles ---------- */
