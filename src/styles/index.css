@@ -42,12 +42,19 @@ body {
 	background-color: var(--bg_grey);
 }
 
+table {
+	border-collapse: collapse !important;
+}
+
+table tr td {
+	vertical-align: top;
+}
+
 /* Typography */
 h1, h2, h3, h4 {
 	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
 	/* font-family: "PP Neue World", serif; */
 	font-weight: normal;
-	color: var(--onyx);
 	line-height: 100%;
 	margin: 0;
 }
@@ -94,7 +101,6 @@ p {
 	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: normal;
-	color: var(--onyx);
 	line-height: 120%;
 	margin: 0;
 }
@@ -131,20 +137,16 @@ a {
 	display: block;
 }
 
+.fixed {
+	table-layout: fixed;
+}
+
 .center {
 	text-align: center;
 }
 
 .padding-y-20 {
 	padding: 20px 0;
-}
-
-/* img {
-	max-width: 100%;
-} */
-
-table {
-	border-collapse: collapse !important;
 }
 
 /* Layout */
@@ -174,6 +176,19 @@ table {
 	line-height: 32px;
 	padding: 0 20px;
 }
+
+.eyebrow {
+	text-transform: uppercase;
+	font-size: 10px;
+	line-height: 8px;
+	vertical-align: middle;
+}
+
+.eyebrow .bullet {
+	font-size: 30px;
+	line-height: 8px;
+	vertical-align: middle;
+}
 /* ---------- END Component Styles ---------- */
 
 /* ---------- Module Styles ---------- */
@@ -182,47 +197,26 @@ table {
 	width: 100%;
 	background-color: var(--parchment);
 	max-width: 640px;
+	color: var(--onyx);
 }
 
 .frame {
 	width: 32px;
 }
 
-.frame.left {
-	border-right: 0.5px solid var(--frame);
-}
-
-.frame.right {
-	border-left: 0.5px solid var(--frame);
-}
-
 .content {
 	padding: 32px 16px;
+	border-right: 0.5px solid var(--frame);
+	border-left: 0.5px solid var(--frame);
 }
 
 .content.v-flush {
 	padding: 0 16px;
 }
 
-/* .container {
-	display: block;
-	padding-left: 32px;
-	padding-right: 32px;
+.content.alt {
+	padding: 48px 16px 16px 16px;
 }
-
-.container {
-	display: block;
-	padding: 32px 16px;
-} */
-
-/* .container.v-flush {
-	padding: 0 16px;
-} */
-
-/* .container.framed {
-	border-left: 1px solid var(--frame);
-	border-right: 1px solid var(--frame);
-} */
 /* ---------- END Module Styles ---------- */
 
 /* ---------- Mobile Styles ---------- */
@@ -233,3 +227,22 @@ table {
 	} */
 }
 /* ---------- END Mobile Styles ---------- */
+
+/* ---------- Dark Mode Styles ---------- */
+@media (prefers-color-scheme: dark) {
+	.module {
+		background-color: #00539A !important;
+		color: #ffffff !important;
+	}
+
+	.btn.pill {
+		background-color: #ffffff !important;
+		color: #00539A !important;
+	}
+
+	.content {
+		border-right: 0.5px solid #296faa !important;
+		border-left: 0.5px solid #296faa !important;
+	}
+}
+/* ---------- END Dark Mode Styles ---------- */

@@ -35,14 +35,20 @@ function templateInjectionTask( cb )
 
 function inlineCssTask( cb )
 {
-	const cssString = fs.readFileSync( 'src/styles/index.css', 'utf8' );
+	var cssString = fs.readFileSync( 'src/styles/index.css', 'utf8' );
 
 	gulp.src( `${tempDir}/**/*.html` )
 	.on( 'data', function( { basename, path, relative } ){
+
 		const dir = `./dist/${relative.replace( basename, '' )}`;
 		var preserveMediaQueries = false;
-		if( path.indexOf('master') !== -1 )
-				preserveMediaQueries = true;
+
+		if( path.indexOf('templates') !== -1 )
+		{
+			preserveMediaQueries = true;
+			cssString = "";
+		}
+
 		juice.juiceFile( path, {
 			extraCss : cssString,
 			preserveMediaQueries,
