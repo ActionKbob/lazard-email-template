@@ -102,7 +102,8 @@ h3 {
 }
 
 h4 {
-	font-size: 12px;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .subheadline {
@@ -126,7 +127,7 @@ h3.subheadline {
 	line-height: 120%;
 }
 
-p {
+p, .paragraph {
 	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: normal;
@@ -191,14 +192,17 @@ a {
 /* ---------- END Boilerplate ---------- */
 
 /* ---------- Component Styles ---------- */
-.btn.pill {
+.btn {
 	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.btn.pill {
 	background-color: var(--rgba_sapphire);
 	color: var(--parchment);
 	border: 1px solid var(--sapphire);
 	border-radius: 80px;
-	font-size: 12px;
-	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
 	-webkit-text-size-adjust: none;
@@ -212,6 +216,15 @@ a {
 .btn.pill.secondary {
 	background-color: var(--parchment);
 	color: var(--sapphire);
+}
+
+.btn.text {
+	color: var(--onyx);
+	text-decoration: none;
+}
+
+.btn.text .arrow {
+	font-size: 16px;
 }
 
 .eyebrow {
@@ -230,7 +243,6 @@ a {
 
 /* ---------- Module Styles ---------- */
 .module {
-	display: table;
 	width: 100%;
 	background-color: var(--parchment);
 	max-width: 640px;
@@ -253,6 +265,11 @@ a {
 
 .content.alt {
 	padding: 48px 16px 16px 16px;
+}
+
+.highlights-table tr.bordered td {
+	padding: 16px 0;
+	border-bottom: 1px solid var(--frame);
 }
 /* ---------- END Module Styles ---------- */
 
