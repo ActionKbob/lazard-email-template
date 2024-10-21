@@ -25,7 +25,8 @@
 	/* Utility */
 	--bg_grey: #F3F2F2;
 	/* RGBA - Used for MSO button colors */
-	--rgba_sapphire: rgb(0, 83, 154);
+	--rgb_sapphire: rgb(0, 83, 154);
+	--rgb_onyx: rgb(23, 26, 28);
 	
 	/* ---------- Frame colors ---------- */
 	--frame: #dadada;
@@ -207,7 +208,7 @@ a {
 }
 
 .btn.pill {
-	background-color: var(--rgba_sapphire);
+	background-color: var(--rgb_sapphire);
 	color: var(--parchment);
 	border: 1px solid var(--sapphire);
 	border-radius: 80px;
@@ -224,6 +225,12 @@ a {
 .btn.pill.secondary {
 	background-color: var(--parchment);
 	color: var(--sapphire);
+}
+
+.btn.pill.onyx {
+	background-color: #ffffff;
+	color: var(--rgb_onyx) !important;
+	border: 1px solid #ffffff;
 }
 
 .btn.text {
@@ -320,12 +327,12 @@ a {
 /* ---------- END Module Styles ---------- */
 
 /* ---------- Mobile Styles ---------- */
-@media screen and (max-width: 578px) {
-	/* .layout_two-column .column {
+/* @media screen and (max-width: 578px) {
+	.layout_two-column .column {
 		display: block;
 		padding-bottom: 16px;
-	} */
-}
+	}
+} */
 /* ---------- END Mobile Styles ---------- */
 
 /* ---------- Dark Mode Styles ---------- */
