@@ -167,6 +167,10 @@ a {
 	display: block;
 }
 
+.mw-100 {
+	max-width: 100%;
+}
+
 .fixed {
 	table-layout: fixed;
 }
@@ -177,6 +181,10 @@ a {
 
 .padding-y-20 {
 	padding: 20px 0;
+}
+
+.margin-t-8 {
+	margin-top: 8px;
 }
 
 /* Layout */
@@ -249,6 +257,29 @@ a {
 	color: var(--onyx);
 }
 
+.module.sapphire {
+	background-color: var(--sapphire);
+	color: var(--parchment);
+}
+
+.module.sage {
+	background-color: var(--sage);
+}
+
+.module.onyx {
+	background-color: var(--onyx);
+	color: var(--parchment);
+}
+
+.module.clarity {
+	background-color: var(--clarity);
+}
+
+.module.currency {
+	background-color: var(--currency);
+	color: var(--parchment);
+}
+
 .frame {
 	width: 32px;
 }
@@ -257,6 +288,21 @@ a {
 	padding: 32px 16px;
 	border-right: 0.5px solid var(--frame);
 	border-left: 0.5px solid var(--frame);
+}
+
+.module.sapphire .content {
+	border-right: 0.5px solid var(--frame_sapphire);
+	border-left: 0.5px solid var(--frame_sapphire);
+}
+
+.module.onyx .content {
+	border-right: 0.5px solid var(--frame_onyx);
+	border-left: 0.5px solid var(--frame_onyx);
+}
+
+.module.currency .content {
+	border-right: 0.5px solid var(--frame_currency);
+	border-left: 0.5px solid var(--frame_currency);
 }
 
 .content.v-flush {
