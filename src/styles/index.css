@@ -219,7 +219,6 @@ a {
 .btn.pill {
 	background-color: var(--rgb_sapphire);
 	color: var(--parchment);
-	border: 1px solid var(--sapphire);
 	border-radius: 80px;
 	text-align: center;
 	text-decoration: none;
@@ -233,6 +232,7 @@ a {
 
 .btn.pill.secondary {
 	background-color: var(--parchment);
+	border: 1px solid var(--sapphire);
 	color: var(--sapphire);
 }
 

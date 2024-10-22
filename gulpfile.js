@@ -46,7 +46,7 @@ function inlineCssTask( cb )
 {
 	var cssString = fs.readFileSync( 'src/styles/index.css', 'utf8' );
 
-	gulp.src( `${tempDir}/**/*.html` )
+	gulp.src( [`${tempDir}/**/*.html`, `!${tempDir}/**/template*.html`] )
 	.on( 'data', function( { basename, path, relative } ){
 
 		const dir = `./dist/${relative.replace( basename, '' )}`;
