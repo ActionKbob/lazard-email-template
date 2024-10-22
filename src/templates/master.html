@@ -8,6 +8,38 @@
 		<link rel="stylesheet" type="text/css" href="../index.css">
 	</head>
 	<body align="center">
+
+		<table style align="center" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" class="wrapper">
+			<tr>
+				<td style align="center">
+					@@include( "modules/preheaders/preheader.link.html" )
+				</td>
+			</tr>
+			<tr>
+				<td style align="center">
+					@@include( "modules/preheaders/preheader.link.html" )
+				</td>
+			</tr>
+			<tr>
+				<td style align="center">
+					@@include( "modules/logo-banners/logo-banner.html" )
+				</td>
+			</tr>
+
+			<tr>
+				<td style align="center">
+					<!--
+						Module: logo-banner
+						Variant: Sapphire
+					-->
+					@@include( "modules/logo-banners/template.html", {
+						variant: "sapphire",
+						imgSrc: "LAM_Logo_Transparent_White.png"
+					} )
+				</td>
+			</tr>
+		</table>
+
 		<center>
 <!-- ---------- Preheader Modules ---------- -->
 			@@include( "modules/preheaders/preheader.link.html" )

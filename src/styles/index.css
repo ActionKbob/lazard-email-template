@@ -189,6 +189,10 @@ a {
 }
 
 /* Layout */
+.wrapper {
+	width: 100%;
+}
+
 .layout_two-column {
 	display: block;
 }
@@ -258,9 +262,10 @@ a {
 
 /* ---------- Module Styles ---------- */
 .module {
-	width: 100%;
+	/* width: 100%; */
+	width: 640px;
 	background-color: var(--parchment);
-	max-width: 640px;
+	/* max-width: 640px; */
 	color: var(--onyx);
 }
 
@@ -285,6 +290,10 @@ a {
 .module.currency {
 	background-color: var(--currency);
 	color: var(--parchment);
+}
+
+.dark p, .dark h1, .dark h2, .dark h3, .dark h4 {
+	color: #ffffff;
 }
 
 .frame {
@@ -327,12 +336,12 @@ a {
 /* ---------- END Module Styles ---------- */
 
 /* ---------- Mobile Styles ---------- */
-/* @media screen and (max-width: 578px) {
-	.layout_two-column .column {
-		display: block;
-		padding-bottom: 16px;
+@media screen and (max-width: 640px) {
+	.module {
+		width: 100% !important;
+		max-width: 640px;
 	}
-} */
+}
 /* ---------- END Mobile Styles ---------- */
 
 /* ---------- Dark Mode Styles ---------- */
