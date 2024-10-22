@@ -193,6 +193,11 @@ a {
 	width: 100%;
 }
 
+.wrapper > tr {
+	margin: 0;
+	padding: 0;
+}
+
 .layout_two-column {
 	display: block;
 }
