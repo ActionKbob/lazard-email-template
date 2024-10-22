@@ -232,7 +232,12 @@ a {
 }
 
 .btn.pill.onyx {
-	background-color: #ffffff;
+	background-color: var(--onyx);
+	color: var(--parchment);
+}
+
+.btn.pill.onyx.secondary {
+	background-color: var(--parchment);
 	color: var(--rgb_onyx) !important;
 	border: 1px solid #ffffff;
 }
@@ -337,6 +342,7 @@ a {
 
 /* ---------- Mobile Styles ---------- */
 @media screen and (max-width: 640px) {
+	/* This is mainly to allow the wrapper to fit within 640px in DreamWeaver while also allowing columns to wrap on mobile where supported */
 	.module {
 		width: 100% !important;
 		max-width: 640px;
