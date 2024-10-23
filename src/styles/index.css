@@ -287,6 +287,10 @@ a {
 	text-decoration: none;
 }
 
+.dark .btn.text {
+	color: var(--parchment);
+}
+
 .btn.text .arrow {
 	font-size: 16px;
 }
@@ -377,6 +381,27 @@ a {
 .highlights-table tr.bordered td {
 	padding: 16px 0;
 	border-bottom: 1px solid var(--frame);
+}
+
+.highlights-table .table-number {
+	width: 124px;
+	color: var(--light_grey);
+}
+
+.highlights-table .table-content {
+	width: 262px;
+}
+
+.sapphire .highlights-table tr.bordered td {
+	border-bottom: 1px solid var(--frame_sapphire);
+}
+
+.onyx .highlights-table tr.bordered td {
+	border-bottom: 1px solid var(--frame_onyx);
+}
+
+.currency .highlights-table tr.bordered td {
+	border-bottom: 1px solid var(--frame_currency);
 }
 /* ---------- END Module Styles ---------- */
 
