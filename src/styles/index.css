@@ -95,7 +95,7 @@ h1, h2, h3, h4 {
 	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
 	/* font-family: "PP Neue World", serif; */
 	font-weight: normal;
-	line-height: 100%;
+	line-height: 120%;
 	margin: 0;
 }
 
@@ -378,9 +378,12 @@ a {
 	padding: 48px 16px 16px 16px;
 }
 
-.highlights-table tr.bordered td {
-	padding: 16px 0;
+.highlights-table tr.bordered {
 	border-bottom: 1px solid var(--frame);
+}
+
+.highlights-table tr td {
+	padding: 16px 0;
 }
 
 .highlights-table .table-number {
@@ -392,15 +395,20 @@ a {
 	width: 262px;
 }
 
-.sapphire .highlights-table tr.bordered td {
+.highlights-table .table-thumbnail {
+	width: 40%;
+	padding-right: 16px;
+}
+
+.sapphire .highlights-table tr.bordered {
 	border-bottom: 1px solid var(--frame_sapphire);
 }
 
-.onyx .highlights-table tr.bordered td {
+.onyx .highlights-table tr.bordered {
 	border-bottom: 1px solid var(--frame_onyx);
 }
 
-.currency .highlights-table tr.bordered td {
+.currency .highlights-table tr.bordered {
 	border-bottom: 1px solid var(--frame_currency);
 }
 /* ---------- END Module Styles ---------- */
