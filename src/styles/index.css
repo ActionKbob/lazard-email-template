@@ -65,19 +65,29 @@ li {
 	margin: 0;
 }
 
+li a {
+	font-size: 12px;
+}
+
 li::marker {
 	color: var(--sapphire);
 	font-size: 16px;
 }
 
-li a {
-	font-size: 12px;
+/* Dark BG override */
+.dark li::marker {
+	color: var(--parchment);
 }
 
 li > span {
 	font-size: 20px;
 	vertical-align: middle;
 	color: var(--sapphire);
+}
+
+/* Dark BG override */
+.dark li > span {
+	color: var(--parchment);
 }
 
 /* Typography */
@@ -154,6 +164,11 @@ a {
 	line-height: 120%;
 }
 
+/* Dark BG override */
+.dark a {
+	color: var(--parchment);
+}
+
 .link-2 {
 	font-size: 12px;
 	line-height: 160%;
@@ -172,10 +187,6 @@ a {
 	max-width: 100%;
 }
 
-.fixed {
-	table-layout: fixed;
-}
-
 .center {
 	text-align: center;
 }
@@ -186,6 +197,10 @@ a {
 
 .margin-t-8 {
 	margin-top: 8px;
+}
+
+.margin-b-16 {
+	margin-bottom: 16px;
 }
 
 /* Layout */
@@ -231,7 +246,7 @@ a {
 }
 
 .btn.pill.secondary {
-	background-color: var(--parchment);
+	background-color: transparent !important;
 	border: 1px solid var(--sapphire);
 	color: var(--sapphire);
 }
@@ -242,9 +257,29 @@ a {
 }
 
 .btn.pill.onyx.secondary {
-	background-color: var(--parchment);
 	color: var(--rgb_onyx) !important;
-	border: 1px solid #ffffff;
+	border: 1px solid var(--onyx);
+}
+
+/* Dark BG Overrides */
+.dark .btn.pill {
+	background-color: var(--parchment);
+	color: var(--sapphire);
+}
+
+.dark .btn.pill.secondary {
+	border: 1px solid var(--parchment);
+	color: var(--parchment);
+} 
+
+.dark .btn.pill.onyx {
+	background-color: var(--parchment);
+	color: var(--onyx);
+}
+
+.dark .btn.pill.onyx.secondary {
+	border: 1px solid var(--parchment);
+	color: var(--parchment) !important;
 }
 
 .btn.text {
