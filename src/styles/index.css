@@ -183,6 +183,10 @@ a {
 	display: block;
 }
 
+.w-100 {
+	width: 100%;
+}
+
 .mw-100 {
 	max-width: 100%;
 }
@@ -193,6 +197,18 @@ a {
 
 .padding-y-20 {
 	padding: 20px 0;
+}
+
+.padding-r-16 {
+	padding-right: 16px;
+}
+
+.padding-r-8 {
+	padding-right: 8px;
+}
+
+.padding-l-16 {
+	padding-left: 16px;
 }
 
 .margin-t-8 {
@@ -218,9 +234,7 @@ a {
 }
 
 .layout_two-column .column {
-	display: inline-block;
-	width: 100%;
-	max-width: 267px;
+	width: 267px;
 }
 /* ---------- END Boilerplate ---------- */
 
@@ -293,6 +307,19 @@ a {
 
 .btn.text .arrow {
 	font-size: 16px;
+}
+
+.btn.open-in-new {
+	display: block; /* This may need to change later */
+	margin: 4px 0;
+}
+
+.btn.open-in-new .btn-icon {
+	width: 16px;
+	height: 16px;
+	border-radius: 100px;
+	background-color: var(--sapphire);
+	padding: 6px;
 }
 
 .eyebrow {
@@ -419,6 +446,12 @@ a {
 	.module {
 		width: 100% !important;
 		max-width: 640px;
+	}
+
+	.layout_two-column .column {
+		display: inline-block;
+		width: 100%;
+		max-width: 267px;
 	}
 }
 /* ---------- END Mobile Styles ---------- */
