@@ -180,6 +180,10 @@ a {
 	font-size: 9px;
 }
 
+.nowrap {
+	white-space: nowrap;
+}
+
 /* Utilities */
 .d-block {
 	display: block;
@@ -219,6 +223,10 @@ a {
 
 .margin-b-16 {
 	margin-bottom: 16px;
+}
+
+.margin-b-48 {
+	margin-bottom: 48px;
 }
 
 /* Layout */
