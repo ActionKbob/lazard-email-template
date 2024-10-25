@@ -3,6 +3,15 @@
 #### Buttons:
 - Pill buttons will need their widths specifically defined within the MSO conditional statement AS WELL as the html element within.
 
+#### Lists:
+Due to Outlook and Gmails differing approach to list rendering, consider composing lists as a series of elements written like so:
+
+```
+<p><span class="list-bull">&bull;</span>&nbsp;<a href="https://lazard.com" class="link-2">Outlook on Emerging Markets</a></p>
+```
+
+This allows the 'marker' for the list item to be colored correcly to the Figma file, while also avoiding the margin and spacing issues from Outlook
+
 ### <u>Required deviations from the Figma file:</U>
 [Reference](https://www.figma.com/design/DQOzjDZf7trxfL4D9jg3Ox/New-Email-Library?t=2ABFyPpxE1ZTgt7E-0)
 
