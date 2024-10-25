@@ -197,7 +197,7 @@ a {
 	text-decoration: underline;
 }
 
-.disclaimer {
+.disclaimer, .disclosure {
 	font-size: 9px;
 }
 
@@ -492,7 +492,7 @@ a {
 
 	.layout_mobile-one-column .column {
 		display: inline-block;
-		width: 100%;
+		width: 100% !important;
 	}
 }
 
