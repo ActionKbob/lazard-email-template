@@ -272,7 +272,7 @@ a {
 	padding: 0;
 }
 
-.layout_two-column {
+.layout_two-column, .layout_three-column, .layout_four-column {
 	display: block;
 }
 
@@ -280,12 +280,16 @@ a {
 	width: 267px;
 }
 
-.layout_four-column {
-	display: block;
+.layout_three-column .column {
+	width: 194px;
 }
 
 .layout_four-column .column {
 	width: 124px;
+}
+
+.layout_four-column .column.wide {
+	width: auto;
 }
 /* ---------- END Boilerplate ---------- */
 
@@ -514,9 +518,14 @@ a {
 		max-width: 267px;
 	}
 
+	.layout_three-column .column {
+		display: inline-block;
+		width: 100% !important;
+	}
+
 	.layout_four-column .column {
 		display: inline-block;
-		/* width: 100% !important; */
+		width: 43% !important;
 	}
 
 	.layout_mobile-one-column
