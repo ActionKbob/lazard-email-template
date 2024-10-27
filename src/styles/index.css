@@ -284,7 +284,7 @@ a {
 	text-decoration: none;
 	-webkit-text-size-adjust: none;
 	line-height: 32px;
-	padding: 0 20px;
+	/* padding: 0 20px; */
 
 	/* Outlook Overrides */
 	mso-border-alt: none #FFFFFF 0;
@@ -469,6 +469,11 @@ a {
 .currency .highlights-table tr.bordered {
 	border-bottom: 1px solid var(--frame_currency);
 }
+
+.cta-banner h2, .cta-banner h3, .cta-banner p {
+	max-width: 404px;
+}
+
 /* ---------- END Module Styles ---------- */
 
 /* ---------- Mobile Styles ---------- */
