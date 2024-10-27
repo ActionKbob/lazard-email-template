@@ -185,6 +185,14 @@ a {
 	line-height: 120%;
 }
 
+.sapphire {
+	color: var(--sapphire);
+}
+
+.dark .sapphire {
+	color: var(--parchment);
+}
+
 /* Dark BG override */
 .dark a {
 	color: var(--parchment);
@@ -242,6 +250,10 @@ a {
 	margin-top: 8px;
 }
 
+.margin-b-8 {
+	margin-bottom: 8px;
+}
+
 .margin-b-16 {
 	margin-bottom: 16px;
 }
@@ -266,6 +278,14 @@ a {
 
 .layout_two-column .column {
 	width: 267px;
+}
+
+.layout_four-column {
+	display: block;
+}
+
+.layout_four-column .column {
+	width: 124px;
 }
 /* ---------- END Boilerplate ---------- */
 
@@ -484,10 +504,19 @@ a {
 		max-width: 640px;
 	}
 
+	.btn.pill {
+		margin-bottom: 8px;
+	}
+
 	.layout_two-column .column {
 		display: inline-block;
 		width: 100%;
 		max-width: 267px;
+	}
+
+	.layout_four-column .column {
+		display: inline-block;
+		/* width: 100% !important; */
 	}
 
 	.layout_mobile-one-column
