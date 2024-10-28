@@ -113,8 +113,8 @@ li > span {
 
 /* Typography */
 h1, h2, h3, h4 {
-	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
-	/* font-family: "PP Neue World", serif; */
+	/* font-family: "Helvetica Neue LT Std", Helvetica, sans-serif; */
+	font-family: "PP Neue World", Helvetica, sans-serif;
 	font-weight: normal;
 	line-height: 120%;
 	margin: 0;
@@ -377,7 +377,7 @@ a {
 	width: 16px;
 	height: 16px;
 	border-radius: 100px;
-	background-color: var(--sapphire);
+	background-color: var(--sapphire); 
 	padding: 6px;
 }
 
