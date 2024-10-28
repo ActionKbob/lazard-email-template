@@ -281,7 +281,7 @@ a {
 }
 
 .layout_two-column .column {
-	width: 267px;
+	width: 50%;
 }
 
 .layout_three-column .column {
@@ -522,7 +522,7 @@ a {
 
 	.layout_two-column .column {
 		display: inline-block;
-		width: 100%;
+		width: 100% !important;
 		max-width: 267px;
 	}
 
