@@ -1,0 +1,37 @@
+<!--
+	Module: Two Column Contents, Strategy Card
+	Variant: @@variant
+-->
+<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="module @@variant">
+	<tr>
+		<td class="frame"></td>
+		<td class="content h-flush">
+			<table style="width: 100%;" cellpadding="8px">
+				<tr class="layout_mobile-one-column">
+					<!--[if mso]>
+					<td style align="right" class="column">
+					<![endif]-->
+					<!--[if !mso]><!-->
+					<td style class="column align-right-md">
+					<!--<![endif]-->
+						<img style src="@@imgBase/@@imgSrc" alt="Strategy thumbnail">
+					</td>
+					<td style="vertical-align: middle;" class="column">
+						<p style="width: 195px;" class="paragraph-3">
+							Investors can now access Lazard's flagship Global Listed Infrastructure Fund as an exchange traded fund (ETF), using the ticker 'GIFL'. <br>
+							Explore the Lazard Global Listed <br>
+							Infrastructure Active ETF page today
+						</p>
+						<br>
+						@@include("components/buttons/text/template.html", {
+							variant: "",
+							href: "https://lazard.com",
+							label: "Subscribe"
+						})
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="frame"></td>
+	</tr>
+</table>

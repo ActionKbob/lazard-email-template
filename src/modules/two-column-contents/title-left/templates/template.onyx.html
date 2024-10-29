@@ -1,0 +1,58 @@
+<!--
+	Module: Two Column Contents, Title Left
+	Variant: @@variant, onyx buttons
+-->
+<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="module @@variant">
+	<tr>
+		<td class="frame"></td>
+		<td class="content h-flush">
+			<table style="width: 100%;" cellpadding="8px">
+				<tr class="layout_mobile-one-column">
+					<td style="width: 104px" class="column">
+						<h3 class="">Back on Track?</h3>
+					</td>
+					<td class="column">
+						<h2 class="subheadline">Emerging Markets Investment Grade Yields</h2>
+						<br>
+						<img style src="@@imgBase/@@imgSrc" alt="Feature Image" width="100%">
+						<p></p> <!-- Spacer <p> for MSO image margin -->
+						<br>
+						<p class="disclaimer">
+							As of 26 October 2023 <br>
+							Sovereign: JPM EMBI Global Diversified IG; Corporate: JPM CEMBI Broad Diversified IG <br>
+							Source: Lazard, JP Morgan
+						</p>
+						<br>
+						<p style="max-width: 390px;" class="paragraph-2">Rising US interest rates--and soaring Treasury yields--have done their part to rattle global economics. As the environment settles, we expect growth differentials to shift, creating a more positive backdrop for emerging markets debt and interesting investment opportunities for the asset class across the capital structure.</p>
+						<br>
+						
+						<p style class="list-item"><span class="bullet">&bull;</span>&nbsp; <a href="https://lazard.com" class="link-2">Outlook on Emerging Markets</a></p>
+						<p style class="list-item"><span class="bullet">&bull;</span>&nbsp; <a href="https://lazard.com" class="link-2">Outlook on Europe</a></p>
+						<p style class="list-item"><span class="bullet">&bull;</span>&nbsp; <a href="https://lazard.com" class="link-2">Outlook on Japan</a></p>
+						<p style class="list-item"><span class="bullet">&bull;</span>&nbsp; <a href="https://lazard.com" class="link-2">Outlook on the United Kingdom</a></p>
+						<br>
+						<!--
+							Component: Button
+							Variant: Pill, Primary, Large
+						-->
+						@@include("components/buttons/pills/templates/template.primary.onyx.html", {
+							label: "Primary Button",
+							width: "127px"
+						})
+						&nbsp;&nbsp;
+
+						<!--
+							Component: Button
+							Variant: Pill, Secondary, Large
+						-->
+						@@include("components/buttons/pills/templates/template.secondary.onyx.html", {
+							label: "Sapphire Secondary Button",
+							width: "192px"
+						})
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="frame"></td>
+	</tr>
+</table>
