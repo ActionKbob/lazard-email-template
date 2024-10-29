@@ -526,7 +526,8 @@ a {
 		max-width: 267px;
 	}
 
-	.layout_three-column .column {
+	.layout_three-column .column,
+	.layout_two-column_fluid .column {
 		display: inline-block;
 		width: 100% !important;
 	}
