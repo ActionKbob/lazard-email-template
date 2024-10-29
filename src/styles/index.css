@@ -122,6 +122,7 @@ h1, h2, h3, h4 {
 
 h1 {
 	font-size: 40px;
+	line-height: 100%;
 }
 
 h2 {
@@ -440,7 +441,7 @@ a {
 }
 
 .content {
-	padding: 32px 8px; /* horizontal padding is 16px, but table cellpadding makes up the other 8px */
+	padding: 32px 16px;
 	border-right: 0.5px solid var(--frame);
 	border-left: 0.5px solid var(--frame);
 }
@@ -461,7 +462,13 @@ a {
 }
 
 .content.v-flush {
-	padding: 0 16px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.content.h-flush {
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
 .content.alt {
