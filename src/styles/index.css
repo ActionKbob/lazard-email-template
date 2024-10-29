@@ -509,10 +509,6 @@ a {
 	border-bottom: 1px solid var(--frame_currency);
 }
 
-.cta-banner h2, .cta-banner h3, .cta-banner p {
-	max-width: 404px;
-}
-
 /* ---------- END Module Styles ---------- */
 
 /* ---------- Mobile Styles ---------- */

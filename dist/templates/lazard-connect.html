@@ -1,0 +1,723 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title></title>
+		<style type="text/css">
+:root{--light_grey:#C5C6C6;--bg_grey:#F3F2F2;--parchment:#ffffff;--onyx:#171A1C;--sapphire:#00539A;--sage:#D9E5CC;--clarity:#EBF4FA;--currency:#4D5C49;--dark_blue:#102E47;--medium_blue:#3D8ACC;--light_blue:#93CDFF;--dark_blue:#30362B;--medium_green:#C1D2B1;--light_green:#D9E5CC;--dark_grey:#515355;--medium_grey:#747576;--light_grey:#C5C6C6;--bg_grey:#F3F2F2;--rgb_sapphire:rgb(0, 83, 154);--rgb_onyx:rgb(23, 26, 28);--frame:#dadada;--frame_sapphire:#296faa;--frame_onyx:#3c3f40;--frame_currency:#6a7666}body{margin:0;padding-top:10px;background-color:var(--bg_grey)}table{border-collapse:collapse!important}table tr td{vertical-align:top}.list-item{vertical-align:middle;line-height:24px}.list-item .bullet{font-size:22px;color:var(--sapphire);vertical-align:middle}.dark li::marker{color:var(--parchment)}.dark .list-item .bullet{color:var(--parchment)}li>span{font-size:20px;vertical-align:middle;color:var(--sapphire)}.dark li>span{color:var(--parchment)}h1,h2,h3,h4{font-family:"PP Neue World",Helvetica,sans-serif;font-weight:400;line-height:120%;margin:0}h1{font-size:40px;line-height:100%}h2{font-size:32px}h3{font-size:24px;line-height:120%}h4{font-size:16px;font-weight:700}.subheadline{font-family:"Helvetica Neue LT Std",Helvetica,sans-serif;font-weight:700;font-size:24px;line-height:95%;letter-spacing:-.24px}h2.subheadline{font-size:16px;letter-spacing:-.16px;font-weight:400;line-height:120%}h3.subheadline{font-size:12px;letter-spacing:-.12px;line-height:120%}.paragraph,p{font-family:"Helvetica Neue LT Std",Helvetica,sans-serif;font-size:14px;font-weight:400;line-height:120%;margin:0}.paragraph-2{font-size:12px;line-height:140%}.paragraph-3{font-size:10px}a{font-family:"Helvetica Neue LT Std",Helvetica,sans-serif;font-size:16px;font-weight:400;color:var(--sapphire);text-transform:capitalize;line-height:120%}.sapphire{color:var(--sapphire)}.dark .sapphire{color:var(--parchment)}.dark a{color:var(--parchment)}.link-2{font-size:12px;line-height:160%;color:var(--sapphire);text-decoration:underline}.caption,.disclaimer{font-size:9px}.nowrap{white-space:nowrap}.d-block{display:block}.w-100{width:100%}.mw-100{max-width:100%}.center{text-align:center}.padding-y-20{padding:20px 0}.padding-r-16{padding-right:16px}.padding-r-8{padding-right:8px}.padding-l-16{padding-left:16px}.margin-t-8{margin-top:8px}.margin-b-8{margin-bottom:8px}.margin-b-12{margin-bottom:12px}.margin-b-16{margin-bottom:16px}.margin-b-48{margin-bottom:48px}.wrapper{width:100%}.wrapper>tr{margin:0;padding:0}.layout_four-column,.layout_three-column,.layout_two-column{display:block}.layout_two-column .column{width:50%}.layout_three-column .column{width:194px}.layout_four-column .column{width:124px}.layout_four-column .column.wide{width:auto}.btn{display:inline-block;font-size:12px;font-weight:700}.btn.pill{background-color:var(--rgb_sapphire);color:var(--parchment);border-radius:80px;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;line-height:32px;mso-border-alt:none #fff 0}.btn.pill.secondary{background-color:transparent!important;border:1px solid var(--sapphire);color:var(--sapphire)}.btn.pill.onyx{background-color:var(--onyx);color:var(--parchment)}.btn.pill.onyx.secondary{color:var(--rgb_onyx)!important;border:1px solid var(--onyx)}.dark .btn.pill{background-color:var(--parchment);color:var(--sapphire)}.dark .btn.pill.secondary{border:1px solid var(--parchment);color:var(--parchment)}.dark .btn.pill.onyx{background-color:var(--parchment);color:var(--onyx)}.dark .btn.pill.onyx.secondary{border:1px solid var(--parchment);color:var(--parchment)!important}.btn.text{color:var(--onyx);text-decoration:none}.dark .btn.text{color:var(--parchment)}.btn.text .arrow{font-size:16px}.btn.open-in-new{display:block;margin:4px 0}.btn.open-in-new .btn-icon{width:16px;height:16px;border-radius:100px;background-color:var(--sapphire);padding:6px}.dark .btn.open-in-new .btn-icon{background-color:var(--parchment)}.eyebrow{text-transform:uppercase;font-size:10px;line-height:8px;vertical-align:middle}.eyebrow .bullet{font-size:30px;line-height:8px;vertical-align:middle}.module{width:640px;background-color:var(--parchment);color:var(--onyx)}.module.sapphire{background-color:var(--sapphire);color:var(--parchment)}.module.sage{background-color:var(--sage)}.module.onyx{background-color:var(--onyx);color:var(--parchment)}.module.clarity{background-color:var(--clarity)}.module.currency{background-color:var(--currency);color:var(--parchment)}.dark h1,.dark h2,.dark h3,.dark h4,.dark p{color:#fff}.frame{width:32px}.content{padding:32px 16px;border-right:.5px solid var(--frame);border-left:.5px solid var(--frame)}.module.sapphire .content{border-right:.5px solid var(--frame_sapphire);border-left:.5px solid var(--frame_sapphire)}.module.onyx .content{border-right:.5px solid var(--frame_onyx);border-left:.5px solid var(--frame_onyx)}.module.currency .content{border-right:.5px solid var(--frame_currency);border-left:.5px solid var(--frame_currency)}.content.v-flush{padding-top:0;padding-bottom:0}.content.h-flush{padding-left:8px;padding-right:8px}.content.alt{padding:48px 16px 16px 16px}.highlights-table tr.bordered{border-bottom:1px solid var(--frame)}.highlights-table tr td{padding:16px 0}.highlights-table .table-number{width:124px;color:var(--light_grey)}.highlights-table .table-content{width:262px}.highlights-table .table-thumbnail{width:40%;padding-right:16px}.sapphire .highlights-table tr.bordered{border-bottom:1px solid var(--frame_sapphire)}.onyx .highlights-table tr.bordered{border-bottom:1px solid var(--frame_onyx)}.currency .highlights-table tr.bordered{border-bottom:1px solid var(--frame_currency)}@media screen and (max-width:640px){.module{width:100%!important;max-width:640px}.btn.pill{margin-bottom:8px}.layout_two-column .column{display:inline-block;width:100%!important;max-width:267px}.layout_three-column .column,.layout_two-column_fluid .column{display:inline-block;width:100%!important}.layout_four-column .column{display:inline-block;width:43%!important}.layout_mobile-one-column{display:block}.layout_mobile-one-column .column{display:inline-block;width:100%!important}}@media screen and (min-width:641px){.align-right-md{text-align:right}}
+</style>
+	</head>
+	<body align="center" style="margin: 0; padding-top: 10px; background-color: #F3F2F2;">
+		<table style="width: 100%; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" class="wrapper">
+			<!-- Logo Banner -->
+			<tr style="margin: 0; padding: 0;">
+				<td align="center" style="vertical-align: top;" valign="top">			
+					<!--
+						Module: logo-banner
+						Variant: parchment
+					-->
+					<table style="width: 640px; background-color: #ffffff; color: #171A1C; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" role="presentation" class="module parchment" width="640" bgcolor="#ffffff">
+						<tr>
+							<td class="frame" style="vertical-align: top; width: 32px;" width="32" valign="top"></td>
+							<td class="content" style="vertical-align: top; padding: 32px 16px; border-right: .5px solid #dadada; border-left: .5px solid #dadada;" valign="top">
+								<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/LAM_Logo_Transparent.png" alt="LAM Logo" height="36">
+							</td>
+							<td class="frame" style="vertical-align: top; width: 32px;" width="32" valign="top"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<!-- Email Banner -->
+			<tr style="margin: 0; padding: 0;">
+				<td align="center" style="vertical-align: top;" valign="top">
+					<!--
+						Module: Email Banner, One Column
+						Variant: parchment
+					-->
+					<table style="width: 640px; background-color: #ffffff; color: #171A1C; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" role="presentation" class="module parchment" width="640" bgcolor="#ffffff">
+						<tr>
+							<td class="frame" style="vertical-align: top; width: 32px;" width="32" valign="top"></td>
+							<td class="content v-flush" style="vertical-align: top; padding: 32px 16px; border-right: .5px solid #dadada; border-left: .5px solid #dadada; padding-top: 0; padding-bottom: 0;" valign="top">
+								<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/LAM_Banner_Industrial.png" alt="Banner Image" width="100%" height="auto">
+							</td>
+							<td class="frame" style="vertical-align: top; width: 32px;" width="32" valign="top"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<!-- Email Heading -->
+			<tr style="margin: 0; padding: 0;">
+				<td align="center" style="vertical-align: top;" valign="top">
+					<!--
+						Module: Email Heading
+						Variant: parchment, sapphire buttons
+					-->
+					<table style="width: 640px; background-color: #ffffff; color: #171A1C; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" role="presentation" class="module cta-banner parchment" width="640" bgcolor="#ffffff">
+						<tr>
+							<td class="frame" style="vertical-align: top; width: 32px;" width="32" valign="top"></td>
+							<td class="content h-flush" style="vertical-align: top; padding: 32px 16px; border-right: .5px solid #dadada; border-left: .5px solid #dadada; padding-left: 8px; padding-right: 8px;" valign="top">
+								<table style="border-collapse: collapse;" border="0" cellpadding="8px" cellspacing="0" role="presentation" width="100%" class="layout_two-column_fluid">
+									<tr>
+										<td class="column" width="100%" style="vertical-align: top;" valign="top">
+											<h1 style="font-family: 'PP Neue World',Helvetica,sans-serif; font-weight: 400; margin: 0; font-size: 40px; line-height: 100%; width: 263px;">Lazard Connect</h1>
+											<br>
+											<p style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; margin: 0; font-size: 12px; line-height: 140%; max-width: 404px;" class="paragraph-2">New Ideas, New Perspectives.</p>
+										</td>
+										<td class="column" style="vertical-align: top;" valign="top">
+											<!--
+												Component: Pill Button
+												Variant: Primary, Sapphire
+											-->
+											<!--[if mso]>
+												<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" rel="noopener" target="_blank" href="https://lazard.com/" arcsize="50%" stroke="f" 
+													style="height:32px;v-text-anchor:middle;color:#ffffff;width:65px;" 
+													fillcolor="#00539A">
+													<w:anchorlock/>
+													<center>
+											<![endif]-->
+											<a target="_blank" href="https://lazard.com/" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; text-transform: capitalize; display: inline-block; font-size: 12px; font-weight: 700; background-color: rgb(0, 83, 154); color: #ffffff; border-radius: 80px; text-align: center; text-decoration: none; -webkit-text-size-adjust: none; line-height: 32px; mso-border-alt: none #fff 0; width: 65px;" class="btn pill">Visit</a>
+											<!--[if mso]>
+													</center>
+												</v:roundrect>
+											<![endif]-->
+										</td>
+									</tr>
+								</table>			
+							</td>
+							<td class="frame" style="vertical-align: top; width: 32px;" width="32" valign="top"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<!-- Three Column Content (1) -->
+			<tr style="margin: 0; padding: 0;">
+				<td align="center" style="vertical-align: top;" valign="top">
+					<!--
+						Module: Three Column Content, Contents
+						Variant: parchment, sapphire buttons
+					-->
+					<table style="width: 640px; background-color: #ffffff; color: #171A1C; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" role="presentation" class="module parchment" width="640" bgcolor="#ffffff">
+						<tr>
+							<td class="frame" style="vertical-align: top; width: 32px;" width="32" valign="top"></td>
+							<td class="content h-flush" style="vertical-align: top; padding: 32px 16px; border-right: .5px solid #dadada; border-left: .5px solid #dadada; padding-left: 8px; padding-right: 8px;" valign="top">
+								<table style="width: 100%; border-collapse: collapse;" cellpadding="8px" width="100%">
+									<tr class="layout_three-column" style="display: block;">
+										<td style="vertical-align: top; width: 123px;" class="column" width="123" valign="top">
+											<h3 style="font-family: 'PP Neue World',Helvetica,sans-serif; font-weight: 400; margin: 0; font-size: 24px; line-height: 120%;">What's trending</h3>
+											<br>
+											<p class="paragraph-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; margin: 0; font-size: 12px; line-height: 140%;">The latest market commentary from our thought leaders.</p>
+										</td>
+										<td class="column" style="vertical-align: top; width: 194px;" width="194" valign="top">
+											<h4 style="font-family: 'PP Neue World',Helvetica,sans-serif; line-height: 120%; margin: 0; font-size: 16px; font-weight: 700;">In praise of small language models</h4>
+											<br>
+											<p class="paragraph-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; margin: 0; font-size: 12px; line-height: 140%;">The global outlook has brightened in 2024 despite some disappointing news along the way. Ronald Temple, Chief Market Strategist, analyzes the forces that stand to impact global markets as the second half of 2024 unfolds, including the results of a razor's-edge US election, China's ongoing housing challenges, and potential Eurozone policy easing.</p>
+											<br>
+											<table cellspacing="16px" role="presentation" class="btn open-in-new" style="font-size: 12px; font-weight: 700; display: block; margin: 4px 0; border-collapse: collapse;">
+												<tr cellspacing="16px">
+													<td rowspan="2" style="padding-right: 8px; vertical-align: middle;" class="padding-r-8" valign="middle">
+														<!--[if mso]>
+														<v:oval xmlns:v="urn:schemas-microsoft-com:vml" fillcolor="#00539A" strokecolor="#00539A" strokeweight="1px" style="width:30px;height:30px;margin-top:8px;">
+															<v:fill type="solid" color="#00539A"/>
+															<v:textbox inset="3px,3px,0,0" style="text-align:center;">
+																<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" width="16" height="16" alt="Open in new Icon" style="display: block; padding: 6px;" />
+															</v:textbox>
+														</v:oval>
+														<![endif]-->
+						
+														<!-- Fallback for non-Outlook clients -->
+														<!--[if !mso]><!-->
+														<div class="d-block btn-icon" style="display: block; width: 16px; height: 16px; border-radius: 100px; background-color: #00539A; padding: 6px;">
+															<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" alt="open in new window button icon" class width="16px" height="16px">
+														</div>
+														<!--<![endif]-->
+													</td>
+													<td style="vertical-align: top;" valign="top">
+														<a href="#" class="link-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; text-transform: capitalize; font-size: 12px; line-height: 160%; color: #00539A; text-decoration: underline;">Select Australian Equity</a>
+													</td>
+												</tr>
+												<tr style="vertical-align: middle;">
+													<td style="vertical-align: top;" valign="top">
+														<p class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; line-height: 120%; margin: 0; font-size: 9px;">APIR LAZ0022AU</p>
+													</td>
+												</tr>
+											</table>
+											<br>
+											<table cellspacing="16px" role="presentation" class="btn open-in-new" style="font-size: 12px; font-weight: 700; display: block; margin: 4px 0; border-collapse: collapse;">
+												<tr cellspacing="16px">
+													<td rowspan="2" style="padding-right: 8px; vertical-align: middle;" class="padding-r-8" valign="middle">
+														<!--[if mso]>
+														<v:oval xmlns:v="urn:schemas-microsoft-com:vml" fillcolor="#00539A" strokecolor="#00539A" strokeweight="1px" style="width:30px;height:30px;margin-top:8px;">
+															<v:fill type="solid" color="#00539A"/>
+															<v:textbox inset="3px,3px,0,0" style="text-align:center;">
+																<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" width="16" height="16" alt="Open in new Icon" style="display: block; padding: 6px;" />
+															</v:textbox>
+														</v:oval>
+														<![endif]-->
+						
+														<!-- Fallback for non-Outlook clients -->
+														<!--[if !mso]><!-->
+														<div class="d-block btn-icon" style="display: block; width: 16px; height: 16px; border-radius: 100px; background-color: #00539A; padding: 6px;">
+															<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" alt="open in new window button icon" class width="16px" height="16px">
+														</div>
+														<!--<![endif]-->
+													</td>
+													<td style="vertical-align: top;" valign="top">
+														<a href="#" class="link-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; text-transform: capitalize; font-size: 12px; line-height: 160%; color: #00539A; text-decoration: underline;">Select Australian Equity</a>
+													</td>
+												</tr>
+												<tr style="vertical-align: middle;">
+													<td style="vertical-align: top;" valign="top">
+														<p class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; line-height: 120%; margin: 0; font-size: 9px;">APIR LAZ0022AU</p>
+													</td>
+												</tr>
+											</table>
+											<br>
+											<table cellspacing="16px" role="presentation" class="btn open-in-new" style="font-size: 12px; font-weight: 700; display: block; margin: 4px 0; border-collapse: collapse;">
+												<tr cellspacing="16px">
+													<td rowspan="2" style="padding-right: 8px; vertical-align: middle;" class="padding-r-8" valign="middle">
+														<!--[if mso]>
+														<v:oval xmlns:v="urn:schemas-microsoft-com:vml" fillcolor="#00539A" strokecolor="#00539A" strokeweight="1px" style="width:30px;height:30px;margin-top:8px;">
+															<v:fill type="solid" color="#00539A"/>
+															<v:textbox inset="3px,3px,0,0" style="text-align:center;">
+																<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" width="16" height="16" alt="Open in new Icon" style="display: block; padding: 6px;" />
+															</v:textbox>
+														</v:oval>
+														<![endif]-->
+						
+														<!-- Fallback for non-Outlook clients -->
+														<!--[if !mso]><!-->
+														<div class="d-block btn-icon" style="display: block; width: 16px; height: 16px; border-radius: 100px; background-color: #00539A; padding: 6px;">
+															<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" alt="open in new window button icon" class width="16px" height="16px">
+														</div>
+														<!--<![endif]-->
+													</td>
+													<td style="vertical-align: top;" valign="top">
+														<a href="#" class="link-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; text-transform: capitalize; font-size: 12px; line-height: 160%; color: #00539A; text-decoration: underline;">Select Australian Equity</a>
+													</td>
+												</tr>
+												<tr style="vertical-align: middle;">
+													<td style="vertical-align: top;" valign="top">
+														<p class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; line-height: 120%; margin: 0; font-size: 9px;">APIR LAZ0022AU</p>
+													</td>
+												</tr>
+											</table>
+											<br>
+											<table cellspacing="16px" role="presentation" class="btn open-in-new" style="font-size: 12px; font-weight: 700; display: block; margin: 4px 0; border-collapse: collapse;">
+												<tr cellspacing="16px">
+													<td rowspan="2" style="padding-right: 8px; vertical-align: middle;" class="padding-r-8" valign="middle">
+														<!--[if mso]>
+														<v:oval xmlns:v="urn:schemas-microsoft-com:vml" fillcolor="#00539A" strokecolor="#00539A" strokeweight="1px" style="width:30px;height:30px;margin-top:8px;">
+															<v:fill type="solid" color="#00539A"/>
+															<v:textbox inset="3px,3px,0,0" style="text-align:center;">
+																<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" width="16" height="16" alt="Open in new Icon" style="display: block; padding: 6px;" />
+															</v:textbox>
+														</v:oval>
+														<![endif]-->
+						
+														<!-- Fallback for non-Outlook clients -->
+														<!--[if !mso]><!-->
+														<div class="d-block btn-icon" style="display: block; width: 16px; height: 16px; border-radius: 100px; background-color: #00539A; padding: 6px;">
+															<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" alt="open in new window button icon" class width="16px" height="16px">
+														</div>
+														<!--<![endif]-->
+													</td>
+													<td style="vertical-align: top;" valign="top">
+														<a href="#" class="link-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; text-transform: capitalize; font-size: 12px; line-height: 160%; color: #00539A; text-decoration: underline;">Select Australian Equity</a>
+													</td>
+												</tr>
+												<tr style="vertical-align: middle;">
+													<td style="vertical-align: top;" valign="top">
+														<p class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; line-height: 120%; margin: 0; font-size: 9px;">APIR LAZ0022AU</p>
+													</td>
+												</tr>
+											</table>
+											<br>
+											<!--
+												Component: Pill Button
+												Variant: Primary, Sapphire
+											-->
+											<!--[if mso]>
+												<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" rel="noopener" target="_blank" href="https://lazard.com/" arcsize="50%" stroke="f" 
+													style="height:32px;v-text-anchor:middle;color:#ffffff;width:65px;" 
+													fillcolor="#00539A">
+													<w:anchorlock/>
+													<center>
+											<![endif]-->
+											<a target="_blank" href="https://lazard.com/" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; text-transform: capitalize; display: inline-block; font-size: 12px; font-weight: 700; background-color: rgb(0, 83, 154); color: #ffffff; border-radius: 80px; text-align: center; text-decoration: none; -webkit-text-size-adjust: none; line-height: 32px; mso-border-alt: none #fff 0; width: 65px;" class="btn pill">Visit</a>
+											<!--[if mso]>
+													</center>
+												</v:roundrect>
+											<![endif]-->
+										</td>
+										<td class="column" style="vertical-align: top; width: 194px;" width="194" valign="top">
+											<h4 style="font-family: 'PP Neue World',Helvetica,sans-serif; line-height: 120%; margin: 0; font-size: 16px; font-weight: 700;">In praise of small language models</h4>
+											<br>
+											<p class="paragraph-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; margin: 0; font-size: 12px; line-height: 140%;">Large language models (LLMs) are progressing at breakneck speed, captivating investors and sweeping through markets. However, their tendency to hallucinate and their inherent opacity limit their utility for investment decisions. Small language models (SLMs), in contrast, offer reliability and interpretability. These qualities make SLMs especially well-suited for answering highly specific questions, as this paper demonstrates using a case study on China's housing market slowdown.</p>
+											<br>
+											<table cellspacing="16px" role="presentation" class="btn open-in-new" style="font-size: 12px; font-weight: 700; display: block; margin: 4px 0; border-collapse: collapse;">
+												<tr cellspacing="16px">
+													<td rowspan="2" style="padding-right: 8px; vertical-align: middle;" class="padding-r-8" valign="middle">
+														<!--[if mso]>
+														<v:oval xmlns:v="urn:schemas-microsoft-com:vml" fillcolor="#00539A" strokecolor="#00539A" strokeweight="1px" style="width:30px;height:30px;margin-top:8px;">
+															<v:fill type="solid" color="#00539A"/>
+															<v:textbox inset="3px,3px,0,0" style="text-align:center;">
+																<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" width="16" height="16" alt="Open in new Icon" style="display: block; padding: 6px;" />
+															</v:textbox>
+														</v:oval>
+														<![endif]-->
+						
+														<!-- Fallback for non-Outlook clients -->
+														<!--[if !mso]><!-->
+														<div class="d-block btn-icon" style="display: block; width: 16px; height: 16px; border-radius: 100px; background-color: #00539A; padding: 6px;">
+															<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" alt="open in new window button icon" class width="16px" height="16px">
+														</div>
+														<!--<![endif]-->
+													</td>
+													<td style="vertical-align: top;" valign="top">
+														<a href="#" class="link-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; text-transform: capitalize; font-size: 12px; line-height: 160%; color: #00539A; text-decoration: underline;">Select Australian Equity</a>
+													</td>
+												</tr>
+												<tr style="vertical-align: middle;">
+													<td style="vertical-align: top;" valign="top">
+														<p class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; line-height: 120%; margin: 0; font-size: 9px;">APIR LAZ0022AU</p>
+													</td>
+												</tr>
+											</table>
+											<br>
+											<table cellspacing="16px" role="presentation" class="btn open-in-new" style="font-size: 12px; font-weight: 700; display: block; margin: 4px 0; border-collapse: collapse;">
+												<tr cellspacing="16px">
+													<td rowspan="2" style="padding-right: 8px; vertical-align: middle;" class="padding-r-8" valign="middle">
+														<!--[if mso]>
+														<v:oval xmlns:v="urn:schemas-microsoft-com:vml" fillcolor="#00539A" strokecolor="#00539A" strokeweight="1px" style="width:30px;height:30px;margin-top:8px;">
+															<v:fill type="solid" color="#00539A"/>
+															<v:textbox inset="3px,3px,0,0" style="text-align:center;">
+																<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" width="16" height="16" alt="Open in new Icon" style="display: block; padding: 6px;" />
+															</v:textbox>
+														</v:oval>
+														<![endif]-->
+						
+														<!-- Fallback for non-Outlook clients -->
+														<!--[if !mso]><!-->
+														<div class="d-block btn-icon" style="display: block; width: 16px; height: 16px; border-radius: 100px; background-color: #00539A; padding: 6px;">
+															<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" alt="open in new window button icon" class width="16px" height="16px">
+														</div>
+														<!--<![endif]-->
+													</td>
+													<td style="vertical-align: top;" valign="top">
+														<a href="#" class="link-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; text-transform: capitalize; font-size: 12px; line-height: 160%; color: #00539A; text-decoration: underline;">Select Australian Equity</a>
+													</td>
+												</tr>
+												<tr style="vertical-align: middle;">
+													<td style="vertical-align: top;" valign="top">
+														<p class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; line-height: 120%; margin: 0; font-size: 9px;">APIR LAZ0022AU</p>
+													</td>
+												</tr>
+											</table>
+											<br>
+											<table cellspacing="16px" role="presentation" class="btn open-in-new" style="font-size: 12px; font-weight: 700; display: block; margin: 4px 0; border-collapse: collapse;">
+												<tr cellspacing="16px">
+													<td rowspan="2" style="padding-right: 8px; vertical-align: middle;" class="padding-r-8" valign="middle">
+														<!--[if mso]>
+														<v:oval xmlns:v="urn:schemas-microsoft-com:vml" fillcolor="#00539A" strokecolor="#00539A" strokeweight="1px" style="width:30px;height:30px;margin-top:8px;">
+															<v:fill type="solid" color="#00539A"/>
+															<v:textbox inset="3px,3px,0,0" style="text-align:center;">
+																<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" width="16" height="16" alt="Open in new Icon" style="display: block; padding: 6px;" />
+															</v:textbox>
+														</v:oval>
+														<![endif]-->
+						
+														<!-- Fallback for non-Outlook clients -->
+														<!--[if !mso]><!-->
+														<div class="d-block btn-icon" style="display: block; width: 16px; height: 16px; border-radius: 100px; background-color: #00539A; padding: 6px;">
+															<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" alt="open in new window button icon" class width="16px" height="16px">
+														</div>
+														<!--<![endif]-->
+													</td>
+													<td style="vertical-align: top;" valign="top">
+														<a href="#" class="link-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; text-transform: capitalize; font-size: 12px; line-height: 160%; color: #00539A; text-decoration: underline;">Select Australian Equity</a>
+													</td>
+												</tr>
+												<tr style="vertical-align: middle;">
+													<td style="vertical-align: top;" valign="top">
+														<p class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; line-height: 120%; margin: 0; font-size: 9px;">APIR LAZ0022AU</p>
+													</td>
+												</tr>
+											</table>
+											<br>
+											<table cellspacing="16px" role="presentation" class="btn open-in-new" style="font-size: 12px; font-weight: 700; display: block; margin: 4px 0; border-collapse: collapse;">
+												<tr cellspacing="16px">
+													<td rowspan="2" style="padding-right: 8px; vertical-align: middle;" class="padding-r-8" valign="middle">
+														<!--[if mso]>
+														<v:oval xmlns:v="urn:schemas-microsoft-com:vml" fillcolor="#00539A" strokecolor="#00539A" strokeweight="1px" style="width:30px;height:30px;margin-top:8px;">
+															<v:fill type="solid" color="#00539A"/>
+															<v:textbox inset="3px,3px,0,0" style="text-align:center;">
+																<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" width="16" height="16" alt="Open in new Icon" style="display: block; padding: 6px;" />
+															</v:textbox>
+														</v:oval>
+														<![endif]-->
+						
+														<!-- Fallback for non-Outlook clients -->
+														<!--[if !mso]><!-->
+														<div class="d-block btn-icon" style="display: block; width: 16px; height: 16px; border-radius: 100px; background-color: #00539A; padding: 6px;">
+															<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" alt="open in new window button icon" class width="16px" height="16px">
+														</div>
+														<!--<![endif]-->
+													</td>
+													<td style="vertical-align: top;" valign="top">
+														<a href="#" class="link-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; text-transform: capitalize; font-size: 12px; line-height: 160%; color: #00539A; text-decoration: underline;">Select Australian Equity</a>
+													</td>
+												</tr>
+												<tr style="vertical-align: middle;">
+													<td style="vertical-align: top;" valign="top">
+														<p class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; line-height: 120%; margin: 0; font-size: 9px;">APIR LAZ0022AU</p>
+													</td>
+												</tr>
+											</table>
+											<br>
+											<!--
+												Component: Pill Button
+												Variant: Primary, Sapphire
+											-->
+											<!--[if mso]>
+												<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" rel="noopener" target="_blank" href="https://lazard.com/" arcsize="50%" stroke="f" 
+													style="height:32px;v-text-anchor:middle;color:#ffffff;width:65px;" 
+													fillcolor="#00539A">
+													<w:anchorlock/>
+													<center>
+											<![endif]-->
+											<a target="_blank" href="https://lazard.com/" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; text-transform: capitalize; display: inline-block; font-size: 12px; font-weight: 700; background-color: rgb(0, 83, 154); color: #ffffff; border-radius: 80px; text-align: center; text-decoration: none; -webkit-text-size-adjust: none; line-height: 32px; mso-border-alt: none #fff 0; width: 65px;" class="btn pill">Visit</a>
+											<!--[if mso]>
+													</center>
+												</v:roundrect>
+											<![endif]-->
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="frame" style="vertical-align: top; width: 32px;" width="32" valign="top"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			
+			<!-- Three Column Content (2) -->
+			<tr style="margin: 0; padding: 0;">
+				<td align="center" style="vertical-align: top;" valign="top">
+					<!--
+						Module: Three Column Content, Contents
+						Variant: sage, onyx buttons
+					-->
+					<table style="width: 640px; color: #171A1C; background-color: #D9E5CC; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" role="presentation" class="module sage" width="640" bgcolor="#D9E5CC">
+						<tr>
+							<td class="frame" style="vertical-align: top; width: 32px;" width="32" valign="top"></td>
+							<td class="content h-flush" style="vertical-align: top; padding: 32px 16px; border-right: .5px solid #dadada; border-left: .5px solid #dadada; padding-left: 8px; padding-right: 8px;" valign="top">
+								<table style="width: 100%; border-collapse: collapse;" cellpadding="8px" width="100%">
+									<tr class="layout_three-column" style="display: block;">
+										<td style="vertical-align: top; width: 123px;" class="column" width="123" valign="top">
+											<h3 style="font-family: 'PP Neue World',Helvetica,sans-serif; font-weight: 400; margin: 0; font-size: 24px; line-height: 120%;">On the horizon</h3>
+											<br>
+											<p class="paragraph-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; margin: 0; font-size: 12px; line-height: 140%;">Strategies to keep on your radar.</p>
+										</td>
+										<td class="column" style="vertical-align: top; width: 194px;" width="194" valign="top">
+											<h4 style="font-family: 'PP Neue World',Helvetica,sans-serif; line-height: 120%; margin: 0; font-size: 16px; font-weight: 700;">In praise of small language models</h4>
+											<br>
+											<p class="paragraph-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; margin: 0; font-size: 12px; line-height: 140%;">The global outlook has brightened in 2024 despite some disappointing news along the way. Ronald Temple, Chief Market Strategist, analyzes the forces that stand to impact global markets as the second half of 2024 unfolds, including the results of a razor's-edge US election, China's ongoing housing challenges, and potential Eurozone policy easing.</p>
+											<br>
+											<table cellspacing="16px" role="presentation" class="btn open-in-new" style="font-size: 12px; font-weight: 700; display: block; margin: 4px 0; border-collapse: collapse;">
+												<tr cellspacing="16px">
+													<td rowspan="2" style="padding-right: 8px; vertical-align: middle;" class="padding-r-8" valign="middle">
+														<!--[if mso]>
+														<v:oval xmlns:v="urn:schemas-microsoft-com:vml" fillcolor="#00539A" strokecolor="#00539A" strokeweight="1px" style="width:30px;height:30px;margin-top:8px;">
+															<v:fill type="solid" color="#00539A"/>
+															<v:textbox inset="3px,3px,0,0" style="text-align:center;">
+																<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" width="16" height="16" alt="Open in new Icon" style="display: block; padding: 6px;" />
+															</v:textbox>
+														</v:oval>
+														<![endif]-->
+						
+														<!-- Fallback for non-Outlook clients -->
+														<!--[if !mso]><!-->
+														<div class="d-block btn-icon" style="display: block; width: 16px; height: 16px; border-radius: 100px; background-color: #00539A; padding: 6px;">
+															<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" alt="open in new window button icon" class width="16px" height="16px">
+														</div>
+														<!--<![endif]-->
+													</td>
+													<td style="vertical-align: top;" valign="top">
+														<a href="#" class="link-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; text-transform: capitalize; font-size: 12px; line-height: 160%; color: #00539A; text-decoration: underline;">Select Australian Equity</a>
+													</td>
+												</tr>
+												<tr style="vertical-align: middle;">
+													<td style="vertical-align: top;" valign="top">
+														<p class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; line-height: 120%; margin: 0; font-size: 9px;">APIR LAZ0022AU</p>
+													</td>
+												</tr>
+											</table>
+											<br>
+											<table cellspacing="16px" role="presentation" class="btn open-in-new" style="font-size: 12px; font-weight: 700; display: block; margin: 4px 0; border-collapse: collapse;">
+												<tr cellspacing="16px">
+													<td rowspan="2" style="padding-right: 8px; vertical-align: middle;" class="padding-r-8" valign="middle">
+														<!--[if mso]>
+														<v:oval xmlns:v="urn:schemas-microsoft-com:vml" fillcolor="#00539A" strokecolor="#00539A" strokeweight="1px" style="width:30px;height:30px;margin-top:8px;">
+															<v:fill type="solid" color="#00539A"/>
+															<v:textbox inset="3px,3px,0,0" style="text-align:center;">
+																<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" width="16" height="16" alt="Open in new Icon" style="display: block; padding: 6px;" />
+															</v:textbox>
+														</v:oval>
+														<![endif]-->
+						
+														<!-- Fallback for non-Outlook clients -->
+														<!--[if !mso]><!-->
+														<div class="d-block btn-icon" style="display: block; width: 16px; height: 16px; border-radius: 100px; background-color: #00539A; padding: 6px;">
+															<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" alt="open in new window button icon" class width="16px" height="16px">
+														</div>
+														<!--<![endif]-->
+													</td>
+													<td style="vertical-align: top;" valign="top">
+														<a href="#" class="link-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; text-transform: capitalize; font-size: 12px; line-height: 160%; color: #00539A; text-decoration: underline;">Select Australian Equity</a>
+													</td>
+												</tr>
+												<tr style="vertical-align: middle;">
+													<td style="vertical-align: top;" valign="top">
+														<p class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; line-height: 120%; margin: 0; font-size: 9px;">APIR LAZ0022AU</p>
+													</td>
+												</tr>
+											</table>
+											<br>
+											<table cellspacing="16px" role="presentation" class="btn open-in-new" style="font-size: 12px; font-weight: 700; display: block; margin: 4px 0; border-collapse: collapse;">
+												<tr cellspacing="16px">
+													<td rowspan="2" style="padding-right: 8px; vertical-align: middle;" class="padding-r-8" valign="middle">
+														<!--[if mso]>
+														<v:oval xmlns:v="urn:schemas-microsoft-com:vml" fillcolor="#00539A" strokecolor="#00539A" strokeweight="1px" style="width:30px;height:30px;margin-top:8px;">
+															<v:fill type="solid" color="#00539A"/>
+															<v:textbox inset="3px,3px,0,0" style="text-align:center;">
+																<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" width="16" height="16" alt="Open in new Icon" style="display: block; padding: 6px;" />
+															</v:textbox>
+														</v:oval>
+														<![endif]-->
+						
+														<!-- Fallback for non-Outlook clients -->
+														<!--[if !mso]><!-->
+														<div class="d-block btn-icon" style="display: block; width: 16px; height: 16px; border-radius: 100px; background-color: #00539A; padding: 6px;">
+															<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" alt="open in new window button icon" class width="16px" height="16px">
+														</div>
+														<!--<![endif]-->
+													</td>
+													<td style="vertical-align: top;" valign="top">
+														<a href="#" class="link-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; text-transform: capitalize; font-size: 12px; line-height: 160%; color: #00539A; text-decoration: underline;">Select Australian Equity</a>
+													</td>
+												</tr>
+												<tr style="vertical-align: middle;">
+													<td style="vertical-align: top;" valign="top">
+														<p class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; line-height: 120%; margin: 0; font-size: 9px;">APIR LAZ0022AU</p>
+													</td>
+												</tr>
+											</table>
+											<br>
+											<table cellspacing="16px" role="presentation" class="btn open-in-new" style="font-size: 12px; font-weight: 700; display: block; margin: 4px 0; border-collapse: collapse;">
+												<tr cellspacing="16px">
+													<td rowspan="2" style="padding-right: 8px; vertical-align: middle;" class="padding-r-8" valign="middle">
+														<!--[if mso]>
+														<v:oval xmlns:v="urn:schemas-microsoft-com:vml" fillcolor="#00539A" strokecolor="#00539A" strokeweight="1px" style="width:30px;height:30px;margin-top:8px;">
+															<v:fill type="solid" color="#00539A"/>
+															<v:textbox inset="3px,3px,0,0" style="text-align:center;">
+																<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" width="16" height="16" alt="Open in new Icon" style="display: block; padding: 6px;" />
+															</v:textbox>
+														</v:oval>
+														<![endif]-->
+						
+														<!-- Fallback for non-Outlook clients -->
+														<!--[if !mso]><!-->
+														<div class="d-block btn-icon" style="display: block; width: 16px; height: 16px; border-radius: 100px; background-color: #00539A; padding: 6px;">
+															<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" alt="open in new window button icon" class width="16px" height="16px">
+														</div>
+														<!--<![endif]-->
+													</td>
+													<td style="vertical-align: top;" valign="top">
+														<a href="#" class="link-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; text-transform: capitalize; font-size: 12px; line-height: 160%; color: #00539A; text-decoration: underline;">Select Australian Equity</a>
+													</td>
+												</tr>
+												<tr style="vertical-align: middle;">
+													<td style="vertical-align: top;" valign="top">
+														<p class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; line-height: 120%; margin: 0; font-size: 9px;">APIR LAZ0022AU</p>
+													</td>
+												</tr>
+											</table>
+											<br>
+										</td>
+										<td class="column" style="vertical-align: top; width: 194px;" width="194" valign="top">
+											<h4 style="font-family: 'PP Neue World',Helvetica,sans-serif; line-height: 120%; margin: 0; font-size: 16px; font-weight: 700;">In praise of small language models</h4>
+											<br>
+											<p class="paragraph-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; margin: 0; font-size: 12px; line-height: 140%;">Large language models (LLMs) are progressing at breakneck speed, captivating investors and sweeping through markets. However, their tendency to hallucinate and their inherent opacity limit their utility for investment decisions. Small language models (SLMs), in contrast, offer reliability and interpretability. These qualities make SLMs especially well-suited for answering highly specific questions, as this paper demonstrates using a case study on China's housing market slowdown.</p>
+											<br>
+											<table cellspacing="16px" role="presentation" class="btn open-in-new" style="font-size: 12px; font-weight: 700; display: block; margin: 4px 0; border-collapse: collapse;">
+												<tr cellspacing="16px">
+													<td rowspan="2" style="padding-right: 8px; vertical-align: middle;" class="padding-r-8" valign="middle">
+														<!--[if mso]>
+														<v:oval xmlns:v="urn:schemas-microsoft-com:vml" fillcolor="#00539A" strokecolor="#00539A" strokeweight="1px" style="width:30px;height:30px;margin-top:8px;">
+															<v:fill type="solid" color="#00539A"/>
+															<v:textbox inset="3px,3px,0,0" style="text-align:center;">
+																<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" width="16" height="16" alt="Open in new Icon" style="display: block; padding: 6px;" />
+															</v:textbox>
+														</v:oval>
+														<![endif]-->
+						
+														<!-- Fallback for non-Outlook clients -->
+														<!--[if !mso]><!-->
+														<div class="d-block btn-icon" style="display: block; width: 16px; height: 16px; border-radius: 100px; background-color: #00539A; padding: 6px;">
+															<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" alt="open in new window button icon" class width="16px" height="16px">
+														</div>
+														<!--<![endif]-->
+													</td>
+													<td style="vertical-align: top;" valign="top">
+														<a href="#" class="link-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; text-transform: capitalize; font-size: 12px; line-height: 160%; color: #00539A; text-decoration: underline;">Select Australian Equity</a>
+													</td>
+												</tr>
+												<tr style="vertical-align: middle;">
+													<td style="vertical-align: top;" valign="top">
+														<p class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; line-height: 120%; margin: 0; font-size: 9px;">APIR LAZ0022AU</p>
+													</td>
+												</tr>
+											</table>
+											<br>
+											<table cellspacing="16px" role="presentation" class="btn open-in-new" style="font-size: 12px; font-weight: 700; display: block; margin: 4px 0; border-collapse: collapse;">
+												<tr cellspacing="16px">
+													<td rowspan="2" style="padding-right: 8px; vertical-align: middle;" class="padding-r-8" valign="middle">
+														<!--[if mso]>
+														<v:oval xmlns:v="urn:schemas-microsoft-com:vml" fillcolor="#00539A" strokecolor="#00539A" strokeweight="1px" style="width:30px;height:30px;margin-top:8px;">
+															<v:fill type="solid" color="#00539A"/>
+															<v:textbox inset="3px,3px,0,0" style="text-align:center;">
+																<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" width="16" height="16" alt="Open in new Icon" style="display: block; padding: 6px;" />
+															</v:textbox>
+														</v:oval>
+														<![endif]-->
+						
+														<!-- Fallback for non-Outlook clients -->
+														<!--[if !mso]><!-->
+														<div class="d-block btn-icon" style="display: block; width: 16px; height: 16px; border-radius: 100px; background-color: #00539A; padding: 6px;">
+															<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" alt="open in new window button icon" class width="16px" height="16px">
+														</div>
+														<!--<![endif]-->
+													</td>
+													<td style="vertical-align: top;" valign="top">
+														<a href="#" class="link-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; text-transform: capitalize; font-size: 12px; line-height: 160%; color: #00539A; text-decoration: underline;">Select Australian Equity</a>
+													</td>
+												</tr>
+												<tr style="vertical-align: middle;">
+													<td style="vertical-align: top;" valign="top">
+														<p class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; line-height: 120%; margin: 0; font-size: 9px;">APIR LAZ0022AU</p>
+													</td>
+												</tr>
+											</table>
+											<br>
+											<table cellspacing="16px" role="presentation" class="btn open-in-new" style="font-size: 12px; font-weight: 700; display: block; margin: 4px 0; border-collapse: collapse;">
+												<tr cellspacing="16px">
+													<td rowspan="2" style="padding-right: 8px; vertical-align: middle;" class="padding-r-8" valign="middle">
+														<!--[if mso]>
+														<v:oval xmlns:v="urn:schemas-microsoft-com:vml" fillcolor="#00539A" strokecolor="#00539A" strokeweight="1px" style="width:30px;height:30px;margin-top:8px;">
+															<v:fill type="solid" color="#00539A"/>
+															<v:textbox inset="3px,3px,0,0" style="text-align:center;">
+																<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" width="16" height="16" alt="Open in new Icon" style="display: block; padding: 6px;" />
+															</v:textbox>
+														</v:oval>
+														<![endif]-->
+						
+														<!-- Fallback for non-Outlook clients -->
+														<!--[if !mso]><!-->
+														<div class="d-block btn-icon" style="display: block; width: 16px; height: 16px; border-radius: 100px; background-color: #00539A; padding: 6px;">
+															<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" alt="open in new window button icon" class width="16px" height="16px">
+														</div>
+														<!--<![endif]-->
+													</td>
+													<td style="vertical-align: top;" valign="top">
+														<a href="#" class="link-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; text-transform: capitalize; font-size: 12px; line-height: 160%; color: #00539A; text-decoration: underline;">Select Australian Equity</a>
+													</td>
+												</tr>
+												<tr style="vertical-align: middle;">
+													<td style="vertical-align: top;" valign="top">
+														<p class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; line-height: 120%; margin: 0; font-size: 9px;">APIR LAZ0022AU</p>
+													</td>
+												</tr>
+											</table>
+											<br>
+											<table cellspacing="16px" role="presentation" class="btn open-in-new" style="font-size: 12px; font-weight: 700; display: block; margin: 4px 0; border-collapse: collapse;">
+												<tr cellspacing="16px">
+													<td rowspan="2" style="padding-right: 8px; vertical-align: middle;" class="padding-r-8" valign="middle">
+														<!--[if mso]>
+														<v:oval xmlns:v="urn:schemas-microsoft-com:vml" fillcolor="#00539A" strokecolor="#00539A" strokeweight="1px" style="width:30px;height:30px;margin-top:8px;">
+															<v:fill type="solid" color="#00539A"/>
+															<v:textbox inset="3px,3px,0,0" style="text-align:center;">
+																<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" width="16" height="16" alt="Open in new Icon" style="display: block; padding: 6px;" />
+															</v:textbox>
+														</v:oval>
+														<![endif]-->
+						
+														<!-- Fallback for non-Outlook clients -->
+														<!--[if !mso]><!-->
+														<div class="d-block btn-icon" style="display: block; width: 16px; height: 16px; border-radius: 100px; background-color: #00539A; padding: 6px;">
+															<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/open_in_new_w.png" alt="open in new window button icon" class width="16px" height="16px">
+														</div>
+														<!--<![endif]-->
+													</td>
+													<td style="vertical-align: top;" valign="top">
+														<a href="#" class="link-2" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; text-transform: capitalize; font-size: 12px; line-height: 160%; color: #00539A; text-decoration: underline;">Select Australian Equity</a>
+													</td>
+												</tr>
+												<tr style="vertical-align: middle;">
+													<td style="vertical-align: top;" valign="top">
+														<p class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; line-height: 120%; margin: 0; font-size: 9px;">APIR LAZ0022AU</p>
+													</td>
+												</tr>
+											</table>
+											<br>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="frame" style="vertical-align: top; width: 32px;" width="32" valign="top"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<!-- One Column Content -->
+			<tr style="margin: 0; padding: 0;">
+				<td align="center" style="vertical-align: top;" valign="top">
+					<!--
+						Module: One Column Contents
+						Variant: parchment, sapphire buttons
+					-->
+					<table style="width: 640px; background-color: #ffffff; color: #171A1C; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" role="presentation" class="module parchment" width="640" bgcolor="#ffffff">
+						<tr>
+							<td class="frame" style="vertical-align: top; width: 32px;" width="32" valign="top"></td>
+							<td class="content" style="vertical-align: top; padding: 32px 16px; border-right: .5px solid #dadada; border-left: .5px solid #dadada;" valign="top">
+								<!--
+									Component: Eyebrow
+								-->
+								<p class="eyebrow" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; margin: 0; text-transform: uppercase; font-size: 10px; line-height: 8px; vertical-align: middle;"><span class="bullet" style="font-size: 30px; line-height: 8px; vertical-align: middle;">&bull;</span> <span class="label">What's Trending</span></p>
+								<br>
+								<h3 style="font-family: 'PP Neue World',Helvetica,sans-serif; font-weight: 400; margin: 0; font-size: 24px; line-height: 120%;">Do Rising US Interest Rates Offer Opportunities in EM?</h3>
+								<br>
+								<h2 class="subheadline" style="margin: 0; font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-size: 16px; letter-spacing: -.16px; font-weight: 400; line-height: 120%;">Emerging Markets Investment Grade Yields</h2>
+								<br>
+								<img style="max-width: 100%;" src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/LAM_ContentImage_1YGraph.png" alt="1Y Grades Chart" class="mw-100">
+								<p style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-size: 14px; font-weight: 400; line-height: 120%; margin: 0;"></p> <!-- Spacer <p> for MSO image margin -->
+								<br>
+								<p class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: 400; line-height: 120%; margin: 0; font-size: 9px;">
+									As of 26 October 2023<br>
+									Sovereign: JPM EMBI Global Diversified IG; Corporate: JPM CEMBI Broad Diversified IG<br>
+									Source: Lazard, JP Morgan
+								</p>
+							</td>
+							<td class="frame" style="vertical-align: top; width: 32px;" width="32" valign="top"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
