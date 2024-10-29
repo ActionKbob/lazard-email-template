@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../index.css">
+	</head>
+	<body align="center">
+		<table style align="center" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" class="wrapper">
+			<tr>
+				<td align="center">
+					@@include( "modules/logo-banners/logo-banner.html" )
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+					@@include( "modules/email-banner/one-column/email-banner-one-column.html" )
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+					<!--
+						Module: One-column-content
+						Variant: Parchment
+					-->
+					@@include( 'modules/one-column-contents/template.html', {
+						variant: "",
+						imgSrc: ""
+					} )
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+					@@include( "modules/tables/thumbnail/template.html", {
+						variant: "clarity"
+					} )
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+					@@include( "modules/cta-banner/two-column/templates/template.dark.html", {
+						variant: "sapphire",
+						heading: "<h2>Explore a New Perspective on AI from Our Team</h2>",
+						paragraph: "<p class='paragraph-2'>Enclosed is the monthly factor report detailing those factors that influenced regional and global equity performance in May 2024 as well as over extended time periods.</p>"
+					} )
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+					@@include( "modules/footer-disclaimer/one-column/one-column-footer-disclaimer.html" )
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
