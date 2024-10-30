@@ -190,8 +190,12 @@ a {
 	color: var(--sapphire);
 }
 
-.dark .sapphire {
+.dark .sapphire, .dark .onyx {
 	color: var(--parchment);
+}
+
+.onyx {
+	color: var(--onyx);
 }
 
 /* Dark BG override */
@@ -397,6 +401,7 @@ a {
 	font-size: 30px;
 	line-height: 8px;
 	vertical-align: middle;
+	margin-right: 6px;
 }
 /* ---------- END Component Styles ---------- */
 
