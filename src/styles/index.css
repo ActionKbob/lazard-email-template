@@ -320,6 +320,10 @@ a {
 	mso-border-alt: none #FFFFFF 0;
 }
 
+.btn.pill.small {
+	line-height: 22px;
+}
+
 .btn.pill span {
 	display: block;
 	background-color: var(--rgb_sapphire);
