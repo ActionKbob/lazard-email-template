@@ -218,6 +218,11 @@ a {
 	white-space: nowrap;
 }
 
+.icon-img {
+	width: 16px;
+	height: 16px;
+}
+
 /* Utilities */
 .d-block {
 	display: block;
@@ -299,6 +304,10 @@ a {
 
 .layout_four-column .column.wide {
 	width: auto;
+}
+
+.align-right-md {
+	text-align: right;
 }
 /* ---------- END Boilerplate ---------- */
 
@@ -505,7 +514,8 @@ a {
 }
 
 .content.alt {
-	padding: 48px 16px 16px 16px;
+	padding-top: 48px;
+	padding-bottom: 16px;
 }
 
 .highlights-table tr.bordered {
@@ -582,11 +592,9 @@ a {
 		display: inline-block;
 		width: 100% !important;
 	}
-}
 
-@media screen and (min-width: 641px) {
 	.align-right-md {
-		text-align: right;
+		text-align: left;
 	}
 }
 /* ---------- END Mobile Styles ---------- */

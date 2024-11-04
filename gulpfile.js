@@ -64,7 +64,9 @@ function inlineCssTask( cb )
 			webResources: {
 				images: 0
 			},
-			removeStyleTags: false
+			removeStyleTags: false,
+			applyHeightAttributes: false,
+			applyWidthAttributes: false
 		}, function( err, outputHtml ) {
 			if( !fs.existsSync( dir ) )
 				fs.mkdirSync( dir, { recursive : true } );
