@@ -116,27 +116,28 @@ h1, h2, h3, h4 {
 	/* font-family: "Helvetica Neue LT Std", Helvetica, sans-serif; */
 	font-family: "PP Neue World", Helvetica, sans-serif;
 	font-weight: normal;
-	line-height: 120%;
 	margin: 0;
 }
 
 h1 {
 	font-size: 40px;
-	line-height: 100%;
+	line-height: 40px;
 }
 
 h2 {
 	font-size: 32px;
+	line-height: 38.4px;
 }
 
 h3 {
 	font-size: 24px;
-	line-height: 120%;
+	line-height: 28.8px;
 }
 
 h4 {
 	font-size: 16px;
 	font-weight: bold;
+	line-height: 19.2px;
 }
 
 .subheadline {
@@ -164,17 +165,18 @@ p, .paragraph {
 	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: normal;
-	line-height: 120%;
+	line-height: 16.8px;
 	margin: 0;
 }
 
 .paragraph-2 {
 	font-size: 12px;
-	line-height: 140%;
+	line-height: 16.8px;
 }
 
 .paragraph-3 {
 	font-size: 10px;
+	line-height: 10px;
 }
 
 a {
