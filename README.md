@@ -3,6 +3,8 @@
 #### Buttons:
 - Pill buttons will need their widths specifically defined within the MSO conditional statement AS WELL as the html element within.
 
+- Pill buttons will ALSO need their hrefs changed on the anchor tag as well as the v:roundrect conditional element for Outlook clients
+
 #### Lists:
 Due to Outlook and Gmails differing approach to list rendering, consider composing lists as a series of elements written like so:
 
