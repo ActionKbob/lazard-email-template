@@ -126,25 +126,25 @@ h1 {
 
 h2 {
 	font-size: 32px;
-	line-height: 38.4px;
+	line-height: 38px;
 }
 
 h3 {
 	font-size: 24px;
-	line-height: 28.8px;
+	line-height: 29px;
 }
 
 h4 {
 	font-size: 16px;
 	font-weight: bold;
-	line-height: 19.2px;
+	line-height: 19px;
 }
 
 .subheadline {
 	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
 	font-weight: bold;
 	font-size: 24px;
-	line-height: 95%;
+	line-height: 22px;
 	letter-spacing: -0.24px;
 }
 
@@ -152,26 +152,26 @@ h2.subheadline {
 	font-size: 16px;
 	letter-spacing: -0.16px;
 	font-weight: normal;
-	line-height: 120%;
+	line-height: 19px;
 }
 
 h3.subheadline {
 	font-size: 12px;
 	letter-spacing: -0.12px;
-	line-height: 120%;
+	line-height: 14px;
 }
 
 p, .paragraph {
 	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: normal;
-	line-height: 16.8px;
+	line-height: 17px;
 	margin: 0;
 }
 
 .paragraph-2 {
 	font-size: 12px;
-	line-height: 16.8px;
+	line-height: 17px;
 }
 
 .paragraph-3 {
@@ -185,7 +185,7 @@ a {
 	font-weight: normal;
 	color: var(--sapphire);
 	text-transform: capitalize;
-	line-height: 120%;
+	line-height: 19px;
 }
 
 .sapphire {
@@ -207,7 +207,7 @@ a {
 
 .link-2 {
 	font-size: 12px;
-	line-height: 160%;
+	line-height: 19px;
 	color: var(--sapphire);
 	text-decoration: underline;
 }
@@ -596,7 +596,11 @@ a {
 	}
 
 	.align-right-md {
-		text-align: left;
+		text-align: left !important;
+	}
+
+	.d-none-sm {
+		display: none !important;
 	}
 }
 /* ---------- END Mobile Styles ---------- */

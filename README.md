@@ -7,7 +7,10 @@
 Due to Outlook and Gmails differing approach to list rendering, consider composing lists as a series of elements written like so:
 
 ```
-<p><span class="list-bull">&bull;</span>&nbsp;<a href="https://lazard.com" class="link-2">Outlook on Emerging Markets</a></p>
+<p style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-size: 14px; font-weight: 400; margin: 0; vertical-align: middle; line-height: 24px;" class="list-item">
+	<span class="bullet" style="font-size: 22px; color: #00539A; vertical-align: middle;">&bull;</span>&nbsp;
+	Lazard US Offshore Fund Offerings
+</p>
 ```
 
 This allows the 'marker' for the list item to be colored correcly to the Figma file, while also avoiding the margin and spacing issues from Outlook
@@ -16,7 +19,7 @@ This allows the 'marker' for the list item to be colored correcly to the Figma f
 [Reference](https://www.figma.com/design/DQOzjDZf7trxfL4D9jg3Ox/New-Email-Library?t=2ABFyPpxE1ZTgt7E-0)
 
 #### General Design Changes:
-- Unordered List bullets do not have their color changed to Sapphire in some clients due to limited support for the ::marker pseudo selector as well as list-style: none not being applied in Outlook
+- Line heights have been converted from percentages, and rounded to nearest full pixel, as percentage values and fractional pixels can cause artifact lines to appear on Outlook clients
 
 #### Color changes made due to lack of opacity support in email clients:
 - Changed module frame border color from #171A1C to #dadada on "Parchment", "Sage", and "Clarity" variants

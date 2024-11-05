@@ -12,179 +12,48 @@
 			<!-- Logo Banner -->
 			<tr>
 				<td align="center">
-					<!--
-						Module: logo-banner
-						Variant: sapphire
-					-->
-					<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="module sapphire">
-						<tr>
-							<td class="frame"></td>
-							<td class="content">
-								<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/LAM_Logo_Transparent_White.png" alt="LAM Logo" height="36">
-							</td>
-							<td class="frame"></td>
-						</tr>
-					</table>
+					@@include( "modules/logo-banners/templates/template.html", {
+						variant: "sapphire",
+						imgSrc: "LAM_Logo_Transparent_White.png"
+					} )
 				</td>
 			</tr>
+			<!-- END Logo Banner -->
 
-			<!-- Email Banner, Two Column  -->
+			<!-- Email Banner, Two Column -->
 			<tr>
 				<td align="center">
-					<!--
-						Module: Email Banner, Two Column
-						Variant: sapphire, sapphire buttons, dark background
-					-->
-					<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="module dark sapphire">
-						<tr>
-							<td class="frame"></td>
-							<td class="content h-flush">
-								<table style="width: 100%;" cellpadding="8px">
-									<tr class="layout_two-column">
-										<td style="margin-bottom: 16px;" class="column">
-											<h1>Factor Report</h1>
-											<br>
-											<p>Monthly analysis of global<br> market factors</p>
-											<br>
-			
-											<!--
-												Component: Pill Button
-												Variant: Primary, MSO Dark, Sapphire
-											-->
-											<!--[if mso]>
-												<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" rel="noopener" target="_blank" href="https://lazard.com/" arcsize="50%" stroke="f" 
-													style="height:32px;v-text-anchor:middle;color:#00539A;width:98px;" 
-													fillcolor="#ffffff">
-													<w:anchorlock/>
-													<center class="mso">
-											<![endif]-->
-											<a target="_blank" href="https://lazard.com/" style="width: 98px" class="btn pill">
-												<!--[if !mso]><!--><span><!--<![endif]-->Download<!--[if !mso]><!--></span><!--<![endif]-->
-											</a>
-											<!--[if mso]>
-													</center>
-												</v:roundrect>
-											<![endif]-->
-										</td>
-										<td class="column">
-											<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/LAM_Feature_Lake.png" alt="Feature image">
-										</td>
-									</tr>
-								</table>
-							</td>
-							<td class="frame"></td>
-						</tr>
-					</table>
+					@@include( "modules/email-banner/two-column/templates/template.dark.html", {
+						variant: "sapphire",
+						imgSrc: "LAM_Feature_Lake.png"
+					} )
 				</td>
 			</tr>
+			<!-- END Email Banner, Two Column -->
 
-			<!-- Basic Table -->
+			<!-- Table, Basic -->
 			<tr>
 				<td align="center">
-					<!--
-						Module: Basic Table
-						Variant: parchment
-					-->
-					<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="module parchment">
-						<tr>
-							<td class="frame"></td>
-							<td class="content">
-								<p class="eyebrow"><span class="bullet">&bull;</span> <span class="label">What's Trending</span></p>
-								<br>
-								<h4>Top 3 highlights from May 2024.</h4>
-								<br>
-								<p class="paragraph-3">Top 3 highlights from May 2024.</p>
-								<br>
-								<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="highlights-table">
-									<tr class="bordered">
-										<td>
-											<p>World equity markets rose 4%, recovering from April's decline.</p>
-										</td>
-									</tr>
-									<tr class="bordered">
-										<td>
-											<p>Yield curves remained inverted in developed markets, with the exception of Japan and Australia.</p>
-										</td>
-									</tr>
-									<tr class="bordered">
-										<td>
-											<p>World equity markets rose 4%, recovering from April's decline.</p>
-										</td>
-									</tr>
-									<tr class="bordered">
-										<td>
-											<p>World equity markets rose 4%, recovering from April's decline.</p>
-										</td>
-									</tr>
-									<tr class="bordered">
-										<td>
-											<p>Yield curves remained inverted in developed markets, with the exception of Japan and Australia.</p>
-										</td>
-									</tr>
-									<tr class="bordered">
-										<td>
-											<p>World equity markets rose 4%, recovering from April's decline.</p>
-										</td>
-									</tr>				
-								</table>
-								<br>
-								<p><a target="_blank" style href="https://www.lazard.com" class="btn text">See all highlights &nbsp; <span class="arrow">&#8594;</span></a></p>
-								<br>
-								<p>Lazard Equity Advantage Team</p>
-								<a class="paragraph" href="mailto:EquityAdvantage@lazard.com">EquityAdvantage@lazard.com</a>
-							</td>
-							<td class="frame"></td>
-						</tr>
-					</table>
+					@@include( "modules/tables/basic/templates/template.html", {
+						variant: "parchment"
+					} )
 				</td>
 			</tr>
+			<!-- END Table, Basic -->
 
-			<!-- CTA Banner -->
+			<!-- CTA Banner (1) -->
 			<tr>
 				<td align="center">
-					<!--
-						Module: CTA Banner, Two Column
-						Variant: clarity, sapphire buttons
-					-->
-					<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="module cta-banner clarity">
-						<tr>
-							<td class="frame"></td>
-							<td class="content h-flush">
-								<table style border="0" cellpadding="8px" cellspacing="0" role="presentation" width="100%" class="layout_two-column_fluid">
-									<tr>
-										<td class="column">
-											<h2>Explore a New Perspective on AI from Our Team</h2>
-										</td>
-										<td class="column">
-											<!--
-												Component: Pill Button
-												Variant: Primary, Sapphire
-											-->
-											<!--[if mso]>
-												<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" rel="noopener" target="_blank" href="https://lazard.com/" arcsize="50%" stroke="f" 
-													style="height:32px;v-text-anchor:middle;color:#ffffff;width:98px;" 
-													fillcolor="#00539A">
-													<w:anchorlock/>
-													<center class="mso">
-											<![endif]-->
-											<a target="_blank" href="https://lazard.com/" style="width: 98px" class="btn pill">
-												<!--[if !mso]><!--><span><!--<![endif]-->Download<!--[if !mso]><!--></span><!--<![endif]-->
-											</a>
-											<!--[if mso]>
-													</center>
-												</v:roundrect>
-											<![endif]-->
-										</td>
-									</tr>
-								</table>			
-							</td>
-							<td class="frame"></td>
-						</tr>
-					</table>
+					@@include( "modules/cta-banner/two-column/templates/template.html", {
+						variant: "clarity",
+						heading: "<h2>Explore a New Perspective on AI from Our Team</h2>",
+						paragraph: ""
+					} )
 				</td>
 			</tr>
+			<!-- END CTA Banner (1) -->
 
-			<!-- Thumbnail Table -->
+			<!-- Table, Thumbnail -->
 			<tr>
 				<td align="center">
 					<!--
@@ -205,9 +74,9 @@
 											<br>
 											<p>Enclosed is the monthly factor report detailing those factors that influenced regional and global equity performance in May 2024 as well as over extended time periods.</p>
 											<br>
-											<a target="_blank" href="https://lazard.com" class="btn text ">Download <span>&#8594;</span></a>
+											<a href="https://lazard.com" class="btn text ">Download <span>&#8594;</span></a>
 										</td>
-									</tr>
+									</tr>									
 								</table>
 							</td>
 							<td class="frame"></td>
@@ -215,93 +84,29 @@
 					</table>
 				</td>
 			</tr>
+			<!-- END Table, Thumbnail -->
 
-			<!-- CTA Banner 2 -->
+			<!-- CTA Banner (1) -->
 			<tr>
 				<td align="center">
-					<!--
-						Module: CTA Banner, Two Column
-						Variant: sapphire, sapphire buttons, dark background
-					-->
-					<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="module dark cta-banner sapphire">
-						<tr>
-							<td class="frame"></td>
-							<td class="content h-flush">
-								<table style border="0" cellpadding="8px" cellspacing="0" role="presentation" width="100%" class="layout_two-column_fluid">
-									<tr>
-										<td class="column">
-											<h2>Explore a New Perspective on AI from Our Team</h2>
-											<br>
-											<p class="paragraph-2">Enclosed is the monthly factor report detailing those factors that influenced regional and global equity performance in May 2024 as well as over extended time periods.</p>
-										</td>
-										<td class="column">
-											<!--
-												Component: Pill Button
-												Variant: Primary, MSO Dark, Sapphire
-											-->
-											<!--[if mso]>
-												<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" rel="noopener" target="_blank" href="https://lazard.com/" arcsize="50%" stroke="f" 
-													style="height:32px;v-text-anchor:middle;color:#00539A;width:98px;" 
-													fillcolor="#ffffff">
-													<w:anchorlock/>
-													<center class="mso">
-											<![endif]-->
-											<a target="_blank" href="https://lazard.com/" style="width: 98px" class="btn pill">
-												<!--[if !mso]><!--><span><!--<![endif]-->Download<!--[if !mso]><!--></span><!--<![endif]-->
-											</a>
-											<!--[if mso]>
-													</center>
-												</v:roundrect>
-											<![endif]-->
-										</td>
-									</tr>
-								</table>			
-							</td>
-							<td class="frame"></td>
-						</tr>
-					</table>
+					@@include( "modules/cta-banner/two-column/templates/template.dark.html", {
+						variant: "sapphire",
+						heading: "<h2>Explore a New Perspective on AI from Our Team</h2>",
+						paragraph: "<p class='paragraph-2'>Enclosed is the monthly factor report detailing those factors that influenced regional and global equity performance in May 2024 as well as over extended time periods.</p>"
+					} )
 				</td>
 			</tr>
+			<!-- END CTA Banner (1) -->
 
-			<!-- Footer + Dislaimer -->
+			<!-- Footer + Disclaimer -->
 			<tr>
 				<td align="center">
-					<!--
-						Module: One Column Footer Disclaimer
-						Variant: Onyx
-					-->
-					<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="module dark onyx">
-						<tr>
-							<td class="frame"></td>
-							<td class="content h-flush">
-								<table style="width: 100%;" cellpadding="8px">
-									<tr class="layout_mobile-one-column">
-										<td style="width: 65px;" class="column nowrap">
-											<a target="_blank" href="https://www.linkedin.com/company/lazard/" style="text-decoration: none;">
-												<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/linkedin_icon.png" alt="LinkedIn Logo" width="16px" height="16px">
-											</a>
-											&nbsp;&nbsp;
-											<a target="_blank" href="https://www.youtube.com/channel/UC5kvy5orZCGN55qOvoGk7ug" style="text-decoration: none;">
-												<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/yt_icon.png" alt="YouTube Logo" width="16px" height="16px">
-											</a>
-										</td>
-										<td class="column">
-											<p class="disclaimer">FOR FINANCIAL PROFESSIONAL USE ONLY. NOT FOR PUBLIC DISTRIBUTION.</p>
-											<br>
-											<p class="disclaimer">This email is for informational purposes only. It is not intended to, and does not constitute financial advice, fund management services, an offer of financial products or to enter into any contract or investment agreement in respect of any product offered by Lazard Asset Management and shall not be considered as an offer or socialization with respect to any product, security , or service in any jurisdiction or in any circumstances in which such offer or solicitation is unlawful or unauthorized or otherwise restricted or prohibited.</p>
-											<br>
-											<p class="disclaimer">Read our Privacy Notice for information about how we use personal data that we hold on you.</p>
-											<br>
-											<p class="disclaimer">To Unsubscribe from future emails or customize our communications with you, manage your email preferences.</p>
-										</td>
-									</tr>
-								</table>
-							</td>
-							<td class="frame"></td>
-						</tr>
-					</table>
+					@@include( "modules/footer-disclaimer/two-column/templates/template.html", {
+						variant: "onyx"
+					} )
 				</td>
 			</tr>
+			<!-- END Footer + Disclaimer -->
 		</table>
 	</body>
 </html>

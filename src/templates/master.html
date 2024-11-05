@@ -6,9 +6,49 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../index.css">
+
+		<style>
+			html {
+				scroll-behavior: smooth;
+			}
+
+			.nav {
+				position: fixed;
+				top: 0;
+				left: 0;
+				padding: 24px 16px;
+				text-align: left;
+			}
+
+			.nav a {
+				font-size: 12px;
+				display: block;
+				margin-bottom: 16px;
+			}
+		</style>
 	</head>
 	<body align="center">
+
+		<div class="nav">
+			<a href="#components">Components</a>
+			<a href="#logo-banners">Logo Banners</a>
+			<a href="#email-banner_one-column">One Column Email Banners</a>
+			<a href="#email-banner_two-column">Two Column Email Banners</a>
+			<a href="#cta-banners_two-column">Two Column CTA Banners</a>
+			<a href="#cta-banners_one-column">One Column CTA Banners</a>
+			<a href="#email-headings">Email Headings</a>
+			<a href="#one-column-contents">One Column Content</a>
+			<a href="#tables">Tables</a>
+			<a href="#two-column-content">Two Column Content</a>
+			<a href="#thumbnail-grid">Thumbnail Grid</a>
+			<a href="#three-column-contents">Three Column Content</a>
+			<a href="#four-column-content">Four Column Content</a>
+			<a href="#footer">Footer + Disclaimers</a>
+		</div>
+
 		<table style align="center" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" class="wrapper">
+
+			@@include( "components/components.html" )
 
 			@@include( "modules/preheaders/preheaders.html" )
 
@@ -58,13 +98,9 @@
 			@@include( "modules/three-column-contents/speaker/speakers.html" )
 
 			@@include( "modules/four-column-contents/four-column-contents.html" )
-			
-			@@include( "modules/cta-banner/two-column/two-column-cta-banners.html" )
-
-			@@include( "modules/cta-banner/one-column/one-column-cta-banners.html" )
 
 			<tr>
-				<td align="center">
+				<td align="center" id="footer">
 					<h4 style="margin: 16px;">Footer + Disclaimer</h4>
 				</td>
 			</tr>
