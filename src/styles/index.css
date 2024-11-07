@@ -25,8 +25,8 @@
 	/* Utility */
 	--bg_grey: #F3F2F2;
 	/* RGBA - Used for MSO button colors */
-	--rgb_sapphire: rgb(0, 83, 154);
-	--rgb_onyx: rgb(23, 26, 28);
+	/* --rgb_sapphire: rgb(0, 83, 154);
+	--rgb_onyx: rgb(23, 26, 28); */
 	
 	/* ---------- Frame colors ---------- */
 	--frame: #dadada;
@@ -114,7 +114,7 @@ li > span {
 /* Typography */
 h1, h2, h3, h4 {
 	/* font-family: "Helvetica Neue LT Std", Helvetica, sans-serif; */
-	font-family: "PP Neue World", Helvetica, sans-serif;
+	font-family: "PP Neue World", "Helvetica Neue LT Std", Helvetica, sans-serif;
 	font-weight: normal;
 	margin: 0;
 }
@@ -145,19 +145,16 @@ h4 {
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 22px;
-	letter-spacing: -0.24px;
 }
 
 h2.subheadline {
 	font-size: 16px;
-	letter-spacing: -0.16px;
 	font-weight: normal;
 	line-height: 19px;
 }
 
 h3.subheadline {
 	font-size: 12px;
-	letter-spacing: -0.12px;
 	line-height: 14px;
 }
 
@@ -338,7 +335,7 @@ a {
 
 .btn.pill span {
 	display: block;
-	background-color: var(--rgb_sapphire);
+	background-color: var(--sapphire);
 	border-radius: 80px;
 }
 
@@ -360,7 +357,7 @@ a {
 }
 
 .btn.pill.onyx.secondary {
-	color: var(--rgb_onyx) !important;
+	color: var(--onyx) !important;
 }
 
 .btn.pill.onyx.secondary span {
@@ -487,23 +484,23 @@ a {
 
 .content {
 	padding: 32px 16px;
-	border-right: 0.5px solid var(--frame);
-	border-left: 0.5px solid var(--frame);
+	border-right: 1px solid var(--frame);
+	border-left: 1px solid var(--frame);
 }
 
 .module.sapphire .content {
-	border-right: 0.5px solid var(--frame_sapphire);
-	border-left: 0.5px solid var(--frame_sapphire);
+	border-right: 1px solid var(--frame_sapphire);
+	border-left: 1px solid var(--frame_sapphire);
 }
 
 .module.onyx .content {
-	border-right: 0.5px solid var(--frame_onyx);
-	border-left: 0.5px solid var(--frame_onyx);
+	border-right: 1px solid var(--frame_onyx);
+	border-left: 1px solid var(--frame_onyx);
 }
 
 .module.currency .content {
-	border-right: 0.5px solid var(--frame_currency);
-	border-left: 0.5px solid var(--frame_currency);
+	border-right: 1px solid var(--frame_currency);
+	border-left: 1px solid var(--frame_currency);
 }
 
 .content.v-flush {
@@ -619,8 +616,8 @@ a {
 	}
 
 	.content {
-		border-right: 0.5px solid #296faa !important;
-		border-left: 0.5px solid #296faa !important;
+		border-right: 1px solid #296faa !important;
+		border-left: 1px solid #296faa !important;
 	} */
 }
 /* ---------- END Dark Mode Styles ---------- */
