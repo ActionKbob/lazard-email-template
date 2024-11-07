@@ -475,7 +475,7 @@ a {
 }
 
 .dark p, .dark h1, .dark h2, .dark h3, .dark h4 {
-	color: #ffffff;
+	color: var(--parchment);
 }
 
 .frame {
