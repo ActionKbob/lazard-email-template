@@ -112,7 +112,7 @@ li > span {
 }
 
 /* Typography */
-h1, h2, h3, h4 {
+h1, h2, h3 {
 	/* font-family: "Helvetica Neue LT Std", Helvetica, sans-serif; */
 	font-family: "PP Neue World", "Helvetica Neue LT Std", Helvetica, sans-serif;
 	font-weight: normal;
@@ -135,6 +135,7 @@ h3 {
 }
 
 h4 {
+	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 19px;
