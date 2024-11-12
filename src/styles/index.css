@@ -139,6 +139,7 @@ h4 {
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 19px;
+	margin: 0;
 }
 
 .subheadline {
@@ -291,6 +292,13 @@ a {
 	display: block;
 }
 
+.layout_two-column .column, 
+.layout_three-column .column, 
+.layout_four-column .column, 
+.layout_mobile-one-column .column {
+	padding: 8px;
+}
+
 .layout_two-column .column {
 	width: 50%;
 }
@@ -301,10 +309,6 @@ a {
 
 .layout_four-column .column {
 	width: 124px;
-}
-
-.layout_four-column .column.wide {
-	width: auto;
 }
 
 .align-right-md {
@@ -581,7 +585,7 @@ a {
 
 	.layout_four-column .column {
 		display: inline-block;
-		width: 43% !important;
+		width: 100% !important;
 	}
 
 	.layout_mobile-one-column
