@@ -9,9 +9,10 @@
   --parchment: #ffffff;
 	--onyx: #171A1C;
   --sapphire: #00539A;
-	--sage: #D9E5CC;
+	--sage: #EDF3ED;
 	--clarity: #EBF4FA;
 	--currency: #4D5C49;
+	--ink: #23283C;
 	/* Secondary */
 	--dark_blue: #102E47;
 	--medium_blue: #3D8ACC;
@@ -33,6 +34,7 @@
 	--frame_sapphire: #296faa;
 	--frame_onyx: #3c3f40;
 	--frame_currency: #6a7666;
+	--frame_ink: #464B5B;
 }
 /* ---------- END Colors ---------- */
 
@@ -112,9 +114,9 @@ li > span {
 }
 
 /* Typography */
-h1, h2, h3 {
-	/* font-family: "Helvetica Neue LT Std", Helvetica, sans-serif; */
-	font-family: "PP Neue World", "Helvetica Neue LT Std", Helvetica, sans-serif;
+h1, h2, h3, h4 {
+	font-family: "VC Garamond Condensed", "Helvetica Neue LT Std", Helvetica, sans-serif;
+	font-style: light;
 	font-weight: normal;
 	margin: 0;
 }
@@ -132,14 +134,43 @@ h2 {
 h3 {
 	font-size: 24px;
 	line-height: 29px;
+	font-style: normal;
 }
 
 h4 {
+	color: var(--medium_grey);
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 12px;
+}
+
+h1.sans, h2.sans, h3.sans, h4.sans {
 	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+h1.sans {
+	font-size: 40px;
+	line-height: 40px;
+}
+
+h2.sans {
+	font-size: 32px;
+	line-height: 38px;
+}
+
+h3.sans {
+	font-size: 24px;
+	line-height: 29px;
+	font-style: normal;
+}
+
+h4.sans {
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: normal;
+	font-style: normal;
 	line-height: 19px;
-	margin: 0;
 }
 
 .subheadline {
@@ -158,6 +189,7 @@ h2.subheadline {
 h3.subheadline {
 	font-size: 12px;
 	line-height: 14px;
+	font-weight: bold;
 }
 
 p, .paragraph {
@@ -175,7 +207,7 @@ p, .paragraph {
 
 .paragraph-3 {
 	font-size: 10px;
-	line-height: 10px;
+	line-height: 12px;
 }
 
 a {
@@ -185,6 +217,7 @@ a {
 	color: var(--sapphire);
 	text-transform: capitalize;
 	line-height: 19px;
+	text-decoration: underline;
 }
 
 .sapphire {
@@ -208,7 +241,6 @@ a {
 	font-size: 12px;
 	line-height: 19px;
 	color: var(--sapphire);
-	text-decoration: underline;
 }
 
 .disclaimer, .caption {
@@ -403,6 +435,9 @@ a {
 }
 
 .btn.text {
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: bold;
 	color: var(--onyx);
 	text-decoration: none;
 }
@@ -479,6 +514,11 @@ a {
 	color: var(--parchment);
 }
 
+.module.ink {
+	background-color: var(--ink);
+	color: var(--parchment);
+}
+
 .dark p, .dark h1, .dark h2, .dark h3, .dark h4 {
 	color: var(--parchment);
 }
@@ -506,6 +546,11 @@ a {
 .module.currency .content {
 	border-right: 1px solid var(--frame_currency);
 	border-left: 1px solid var(--frame_currency);
+}
+
+.module.ink .content {
+	border-right: 1px solid var(--frame_ink);
+	border-left: 1px solid var(--frame_ink);
 }
 
 .content.v-flush {
@@ -555,6 +600,10 @@ a {
 
 .currency .highlights-table tr.bordered {
 	border-bottom: 1px solid var(--frame_currency);
+}
+
+.ink .highlights-table tr.bordered {
+	border-bottom: 1px solid var(--frame_ink);
 }
 
 /* ---------- END Module Styles ---------- */
