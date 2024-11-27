@@ -56,13 +56,17 @@ table tr td {
 ul {
 	margin: 0;
 	padding: 0;
+	margin-left: 18px;
 	line-height: 160%;
 	font-weight: 400;
 	font-size: 12px;
 }
 
 li {
-	padding-bottom: 8px;
+	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
+	font-size: 12;
+	line-height: 19px;
+	margin-bottom: 8px;
 	padding-left: 0px;
 	margin-left: 0px; 
 }
@@ -73,7 +77,7 @@ li a {
 
 li::marker 
 {
-	font-size: 16px;
+	font-size: 18px;
 }
 
 li.link::marker {
@@ -81,10 +85,10 @@ li.link::marker {
 }
 
 /* Gmail Webapp list styles */
-u + .body .glist { margin-left: 0 !important; }
+u + .body .g_list { margin-left: 0 !important; }
   
 @media only screen and (max-width: 640px) {
-  u + .body .glist { margin-left: 25px !important; }
+  u + .body .g_list { margin-left: 25px !important; }
 }
 
 .list-item {
