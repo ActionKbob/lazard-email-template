@@ -58,7 +58,7 @@ ul {
 	padding: 0;
 	margin-left: 18px;
 	line-height: 160%;
-	font-weight: 400;
+	font-weight: normal;
 	font-size: 12px;
 }
 
@@ -75,7 +75,7 @@ li a {
 	font-size: 12px;
 }
 
-li::marker 
+li::marker
 {
 	font-size: 18px;
 }
@@ -124,6 +124,7 @@ li > span {
 
 /* Typography */
 h1, h2, h3, h4 {
+	color: var(--onyx);
 	font-family: "VC Garamond Condensed", "Helvetica Neue LT Std", Helvetica, sans-serif;
 	font-style: light;
 	font-weight: normal;
@@ -176,8 +177,9 @@ h3.sans {
 }
 
 h4.sans {
+	color: var(--onyx);
 	font-size: 16px;
-	font-weight: normal;
+	font-weight: bold;
 	font-style: normal;
 	line-height: 19px;
 }
@@ -224,7 +226,6 @@ a {
 	font-size: 16px;
 	font-weight: normal;
 	color: var(--sapphire);
-	text-transform: capitalize;
 	line-height: 19px;
 	text-decoration: underline;
 }
@@ -370,9 +371,6 @@ a {
 	text-align: center;
 	-webkit-text-size-adjust: none;
 	line-height: 32px;
-
-	/* Outlook Overrides */
-	mso-border-alt: none #FFFFFF 0;
 }
 
 .btn.pill.small {
@@ -587,6 +585,9 @@ a {
 
 .highlights-table .table-number {
 	width: 124px;
+}
+
+.highlights-table .table-number h3 {
 	color: var(--light_grey);
 }
 
@@ -619,6 +620,12 @@ a {
 
 /* ---------- Mobile Styles ---------- */
 @media screen and (max-width: 640px) {
+
+	/* This forces large feature images down to device size without compromising the mobile static image widths on desktop sizes */
+	img {
+		max-width: 100%;
+	}
+
 	/* This is mainly to allow the wrapper to fit within 640px in DreamWeaver while also allowing columns to wrap on mobile where supported */
 	.module {
 		width: 100% !important;
