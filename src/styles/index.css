@@ -43,6 +43,10 @@ body {
 	margin: 0;
 	padding-top: 10px;
 	background-color: var(--bg_grey);
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
 }
 
 table {
@@ -334,7 +338,8 @@ a {
 	display: block;
 }
 
-.layout_two-column .column, 
+.layout_two-column .column,
+.layout_two-column_fluid .column,
 .layout_three-column .column, 
 .layout_four-column .column, 
 .layout_mobile-one-column .column {
