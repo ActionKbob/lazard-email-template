@@ -14,19 +14,10 @@
 			<!-- Logo Banner -->
 			<tr>
 				<td align="center">			
-					<!--
-						Module: logo-banner
-						Variant: parchment
-					-->
-					<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="module parchment">
-						<tr>
-							<td class="frame"></td>
-							<td class="content">
-								<img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/LAM_Logo_Transparent.png" alt="Lazard Asset Management" height="36">
-							</td>
-							<td class="frame"></td>
-						</tr>
-					</table>
+					@@include( "modules/logo-banners/templates/template.html", {
+						variant: "parchment",
+						imgSrc: "LAM_Logo_Transparent.png"
+					} )
 				</td>
 			</tr>
 
@@ -43,7 +34,7 @@
 							<td class="content h-flush">
 								<table style border="0" cellpadding="8px" cellspacing="0" role="presentation" width="100%" class="layout_two-column_fluid">
 									<tr>
-										<td class="column">
+										<td class="column" style="width: 404px;">
 											<h1 class="sans" style="width: 202px;">Engage @ Lazard</h1>
 											<br>
 											<h2 class="subheadline">New Ideas, New Perspectives.</h2>
@@ -55,12 +46,12 @@
 											-->
 											<!--[if mso]>
 												<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" rel="noopener" target="_blank" href="https://lazard.com/" arcsize="50%" stroke="f" 
-													style="height:32px;v-text-anchor:middle;color:#ffffff;width:65px;" 
+													style="height:32px;v-text-anchor:middle;color:#ffffff;width:100%;" 
 													fillcolor="#00539A">
 													<w:anchorlock/>
 													<center>
 											<![endif]-->
-											<a target="_blank" href="https://lazard.com/" style="width: 65px" class="btn pill">
+											<a target="_blank" href="https://lazard.com/" style="width: 100%" class="btn pill">
 												<!--[if !mso]><!--><span><!--<![endif]-->Visit<!--[if !mso]><!--></span><!--<![endif]-->
 											</a>
 											<!--[if mso]>
@@ -90,8 +81,8 @@
 							<td class="content h-flush">
 								<table style="width: 100%" border="0" cellpadding="8px" cellspacing="0" role="presentation" class="layout_two-column_fluid">
 									<tr>
-										<td class="column" width="100%">
-											<h3 class="sans">Introducing Lazard Global Listed Infrastructure Active ETF (Cboe: GIFL)</h3>											
+										<td class="column" style="width: 404px;">
+											<h3 class="sans">Introducing Lazard Global Listed Infrastructure Active ETF <span class="nowrap">(Cboe: GIFL)</span></h3>	
 										</td>
 										<td class="column">
 											<!--
@@ -100,12 +91,12 @@
 											-->
 											<!--[if mso]>
 												<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" rel="noopener" target="_blank" href="https://lazard.com/" arcsize="50%" stroke="f" 
-													style="height:32px;v-text-anchor:middle;color:#00539A;width:65px;" 
+													style="height:32px;v-text-anchor:middle;color:#00539A;width:100%;" 
 													fillcolor="#ffffff">
 													<w:anchorlock/>
 													<center class="mso">
 											<![endif]-->
-											<a target="_blank" href="https://lazard.com/" style="width: 65px" class="btn pill @@variant">
+											<a target="_blank" href="https://lazard.com/" style="width: 100%" class="btn pill @@variant">
 												<!--[if !mso]><!--><span><!--<![endif]-->Visit<!--[if !mso]><!--></span><!--<![endif]-->
 											</a>
 											<!--[if mso]>
@@ -137,7 +128,7 @@
 									<tr class="layout_two-column layout_mobile-one-column" align="center">
 										<td style="width: 194px;" class="column align-right-md">
 											<!-- <img src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/LAM_GIFL.png" alt="Strategy thumbnail" width="194" class="d-block"> -->
-											<img src="https://placehold.co/194x194" alt="Strategy thumbnail" width="194px" height="194px" class="d-block">
+											<img src="https://placehold.co/194x194" alt="Strategy thumbnail" width="194px" class="d-block">
 										</td>
 										<td style="vertical-align: middle; width: 194px;" class="column" align="left">
 											<p class="paragraph-3">
@@ -424,7 +415,7 @@
 							<td class="content h-flush">
 								<table style border="0" cellpadding="8px" cellspacing="0" role="presentation" width="100%" class="layout_two-column_fluid">
 									<tr>
-										<td class="column">
+										<td class="column" style="width: 404px;">
 											<h2 class="sans">Annual Sustainable Investment Report</h2>
 										</td>
 										<td class="column">
@@ -434,12 +425,12 @@
 											-->
 											<!--[if mso]>
 												<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" rel="noopener" target="_blank" href="https://lazard.com/" arcsize="50%" stroke="f" 
-													style="height:32px;v-text-anchor:middle;color:#ffffff;width:98px;" 
+													style="height:32px;v-text-anchor:middle;color:#ffffff;width:100%;" 
 													fillcolor="#00539A">
 													<w:anchorlock/>
 													<center>
 											<![endif]-->
-											<a target="_blank" href="https://lazard.com/" style="width: 98px" class="btn pill">
+											<a target="_blank" href="https://lazard.com/" style="width: 100%" class="btn pill">
 												<!--[if !mso]><!--><span><!--<![endif]-->Download<!--[if !mso]><!--></span><!--<![endif]-->
 											</a>
 											<!--[if mso]>
@@ -502,7 +493,7 @@
 							<td class="content h-flush">
 								<table style border="0" cellpadding="8px" cellspacing="0" role="presentation" width="100%" class="layout_two-column_fluid">
 									<tr>
-										<td class="column" width="100%">
+										<td class="column" style="width: 404px;">
 											<!--
 												Component: Eyebrow
 											-->
@@ -517,12 +508,12 @@
 											-->
 											<!--[if mso]>
 												<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" rel="noopener" target="_blank" href="https://lazard.com/" arcsize="50%" stroke="f" 
-													style="height:32px;v-text-anchor:middle;color:#ffffff;width:98px;" 
+													style="height:32px;v-text-anchor:middle;color:#ffffff;width:100%;" 
 													fillcolor="#00539A">
 													<w:anchorlock/>
 													<center>
 											<![endif]-->
-											<a target="_blank" href="https://lazard.com/" style="width: 98px" class="btn pill">
+											<a target="_blank" href="https://lazard.com/" style="width: 100%" class="btn pill">
 												<!--[if !mso]><!--><span><!--<![endif]-->Download<!--[if !mso]><!--></span><!--<![endif]-->
 											</a>
 											<!--[if mso]>
@@ -586,7 +577,7 @@
 								<h2 class="subheadline">Emerging Markets Investment Grade Yields</h2>
 								<br>
 								<!-- <img style src="https://info.lazardassetmanagement.com/rs/394-MLC-997/images/LAM_ContentImage_1YGraph.png" alt="1Y Grades Chart" class="mw-100" /> -->
-								<img src="https://placehold.co/543x304" alt="Feature Image" width="543" height="auto">
+								<img src="https://placehold.co/542x304" alt="Feature Image" width="542px">
 								<p></p> <!-- Spacer <p> for MSO image margin -->
 								<br>
 								<p class="disclaimer">As of 26 October 2023</p>
@@ -612,7 +603,7 @@
 							<td class="content h-flush">
 								<table style border="0" cellpadding="8px" cellspacing="0" role="presentation" width="100%" class="layout_two-column_fluid">
 									<tr>
-										<td class="column">
+										<td class="column" style="width: 404px;">
 											<p class="paragraph-2">For more information on Lazard Asset Management's capabilities, visit <a href="lazardassetmanagement.com" target="_blank" class="link-2">lazardassetmanagement.com.</a></p>
 										</td>
 										<td class="column">
@@ -622,12 +613,12 @@
 											-->
 											<!--[if mso]>
 												<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" rel="noopener" target="_blank" href="https://lazard.com/" arcsize="50%" stroke="f" 
-													style="height:32px;v-text-anchor:middle;color:#00539A;width:98px;" 
+													style="height:32px;v-text-anchor:middle;color:#00539A;width:100%;" 
 													fillcolor="#ffffff">
 													<w:anchorlock/>
 													<center>
 											<![endif]-->
-											<a target="_blank" href="https://lazard.com/" style="width: 98px" class="btn pill">
+											<a target="_blank" href="https://lazard.com/" style="width: 100%" class="btn pill">
 												<!--[if !mso]><!--><span><!--<![endif]-->Download<!--[if !mso]><!--></span><!--<![endif]-->
 											</a>
 											<!--[if mso]>
