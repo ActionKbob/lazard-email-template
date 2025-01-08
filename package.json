@@ -16,7 +16,8 @@
   "devDependencies": {
     "del": "^7.1.0",
     "gulp": "^5.0.0",
-    "gulp-clean-css": "^4.3.0"
+    "gulp-clean-css": "^4.3.0",
+    "gulp-replace": "^1.1.4"
   },
   "type": "module"
 }

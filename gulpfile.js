@@ -13,6 +13,7 @@ import path from 'path'
 import file_include from 'gulp-file-include';
 import juice from 'juice';
 import cleanCss from 'gulp-clean-css';
+import replace from 'gulp-replace';
 
 import { deleteAsync } from 'del';
 
@@ -77,6 +78,17 @@ function inlineCssTask( cb )
 	.on( 'end', cb );
 }
 
+function replaceFontWeightTask( cb )
+{
+	gulp.src(  [`${distDir}/**/*.html`] )
+			.pipe( replace( 'font-weight: 400', 'font-weight: normal' ) )
+			.pipe( replace( 'font-weight:400', 'font-weight: normal' ) )
+			.pipe( replace( 'font-weight: 700', 'font-weight: bold' ) )
+			.pipe( replace( 'font-weight:700', 'font-weight: bold' ) )
+			.pipe( gulp.dest( distDir ) )
+			.on( 'end', cb );
+}
+
 async function cleanup( cb )
 {
 	await deleteAsync( [ tempDir, distDir ] );
@@ -88,6 +100,6 @@ function watchTask()
 	gulp.watch( [ './src/**/*.html', './src/**/*.css' ], gulp.series( 'build' ) );
 }
 
-gulp.task( 'build', gulp.series( cleanup, templateInjectionTask, minifyCss, inlineCssTask ) );
+gulp.task( 'build', gulp.series( cleanup, templateInjectionTask, minifyCss, inlineCssTask, replaceFontWeightTask ) );
 gulp.task( 'watch', gulp.series( 'build', watchTask ) );
 gulp.task( 'clean', gulp.series( cleanup ) );
