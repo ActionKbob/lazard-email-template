@@ -72,7 +72,8 @@ li {
 	line-height: 19px;
 	margin-bottom: 8px;
 	padding-left: 0px;
-	margin-left: 0px; 
+	margin-left: 0px;
+	color: var(--onyx);
 }
 
 li a {
@@ -208,6 +209,7 @@ h3.subheadline {
 }
 
 p, .paragraph {
+	color: var(--onyx);
 	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: normal;
