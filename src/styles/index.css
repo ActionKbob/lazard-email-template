@@ -582,7 +582,7 @@ a {
 	padding-bottom: 16px;
 }
 
-.highlights-table tr.bordered {
+.highlights-table tr.bordered td {
 	border-bottom: 1px solid var(--frame);
 }
 
@@ -607,19 +607,19 @@ a {
 	padding-right: 16px;
 }
 
-.sapphire .highlights-table tr.bordered {
+.sapphire .highlights-table tr.bordered td {
 	border-bottom: 1px solid var(--frame_sapphire);
 }
 
-.onyx .highlights-table tr.bordered {
+.onyx .highlights-table tr.bordered td {
 	border-bottom: 1px solid var(--frame_onyx);
 }
 
-.currency .highlights-table tr.bordered {
+.currency .highlights-table tr.bordered td {
 	border-bottom: 1px solid var(--frame_currency);
 }
 
-.ink .highlights-table tr.bordered {
+.ink .highlights-table tr.bordered td {
 	border-bottom: 1px solid var(--frame_ink);
 }
 
