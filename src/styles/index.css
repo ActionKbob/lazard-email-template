@@ -310,6 +310,10 @@ a {
 	margin-top: 8px;
 }
 
+.margin-t-16 {
+	margin-top: 16px;
+}
+
 .margin-b-8 {
 	margin-bottom: 8px;
 }
@@ -388,6 +392,8 @@ a {
 	display: block;
 	background-color: var(--sapphire);
 	border-radius: 80px;
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
 .btn.pill.secondary {
