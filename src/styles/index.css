@@ -629,6 +629,9 @@ a {
 	border-bottom: 1px solid var(--frame_ink);
 }
 
+.shift-right-md {
+	padding-left: 124px;
+}
 /* ---------- END Module Styles ---------- */
 
 /* ---------- Mobile Styles ---------- */
@@ -682,6 +685,10 @@ a {
 
 	.d-none-sm {
 		display: none !important;
+	}
+
+	.shift-right-md {
+		padding-left: 8px !important;
 	}
 }
 /* ---------- END Mobile Styles ---------- */
