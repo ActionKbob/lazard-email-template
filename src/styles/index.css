@@ -472,7 +472,7 @@ a {
 
 .btn.open-in-new {
 	display: block; /* This may need to change later */
-	margin: 4px 0;
+	margin: 4px 0 16px;
 }
 
 .btn.open-in-new .btn-icon {
@@ -576,6 +576,10 @@ a {
 .content.v-flush {
 	padding-top: 0;
 	padding-bottom: 0;
+}
+
+.content.t-flush {
+	padding-top: 0;
 }
 
 .content.h-flush {
