@@ -349,7 +349,8 @@ a {
 .layout_three-column .column, 
 .layout_four-column .column, 
 .layout_mobile-one-column .column {
-	padding: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
 .layout_two-column .column {
@@ -362,6 +363,10 @@ a {
 
 .layout_four-column .column {
 	width: 124px;
+}
+
+.column.padded {
+	padding-right: 24px;
 }
 
 .align-right-md {
@@ -548,7 +553,7 @@ a {
 }
 
 .content {
-	padding: 32px 16px;
+	padding: 8px 8px;
 	border-right: 1px solid var(--frame);
 	border-left: 1px solid var(--frame);
 }
@@ -578,19 +583,23 @@ a {
 	padding-bottom: 0;
 }
 
+/*
 .content.t-flush {
 	padding-top: 0;
 }
+*/
 
 .content.h-flush {
 	padding-left: 8px;
 	padding-right: 8px;
 }
 
+/* 
 .content.alt {
 	padding-top: 48px;
 	padding-bottom: 16px;
 }
+*/
 
 .highlights-table tr.bordered td {
 	border-bottom: 1px solid var(--frame);
@@ -693,6 +702,10 @@ a {
 
 	.shift-right-md {
 		padding-left: 8px !important;
+	}
+
+	.column.padded {
+		padding-right: 8px !important;
 	}
 }
 /* ---------- END Mobile Styles ---------- */
