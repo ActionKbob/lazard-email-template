@@ -11,7 +11,12 @@
 	</head>
 	<body align="center">
 		<table style align="center" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" class="wrapper">
+			
+			
 			<!-- Logo Banner -->
+			@@include( "components/spacers/templates/template.html", {
+				variant: "parchment"
+			} )
 			<tr>
 				<td align="center">			
 					@@include( "modules/logo-banners/templates/template.html", {
@@ -23,6 +28,9 @@
 			<!-- END Logo Banner -->
 
 			<!-- Email Banner, One Column -->
+			@@include( "components/spacers/templates/template.html", {
+				variant: "parchment"
+			} )
 			<tr>
 				<td align="center">
 					@@include( "modules/email-banner/one-column/templates/template.html", {
@@ -34,6 +42,9 @@
 			<!-- END Email Banner, One Column -->
 
 			<!-- One Column Content -->
+			@@include( "components/spacers/templates/template.html", {
+				variant: "parchment"
+			} )
 			<tr>
 				<td align="center">
 					<!--
@@ -86,9 +97,15 @@
 					</table>
 				</td>
 			</tr>
+			@@include( "components/spacers/templates/template.html", {
+				variant: "parchment"
+			} )
 			<!-- END One Column Content -->
 
 			<!-- CTA Banner, One Column -->
+			@@include( "components/spacers/templates/template.html", {
+				variant: "clarity"
+			} )
 			<tr>
 				<td align="center">
 					<!--
@@ -101,7 +118,7 @@
 							<td class="content">
 								<h2 class="sans margin-b-16">Explore a New Perspective on AI from Our Team</h2>
 								
-								<p style="max-width: 404px;" class="d-block paragraph-2 margin-b-16">This paper explores the investment applications of small language models and their advantages over large language models.</p>
+								<p class="d-block paragraph-2 margin-b-16">This paper explores the investment applications of small language models and their advantages over large language models.</p>
 								
 								<!--
 									Component: Pill Button
@@ -127,10 +144,19 @@
 					</table>
 				</td>
 			</tr>
+			@@include( "components/spacers/templates/template.html", {
+				variant: "clarity"
+			} )
 			<!-- END CTA Banner, One Column -->
 
 			<!-- Footer + Disclaimer -->
+			@@include( "components/spacers/templates/template.html", {
+				variant: "onyx"
+			} )
 			@@include( "modules/footer-disclaimer/two-column/two-column-footer-disclaimer.html" )
+			@@include( "components/spacers/templates/template.html", {
+				variant: "onyx"
+			} )
 		</table>
 	</body>
 </html>

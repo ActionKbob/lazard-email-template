@@ -12,6 +12,9 @@
 	<body align="center">
 		<table style align="center" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" class="wrapper">
 			<!-- Logo Banner -->
+			@@include( "components/spacers/templates/template.html", {
+				variant: "parchment"
+			} )
 			<tr>
 				<td align="center">			
 					@@include( "modules/logo-banners/templates/template.html", {
@@ -23,6 +26,9 @@
 			<!-- END Logo Banner -->
 
 			<!-- Email Banner, One Column -->
+			@@include( "components/spacers/templates/template.html", {
+				variant: "parchment"
+			} )
 			<tr>
 				<td align="center">
 					@@include( "modules/email-banner/one-column/templates/template.html", {
@@ -34,6 +40,9 @@
 			<!-- END Email Banner, One Column -->
 
 			<!-- Email Heading -->
+			@@include( "components/spacers/templates/template.html", {
+				variant: "parchment"
+			} )
 			<tr>
 				<td align="center">
 					<!--
@@ -46,7 +55,7 @@
 							<td class="content h-flush">
 								<table style border="0" cellpadding="8px" cellspacing="0" role="presentation" width="100%" class="layout_two-column_fluid">
 									<tr>
-										<td class="column" style="width: 404px;">
+										<td class="column padded" style="width: 404px;">
 											<h1 class="sans">Fixed Income Viewpoints</h1>
 										</td>
 										<td class="column align-right-md">
@@ -77,6 +86,9 @@
 					</table>
 				</td>
 			</tr>
+			@@include( "components/spacers/templates/template.html", {
+				variant: "parchment"
+			} )
 			<!-- END Email Heading -->
 
 			<!-- Two Column Content -->
@@ -92,7 +104,7 @@
 							<td class="content h-flush">
 								<table style="width: 100%;" cellpadding="8px" cellspacing="0" role="presentation">
 									<tr class="layout_mobile-one-column">
-										<td style="width: 104px" class="column">
+										<td style="width: 104px" class="column padded">
 											<h3 class="sans">Back on Track?</h3>
 										</td>
 										<td class="column">
@@ -107,9 +119,15 @@
 					</table>
 				</td>
 			</tr>
+			@@include( "components/spacers/templates/template.html", {
+				variant: "parchment"
+			} )
 			<!-- END Two Column Content -->
 
 			<!-- CTA Banner -->
+			@@include( "components/spacers/templates/template.html", {
+				variant: "sage"
+			} )
 			<tr>
 				<td align="center">
 					<!--
@@ -153,10 +171,19 @@
 					</table>
 				</td>
 			</tr>
+			@@include( "components/spacers/templates/template.html", {
+				variant: "sage"
+			} )
 			<!-- END CTA Banner -->
 
 			<!-- Footer + Disclaimer -->
+			@@include( "components/spacers/templates/template.html", {
+				variant: "onyx"
+			} )
 			@@include( "modules/footer-disclaimer/two-column/two-column-footer-disclaimer.html" )
+			@@include( "components/spacers/templates/template.html", {
+				variant: "onyx"
+			} )
 			<!-- END Footer + Disclaimer -->
 		</table>
 	</body>
