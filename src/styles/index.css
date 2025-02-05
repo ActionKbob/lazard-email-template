@@ -326,6 +326,10 @@ a {
 	margin-bottom: 16px;
 }
 
+.margin-b-16-md {
+	margin-bottom: 16px;
+}
+
 .margin-b-48 {
 	margin-bottom: 48px;
 }
@@ -710,6 +714,10 @@ a {
 
 	.column.padded {
 		padding-right: 8px !important;
+	}
+
+	.margin-b-16-md {
+		margin-bottom: 0px !important;
 	}
 }
 /* ---------- END Mobile Styles ---------- */

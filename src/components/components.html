@@ -501,7 +501,6 @@
 		<h4 style="margin: 16px;">Spacers</h4>
 	</td>
 </tr>
-<!-- ---------- Email Banner One Column Modules ---------- -->
 
 @@include( "components/spacers/templates/template.html", {
 	variant: "parchment"
@@ -510,6 +509,10 @@
 
 @@include( "components/spacers/templates/template.html", {
 	variant: "sage"
+} )
+
+@@include( "components/spacers/templates/template.html", {
+	variant: "clarity"
 } )
 
 
@@ -529,3 +532,37 @@
 @@include( "components/spacers/templates/template.html", {
 	variant: "ink dark"
 } )
+
+<tr>
+	<td align="center" id="email-banner_one-column">
+		<h4 style="margin: 16px;">Privacy policy & Unsubscribe</h4>
+	</td>
+</tr>
+
+<tr>
+	<td align="center">
+		<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="module onyx">
+			<tr>
+				<td class="frame"></td>
+				<td class="content">
+					<p class="disclaimer margin-b-16" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: normal; margin: 0; font-size: 9px; line-height: 11px; margin-bottom: 16px; color: #ffffff;"><a href=https://www.lazardassetmanagement.com/entry?relTargetURL=privacy-policy.html&source=mkto&medium=email&campaign={{my.campaign}}&cscode={{my.cscode}}&sfdcid={{lead.SFDC Id}}&content={{my.content}} class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: normal; text-decoration: underline; font-size: 9px; line-height: 11px; color: #ffffff; target="_blank">Privacy Policy</a>
+				</td>
+				<td class="frame"></td>
+			</tr>
+		</table>
+	</td>
+</tr>
+
+<tr>
+	<td align="center">
+		<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="module onyx">
+			<tr>
+				<td class="frame"></td>
+				<td class="content">
+					<a href=https://www.lazardassetmanagement.com/entry?relTargetURL=unsubscribe.html&id={{Lead.Id}}&source=mkto&medium=email&campaign={{my.campaign}}&cscode={{my.cscode}}&sfdcid={{lead.SFDC Id}}&content={{my.content}} class="disclaimer" style="font-family: 'Helvetica Neue LT Std',Helvetica,sans-serif; font-weight: normal; text-decoration: underline; font-size: 9px; line-height: 11px; color: #ffffff;" target="_blank">Unsubscribe</a></p>
+				</td>
+				<td class="frame"></td>
+			</tr>
+		</table>
+	</td>
+</tr>
