@@ -72,8 +72,11 @@ li {
 	line-height: 19px;
 	margin-bottom: 8px;
 	padding-left: 0px;
-	margin-left: 0px;
-	color: var(--onyx);
+	margin-left: 4px;
+}
+
+.dark li {
+	color: var(--parchment) !important;
 }
 
 li a {
@@ -87,6 +90,10 @@ li::marker
 
 li.link::marker {
 	color: var(--sapphire);
+}
+
+.dark li.link-2 {
+	color: var(--parchment);
 }
 
 /* Gmail Webapp list styles */
@@ -274,6 +281,11 @@ a {
 }
 
 /* Utilities */
+.responsive-img {
+	width: 100% !important;
+	height: auto !important;
+}
+
 .d-block {
 	display: block;
 }
@@ -288,6 +300,10 @@ a {
 
 .center {
 	text-align: center;
+}
+
+.right {
+	text-align: right;
 }
 
 .padding-y-20 {
@@ -334,6 +350,11 @@ a {
 	margin-bottom: 48px;
 }
 
+.margin-x-12 {
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
 /* Layout */
 .wrapper {
 	width: 100%;
@@ -346,6 +367,7 @@ a {
 
 .layout_two-column, .layout_three-column, .layout_four-column {
 	display: block;
+	width: 100%;
 }
 
 .layout_two-column .column,
@@ -673,31 +695,19 @@ a {
 		margin-bottom: 8px;
 	}
 
-	.layout_two-column .column {
-		display: inline-block;
-		width: 100% !important;
-		max-width: 267px;
-	}
-
+	.layout_four-column .column,
 	.layout_three-column .column,
-	.layout_two-column_fluid .column {
+	.layout_two-column_fluid .column,
+	.layout_two-column .column,
+	.layout_mobile-one-column .column {
 		display: inline-block;
-		width: 100% !important;
-	}
-
-	.layout_four-column .column {
-		display: inline-block;
-		width: 100% !important;
+		width: unset !important;
+		/* max-width: 267px; */
 	}
 
 	.layout_mobile-one-column
 	{
 		display: block;
-	}
-
-	.layout_mobile-one-column .column {
-		display: inline-block;
-		width: 100% !important;
 	}
 
 	.align-right-md {

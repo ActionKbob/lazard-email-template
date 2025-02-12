@@ -6,80 +6,43 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../index.css">
 
-		<!--[if mso]>
-		<noscript>
-			<xml>
-				<o:OfficeDocumentSettings>
-					<o:PixelsPerInch>96</o:PixelsPerInch>
-				</o:OfficeDocumentSettings>
-			</xml>
-		</noscript>
-		<![endif]-->
-
-		<!--[if (gte mso 9)|(IE)]>
-		<style>
-			li {
-			margin-left:27px !important;
-			mso-special-format: bullet;
-			}
-			.mso_list {
-			margin-left: -25px !important;
-			}
-		</style>
-		<![endif]-->
+		@@include( "includes/msoDependencies.html" )
 	</head>
 	<body align="center">
 		<table style align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" class="wrapper w-100">
 
 			<tr>
 				<td align="center">
-					@@include( 'modules/preheaders/templates/template.html', {
+					@@include( "modules/two-column-contents/image-right/templates/template.onyx.html", {
 						variant: "sage",
-						"label": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aliquid reprehenderit esse perspiciatis reiciendis illum, veniam dolore dignissimos. Vitae illo tempora voluptatum earum labore laudantium voluptas nisi possimus ullam culpa?</p>"
+						imgSrc: "LAM_ContentImage_Lecture.png"
+					} )
+				</td>
+			</tr>
+			
+			<tr>
+				<td align="center">
+					@@include( "modules/two-column-contents/image-right/templates/template.html", {
+						variant: "clarity",
+						imgSrc: "LAM_ContentImage_Lecture.png"
 					} )
 				</td>
 			</tr>
 
 			<tr>
 				<td align="center">
-					@@include( "modules/cta-banner/one-column/templates/template.dark.html", {
-						variant: "sapphire",
-						heading: "<h2 class='sans margin-b-16'>Explore a New Perspective on AI from Our Team</h2>",
-						paragraph: "<p class='paragraph-2 margin-b-16'>Enclosed is the monthly factor report detailing those factors that influenced regional and global equity performance in May 2024 as well as over extended time periods.</p>"
+					@@include( "modules/two-column-contents/teams/templates/template.html", {
+						variant: "clarity",
+						imgSrc: "LAM_Bio_1.png"
 					} )
 				</td>
 			</tr>
-
+			
 			<tr>
 				<td align="center">
-					@@include( "modules/one-column-contents/basic/templates/template.html", {
-						variant: "parchment",
-						imgSrc: "LAM_ContentImage_1YGraph.png"
-					} )
-				</td>
-			</tr>
-
-			<tr>
-				<td align="center">
-					@@include( "modules/email-banner/two-column/templates/template.html", {
-						variant: "parchment",
-						imgSrc: "LAM_Feature_Lake.png"
-					} )
-				</td>
-			</tr>
-
-			<tr>
-				<td align="center">
-					@@include( "modules/tables/basic/templates/template.html", {
-						variant: "parchment"
-					} )
-				</td>
-			</tr>
-
-			<tr>
-				<td align="center">
-					@@include( "modules/tables/numbered/templates/template.html", {
-						variant: "currency dark"
+					@@include( "modules/two-column-contents/teams/templates/template.html", {
+						variant: "sapphire dark",
+						imgSrc: "LAM_Bio_1.png"
 					} )
 				</td>
 			</tr>
