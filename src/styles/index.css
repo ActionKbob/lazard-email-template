@@ -41,7 +41,6 @@
 /* ---------- Boilerplate ---------- */
 body {
 	margin: 0;
-	padding-top: 10px;
 	background-color: var(--bg_grey);
 
 	-webkit-font-smoothing: antialiased;
