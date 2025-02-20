@@ -41,8 +41,8 @@
 /* ---------- Boilerplate ---------- */
 body {
 	margin: 0;
-	background-color: var(--bg_grey);
-
+	padding: 0;
+	background-color: var(--parchment);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
