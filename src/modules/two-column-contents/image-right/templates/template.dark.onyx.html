@@ -2,43 +2,47 @@
 	Module: Two Column Contents, Image Right
 	Variant: @@variant, onyx buttons, dark background
 -->
-<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="module dark @@variant">
-	<tr>
-		<td class="frame"></td>
-		<td class="content h-flush">
-			<table style="width: 100%;" cellpadding="8px" cellspacing="0" role="presentation">
-				<tr class="layout_two-column">
-					<td style class="column padded">
-						<h4 class="sans margin-b-16">Do Rising US Interest Rates Offer Opportunities in EM?</h4>
-						
-						<h3 class="subheadline margin-b-16">Tuesday, October 31, 1:00PM eT</h3>
-						
-						<p class="paragraph-2 margin-b-16">Rising US interest rates--and soaring Treasury yields--have done their part to rattle global economics. As the environment settles, we expect growth differentials to shift, creating a more positive backdrop for emerging markets debt and interesting investment opportunities for the asset class across the capital structure.</p>
-						
-						<div class="mso_list margin-b-16">
-							<ul class="g_list" style="" align="left" type="disc">
-									<li><a class="link-2" target="_blank" href="https://www.lazardassetmanagement.com">Lazard US Offshore Fund Offerings</a></li>
-							</ul>
-						</div>
-						
-						@@include("components/buttons/pills/templates/template.msoDark.primary.onyx.html", {
-							label: "Primary",
-							width: "98px"
-						})
-					</td>
-					<td style class="column">
-						<h3 class="subheadline margin-b-16">Emerging Markets Investment Grade Yields</h3>
-						
-						<!-- <img style src="@@imgBase/@@imgSrc" alt="Second Column Image" class=""> -->
-						<img src="https://placehold.co/264x142" alt="Feature image" width="264px" height="142px">
-						
-						<p class="disclaimer margin-t-16">As of 26 October 2023</p>
-						<p class="disclaimer">Sovereign: JPM EMBI Global Diversified IG; Corporate: JPM CEMBI Broad Diversified IG</p>
-						<p class="disclaimer">Source: Lazard, JP Morgan</p>
-					</td>
-				</tr>
-			</table>
-		</td>
-		<td class="frame"></td>
-	</tr>
-</table>
+<tr class="bg @@variant">
+	<td align="center">
+		<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="module dark">
+			<tr>
+				<td class="frame"></td>
+				<td class="content h-flush">
+					<table style="width: 100%;" cellpadding="8px" cellspacing="0" role="presentation">
+						<tr class="layout_two-column">
+							<td style class="column padded">
+								<h4 class="sans margin-b-16">Do Rising US Interest Rates Offer Opportunities in EM?</h4>
+								
+								<h3 class="subheadline margin-b-16">Tuesday, October 31, 1:00PM eT</h3>
+								
+								<p class="paragraph-2 margin-b-16">Rising US interest rates--and soaring Treasury yields--have done their part to rattle global economics. As the environment settles, we expect growth differentials to shift, creating a more positive backdrop for emerging markets debt and interesting investment opportunities for the asset class across the capital structure.</p>
+								
+								<div class="mso_list margin-b-16">
+									<ul class="g_list" style="" align="left" type="disc">
+											<li><a class="link-2" target="_blank" href="https://www.lazardassetmanagement.com">Lazard US Offshore Fund Offerings</a></li>
+									</ul>
+								</div>
+								
+								@@include("components/buttons/pills/templates/template.msoDark.primary.onyx.html", {
+									label: "Primary",
+									width: "98px"
+								})
+							</td>
+							<td style class="column">
+								<h3 class="subheadline margin-b-16">Emerging Markets Investment Grade Yields</h3>
+								
+								<!-- <img style src="@@imgBase/@@imgSrc" alt="Second Column Image" class=""> -->
+								<img src="https://placehold.co/264x142" alt="Feature image" width="264px" height="142px">
+								
+								<p class="disclaimer margin-t-16">As of 26 October 2023</p>
+								<p class="disclaimer">Sovereign: JPM EMBI Global Diversified IG; Corporate: JPM CEMBI Broad Diversified IG</p>
+								<p class="disclaimer">Source: Lazard, JP Morgan</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td class="frame"></td>
+			</tr>
+		</table>
+	</td>
+</tr>
