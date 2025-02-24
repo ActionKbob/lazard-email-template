@@ -134,6 +134,11 @@ li > span {
 }
 
 /* Typography */
+.appleLinks {
+	text-decoration: none !important;
+	-webkit-text-size-adjust: none !important;	
+}
+
 h1, h2, h3, h4 {
 	color: var(--onyx);
 	font-family: "VC Garamond Condensed", "Helvetica Neue LT Std", Helvetica, sans-serif;
