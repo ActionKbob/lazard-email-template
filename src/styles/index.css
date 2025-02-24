@@ -242,6 +242,11 @@ a {
 	text-decoration: underline;
 }
 
+a:visited {
+	color: var(--sapphire);
+	text-decoration: none;
+}
+
 .sapphire {
 	color: var(--sapphire);
 }
@@ -257,6 +262,11 @@ a {
 /* Dark BG override */
 .dark a {
 	color: var(--parchment);
+}
+
+a:visited {
+	color: var(--parchment);
+	text-decoration: none;
 }
 
 .link-2 {
