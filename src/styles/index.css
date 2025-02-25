@@ -232,9 +232,13 @@ a {
 	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
-	color: var(--sapphire);
 	line-height: 19px;
 	text-decoration: underline;
+}
+
+a, a:visited, a:link, a:focus
+{
+	color: var(--sapphire);
 }
 
 .sapphire {
@@ -250,7 +254,8 @@ a {
 }
 
 /* Dark BG override */
-.dark a {
+.dark a, .dark a:visited, .dark a:link, .dark a:focus
+{
 	color: var(--parchment);
 }
 
