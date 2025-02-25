@@ -39,16 +39,6 @@
 /* ---------- END Colors ---------- */
 
 /* ---------- Boilerplate ---------- */
-body {
-	margin: 0;
-	padding-top: 10px;
-	background-color: var(--bg_grey);
-
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
-}
-
 table {
 	border-collapse: collapse !important;
 }
@@ -236,7 +226,7 @@ p, .paragraph {
 
 a {
 	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
-	font-size: 16px;
+	/* font-size: 16px; */
 	font-weight: normal;
 	color: var(--sapphire);
 	line-height: 19px;
@@ -521,19 +511,20 @@ a {
 .eyebrow {
 	text-transform: uppercase;
 	font-size: 10px;
-	line-height: 8px;
+	line-height: 1.2;
 	vertical-align: middle;
 }
 
 .eyebrow .bullet {
 	font-size: 30px;
-	line-height: 8px;
+	line-height: 1.2;
 	vertical-align: middle;
 	margin-right: 6px;
 }
 
 .spacer {
 	height: 16px;
+	padding: 0px 16px !important;
 }
 /* ---------- END Component Styles ---------- */
 
