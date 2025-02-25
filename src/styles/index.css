@@ -226,7 +226,7 @@ p, .paragraph {
 
 a {
 	font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
-	/* font-size: 16px; */
+	font-size: 16px;
 	font-weight: normal;
 	color: var(--sapphire);
 	line-height: 19px;
@@ -256,7 +256,7 @@ a {
 	color: var(--sapphire);
 }
 
-.disclaimer, .caption {
+.disclaimer, .caption, .disclaimer a, .caption a {
 	font-size: 9px;
 	line-height: 11px;
 }
