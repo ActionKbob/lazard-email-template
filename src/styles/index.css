@@ -39,6 +39,10 @@
 /* ---------- END Colors ---------- */
 
 /* ---------- Boilerplate ---------- */
+body {
+	margin: 0;
+}
+
 table {
 	border-collapse: collapse !important;
 }
