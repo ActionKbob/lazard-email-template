@@ -541,35 +541,34 @@ a, a:visited, a:link, a:focus
 .module {
 	/* width: 100%; */
 	width: 640px;
-	background-color: var(--parchment);
 	/* max-width: 640px; */
 	color: var(--onyx);
 }
 
-.module.sapphire {
+.bg.sapphire {
 	background-color: var(--sapphire);
 	color: var(--parchment);
 }
 
-.module.sage {
+.bg.sage {
 	background-color: var(--sage);
 }
 
-.module.onyx {
+.bg.onyx {
 	background-color: var(--onyx);
 	color: var(--parchment);
 }
 
-.module.clarity {
+.bg.clarity {
 	background-color: var(--clarity);
 }
 
-.module.currency {
+.bg.currency {
 	background-color: var(--currency);
 	color: var(--parchment);
 }
 
-.module.ink {
+.bg.ink {
 	background-color: var(--ink);
 	color: var(--parchment);
 }
@@ -588,22 +587,22 @@ a, a:visited, a:link, a:focus
 	border-left: 1px solid var(--frame);
 }
 
-.module.sapphire .content {
+.bg.sapphire .content {
 	border-right: 1px solid var(--frame_sapphire);
 	border-left: 1px solid var(--frame_sapphire);
 }
 
-.module.onyx .content {
+.bg.onyx .content {
 	border-right: 1px solid var(--frame_onyx);
 	border-left: 1px solid var(--frame_onyx);
 }
 
-.module.currency .content {
+.bg.currency .content {
 	border-right: 1px solid var(--frame_currency);
 	border-left: 1px solid var(--frame_currency);
 }
 
-.module.ink .content {
+.bg.ink .content {
 	border-right: 1px solid var(--frame_ink);
 	border-left: 1px solid var(--frame_ink);
 }

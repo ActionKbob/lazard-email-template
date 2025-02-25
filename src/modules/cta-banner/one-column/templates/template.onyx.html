@@ -2,19 +2,23 @@
 	Module: CTA Banner, One Column
 	Variant: @@variant, onyx buttons
 -->
-<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="module cta-banner @@variant">
-	<tr>
-		<td class="frame"></td>
-		<td class="content">
-			@@heading
-			
-			@@paragraph
-			
-			@@include("components/buttons/pills/templates/template.primary.onyx.html", {
-				label: "Download",
-				width: "271px"
-			})		
-		</td>
-		<td class="frame"></td>
-	</tr>
-</table>
+<tr>
+	<td align="center" class="bg @@variant">
+		<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="module cta-banner @@variant">
+			<tr>
+				<td class="frame"></td>
+				<td class="content">
+					@@heading
+					
+					@@paragraph
+					
+					@@include("components/buttons/pills/templates/template.primary.onyx.html", {
+						label: "Download",
+						width: "271px"
+					})		
+				</td>
+				<td class="frame"></td>
+			</tr>
+		</table>
+	</td>
+</tr>

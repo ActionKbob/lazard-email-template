@@ -2,26 +2,30 @@
 	Module: Email Heading
 	Variant: @@variant, sapphire buttons, dark background
 -->
-<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="module dark cta-banner @@variant">
-	<tr>
-		<td class="frame"></td>
-		<td class="content h-flush">
-			<table style="" border="0" cellpadding="8px" cellspacing="0" role="presentation" class="layout_two-column_fluid w-100">
-				<tr>
-					<td class="column padded" width="100%">
-						@@heading
-						
-						@@paragraph
-					</td>
-					<td class="column">
-						@@include("components/buttons/pills/templates/template.msoDark.primary.sapphire.html", {
-							label: "Download",
-							width: "98px"
-						})
-					</td>
-				</tr>
-			</table>			
-		</td>
-		<td class="frame"></td>
-	</tr>
-</table>
+<tr>
+	<td align="center" class="bg @@variant">
+		<table style border="0" cellpadding="0" cellspacing="0" role="presentation" class="module dark cta-banner @@variant">
+			<tr>
+				<td class="frame"></td>
+				<td class="content h-flush">
+					<table style="" border="0" cellpadding="8px" cellspacing="0" role="presentation" class="layout_two-column_fluid w-100">
+						<tr>
+							<td class="column padded" width="100%">
+								@@heading
+								
+								@@paragraph
+							</td>
+							<td class="column">
+								@@include("components/buttons/pills/templates/template.msoDark.primary.sapphire.html", {
+									label: "Download",
+									width: "98px"
+								})
+							</td>
+						</tr>
+					</table>			
+				</td>
+				<td class="frame"></td>
+			</tr>
+		</table>
+	</td>
+</tr>
