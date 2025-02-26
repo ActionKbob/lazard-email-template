@@ -411,11 +411,11 @@ a, a:visited, a:link, a:focus
 	color: var(--parchment);
 	text-align: center;
 	-webkit-text-size-adjust: none;
-	line-height: 1.2;
+	line-height: 32px;
 }
 
 .btn.pill.small {
-	line-height: 1.2;
+	line-height: 22px;
 }
 
 .btn.pill span {
